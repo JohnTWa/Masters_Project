@@ -478,28 +478,27 @@ def plot_colour_frame_comparison(frame_timestamps_and_colours_csv_path, rgb_csv_
 #                                     key=key,
 #                                     colour=colour)
 
-## For Synchronous Communication: ##
+# For Synchronous Communication: ##
 
-# signal_csv_path = 'files/key_light_levels/light_levels_CLK.csv'
-# display_binary_reading(signal_csv_path, (800,930), 60, 0, 0.25)
-# display_binary_reading_with_markers(signal_csv_path)
+signal_csv_path = 'files/key_light_levels/light_levels_CLK.csv'
+display_binary_reading_with_markers(signal_csv_path)
 
-# signal_csv_path = 'files/key_light_levels/light_levels_SGL.csv'
-# display_binary_reading_with_markers(signal_csv_path)
+signal_csv_path = 'files/key_light_levels/light_levels_SGL.csv'
+display_binary_reading_with_markers(signal_csv_path)
 
-# ns = tuple(range(1,109))
+key = 3
 
-# for n in ns:
-#     key = round((4*n-2)/3)
-#     print(f'key{key}')
-#     signal_csv_path = f'files/key_light_levels/light_levels_key_{key}.csv'
-#     display_binary_reading_with_markers(signal_csv_path)
+while key <= 108:
+    print(f'key{key}')
+    signal_csv_path = f'files/key_light_levels/light_levels_key_{key}.csv'
+    display_binary_reading_with_markers(signal_csv_path)
+    key += 1
 
 ## For Analogue Communication: ##
 
-csv_path = "files\spreadsheets\s5_rgb_normalised.csv"
+# csv_path = "files\spreadsheets\s5_rgb_normalised.csv"
 
-ns = tuple(range(1, 109*3))
+# ns = tuple(range(0, 109*3))
 
-for n in ns:
-    display_ASK_reading(csv_path, column=n, framerate=60)
+# for n in ns:
+#     display_ASK_reading(csv_path, column=n, framerate=60)

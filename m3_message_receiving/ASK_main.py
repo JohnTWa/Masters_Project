@@ -8,14 +8,27 @@ from common.hamming_code import hamming_decode
 from common.ASCII import binary_to_ascii
 from m3_message_receiving.ASK_synchronous.determine_states import determine_states
 
+# Packages
+import logging
+
 ## Define paths ##
 
+log_file_path = 'files/logs/ASK_demodulation.log'
 key_levels_and_events_folder = 'files/key_light_levels'
-rgb_csv_path = 'files/spreadsheets/s4_rgb_averages.csv'
+rgb_csv_path = 'files/spreadsheets/s5_rgb_normalised.csv'
 CLK_csv_path = key_levels_and_events_folder + '/light_levels_CLK.csv'
 SGL_csv_path = key_levels_and_events_folder + '/light_levels_SGL.csv'
 binary_csv_path = 'files/spreadsheets/s8_binary.csv'
 output_text_path = 'files/t2_received_text.txt'
+
+# Configure the logger to write to a file, e.g., 'app.log'
+logging.basicConfig(
+    filename=log_file_path,        # log file name
+    filemode='w',              # append mode; use 'w' to overwrite each time
+    format='%(asctime)s \t %(levelname)s \t %(message)s',
+    level=logging.INFO         # logging level; adjust as needed
+)
+logger = logging.getLogger(__name__)
 
 ## Define signal parameters ##
 
@@ -41,33 +54,31 @@ print(f'Bits per Frame: expected-{frame_bits}, detected-{len(CLK)/len(frame_boun
 
 ## For Each transmitting key: ##
 
-key = 3 # third key is first data key
-while key <= 109:
-
-    colour_n = (key-1)%3
-    column = (key-1)*3 + colour_n
-    colour_dictionary = {0:'R', 1:'G', 2:'B'}
+key = 3  # third key is first data key
+while key <= 108:
+    colour_n = key % 3
+    column = (key - 1) * 3 + colour_n
+    colour_dictionary = {0: 'R', 1: 'G', 2: 'B'}
     colour = colour_dictionary[colour_n]
-    print(f'Key {key}, Colour {colour}, Column {column}')
-    levels_and_events_csv_path = key_levels_and_events_folder + f'/light_levels_key_{key}.csv'
-    _ = detect_edges_with_orig_index(rgb_csv_path, column-1, levels_and_events_csv_path, threshold_fraction=0.1)
+    logger.info(f'Key {key}, Colour {colour}, Column {column}')
 
-    print(f'|Reading key {key}, column {column}')
+    levels_and_events_csv_path = key_levels_and_events_folder + f'/light_levels_key_{key}.csv'
+    _ = detect_edges_with_orig_index(rgb_csv_path, column, levels_and_events_csv_path, threshold_fraction=0.1)
+
+    logger.info(f'|Reading key {key}, column {column}')
 
     signal_number = 1
-    ## For each frame ##
+    # For each frame
     for frame_bound in frame_bounds:
-
-        print(f'||Reading signal {signal_number}, between rows {frame_bound}')
+        logger.info(f'||Reading signal {signal_number}, between rows {frame_bound}')
         start, end = frame_bound
-        print(f'||Start: {start}, End: {end}')
+        logger.info(f'||Start: {start}, End: {end}')
         codeword = determine_states(levels_and_events_csv_path, CLK, frame_bound)
-        print(f'||Codeword: {codeword}')
+        logger.info(f'||Codeword: {codeword}')
         payload = hamming_decode(codeword)
         character = binary_to_ascii(payload)
-        print(f'||Character: {character}')
+        logger.info(f'||Character: {character}')
         append_to_txt(output_text_path, signal_number, character)
-
         signal_number += 1
-    
+
     key += 1
