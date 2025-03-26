@@ -1,0 +1,12 @@
+# Ignore these folders and anything inside them
+files/input_files
+files/frames
+files/warped_frames
+OLD
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
