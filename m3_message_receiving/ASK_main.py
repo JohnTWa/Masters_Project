@@ -11,10 +11,10 @@ from m3_message_receiving.ASK_synchronous.determine_states import determine_stat
 ## Define paths ##
 
 key_levels_and_events_folder = 'files/key_light_levels'
-rgb_csv_path = 'files/s3_rgb_averages.csv'
+rgb_csv_path = 'files/spreadsheets/s4_rgb_averages.csv'
 CLK_csv_path = key_levels_and_events_folder + '/light_levels_CLK.csv'
 SGL_csv_path = key_levels_and_events_folder + '/light_levels_SGL.csv'
-binary_csv_path = 'files/s5_binary.csv'
+binary_csv_path = 'files/spreadsheets/s8_binary.csv'
 output_text_path = 'files/t2_received_text.txt'
 
 ## Define signal parameters ##
@@ -41,10 +41,14 @@ print(f'Bits per Frame: expected-{frame_bits}, detected-{len(CLK)/len(frame_boun
 
 ## For Each transmitting key: ##
 
-column = 7 # Start at column 7, which is key 3, colour R. 
-while column < 333:
+key = 3 # third key is first data key
+while key <= 109:
 
-    key = 1 + round(column/3) # Calculate key from column number
+    colour_n = (key-1)%3
+    column = (key-1)*3 + colour_n
+    colour_dictionary = {0:'R', 1:'G', 2:'B'}
+    colour = colour_dictionary[colour_n]
+    print(f'Key {key}, Colour {colour}, Column {column}')
     levels_and_events_csv_path = key_levels_and_events_folder + f'/light_levels_key_{key}.csv'
     _ = detect_edges_with_orig_index(rgb_csv_path, column-1, levels_and_events_csv_path, threshold_fraction=0.1)
 
@@ -66,8 +70,4 @@ while column < 333:
 
         signal_number += 1
     
-    column += 4 # Move to next key, next colour: for example, key 4, colour G
-
-# Currently, frames are sent on different colours for each data transmitting key, in the format: 
-    # key1 R, key2 G, key3 B, key5 R, key6 G, key7 B, ...
-    # Notice that every 4th key is skipped, as it is not used for transmission.
+    key += 1

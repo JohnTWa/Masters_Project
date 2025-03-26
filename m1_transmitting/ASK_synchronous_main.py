@@ -58,6 +58,6 @@ for signal_set in signal_sets:
                                         data_ids=data_IDs,
                                         CLK_ids=CLK_IDs,
                                         SGL_ids=SGL_IDs,
-                                        frequency=1)
+                                        frequency=10)
     
 keyboard.set_colour_timed(setup_items, key_IDs, (0,0,0), 4)
