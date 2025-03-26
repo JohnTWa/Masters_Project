@@ -1,3 +1,6 @@
+from _SETUP_ import set_directory
+set_directory()
+
 from PIL import Image
 import matplotlib.pyplot as plt
 
@@ -17,7 +20,7 @@ def image_to_binary(file_path):
     
     return binary_list
 
-def display_pgm_with_pillow(file_path):
+def display_pgm(file_path):
     # Open the image using Pillow
     image = Image.open(file_path)
     
@@ -28,5 +31,4 @@ def display_pgm_with_pillow(file_path):
     plt.show()
 
 if __name__ == '__main__':
-    display_pgm_with_pillow('files/images/PGM.pgm')
-    display_image('files/images/PGM.pgm')
+    display_pgm('files/images/PGM.pgm')
