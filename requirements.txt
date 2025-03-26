@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+opencv-python
+pillow
+pyqt5
+cuesdk
