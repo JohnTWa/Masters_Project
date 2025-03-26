@@ -12,14 +12,11 @@ def rs232_format(message: str, idle_bits = 0):
     parity_bit = parity_bit_calculation(message)
     return ('1' + message + parity_bit + '0'*idle_bits)
 
-def rs232_modified_format(message: str, idle_bits = 0, parity_enabled = False):
+def frame_format(message: str, idle_bits = 0):
+    # 1 + payload + 1 + idle_bits
     if not all(bit in '01' for bit in message):
         raise ValueError("The input message must contain only '0' and '1'.")
-    
-    if parity_enabled == True:
-        parity_bit = parity_bit_calculation(message)
-        return ('1' + message + parity_bit + '1' + '0'*idle_bits)
-    
+
     else:
         return ('1' + message + '1' + '0'*idle_bits)
     
