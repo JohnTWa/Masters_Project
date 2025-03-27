@@ -6,6 +6,7 @@ from m3_message_receiving.edge_detection import detect_edges_with_orig_index
 from common.hamming_code import hamming_decode
 from m3_message_receiving.ASK_synchronous.determine_states import determine_states
 import common.binary_image as bin_img
+import common.image_displaying as img_disp
 
 # Packages
 import logging
@@ -138,3 +139,5 @@ else:
 bin_img.write_p1_from_rows(rows, output_image_path)
 logger.info(f"Received image saved to {output_image_path}")
 bin_img.display_pgm_or_pbm(output_image_path)
+bin_img.compare_pbm_files('files/images/dog_P1.pbm', output_image_path, 'files/images/received_image_diff.png')
+img_disp.display_image('files/images/received_image_diff.png')

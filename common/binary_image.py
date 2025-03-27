@@ -208,16 +208,62 @@ def write_p1_from_rows(rows, output_file_path):
             line = " ".join(str(bit) for bit in row)
             f.write(line + "\n")
 
+def compare_pbm_files(file1, file2, output_file):
+    """
+    Compares two PBM files (assumed to be in ASCII PBM (P1) format) and produces
+    an output image where pixels that differ are colored red, while identical pixels
+    are shown in grayscale (white for 0, black for 1).
+    
+    Args:
+        file1 (str): Path to the first PBM file.
+        file2 (str): Path to the second PBM file.
+        output_file (str): Path where the output image will be saved (e.g., "diff.png").
+    """
+    # Load the PBM images as lists of rows (each row is a list of integers)
+    rows1 = split_pbm_rows(file1)
+    rows2 = split_pbm_rows(file2)
+    
+    if len(rows1) != len(rows2):
+        raise ValueError("PBM files have different number of rows!")
+    
+    height = len(rows1)
+    width = len(rows1[0])
+    for r1, r2 in zip(rows1, rows2):
+        if len(r1) != width or len(r2) != width:
+            raise ValueError("PBM files have inconsistent row widths!")
+    
+    # Create an empty color image array
+    # We'll use shape (height, width, 3) for RGB.
+    out_img = np.zeros((height, width, 3), dtype=np.uint8)
+    
+    # Compare each pixel.
+    for i in range(height):
+        for j in range(width):
+            if rows1[i][j] != rows2[i][j]:
+                # If different, mark pixel red.
+                out_img[i, j] = [255, 0, 0]
+            else:
+                # If identical, use grayscale:
+                # We assume PBM: 0 => white, 1 => black.
+                if rows1[i][j] == 0:
+                    out_img[i, j] = [255, 255, 255]
+                else:
+                    out_img[i, j] = [0, 0, 0]
+    
+    # Create and save output image.
+    im = Image.fromarray(out_img)
+    im.save(output_file)
+
 if __name__ == '__main__':
     
     # Display the PBM image
-    image_path = 'files\images\dog.jpg'
+    image_path = 'files\images\dog.png'
     p4_image_path = f'{os.path.splitext(image_path)[0]}_P4.pbm'
     p1_image_path = f'{os.path.splitext(image_path)[0]}_P1.pbm'
 
     # Convert the image to a PBM file
     display_pgm_or_pbm(image_path)
-    image_to_pbm(image_path, p4_image_path, 256)
+    image_to_pbm(image_path, p4_image_path, 128)
     convert_p4_to_p1(p4_image_path, p1_image_path)
     display_pgm_or_pbm(p1_image_path)
 
