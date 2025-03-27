@@ -27,7 +27,7 @@ spreadsheets_folder = 'files/spreadsheets'
 
 ## Define file paths
 
-video_path = 'files/ASK Synchronous Transmission.mp4'
+video_path = 'files/ASK Synchronous Image Transmission.mp4'
 input_image_path = frames_folder + '/frame_0.png'
 corners_csv_path = spreadsheets_folder + '/s2_corner_coordinates.csv'
 warped_image_path = warped_frames_folder + '/warped_frame_0.png'
