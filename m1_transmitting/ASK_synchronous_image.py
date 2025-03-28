@@ -23,7 +23,7 @@ def process_image(image_path):
 
     return p1_image_path
 
-def transmit_image_using_ASK(setup_items, key_IDs, p1_image_path, frequency, HAMMING_ENCODE=False):
+def transmit_image_using_ASK(key_IDs, p1_image_path, frequency, HAMMING_ENCODE=False):
     key_IDs = fh.adjust_for_Corsair_logo(key_IDs)
     CLK_IDs = [0] #Corsair Logo
     SGL_IDs = [1] #ESC
@@ -59,10 +59,18 @@ def transmit_image_using_ASK(setup_items, key_IDs, p1_image_path, frequency, HAM
     # Each signal (e.g., "10101010") has a length of 8 bits (or 11 bits if Hamming encoding is used).
     signal_length = len(signal_sets[0][0]) + 1  # use the first signal in the first set.
     number_of_sets = len(signal_sets)
-    expected_time = number_of_sets * (signal_length / frequency)
+    t1 = 4
+    t2 = 1
+    expected_time = number_of_sets * (signal_length / frequency) + t1 + t2
+
     print(f"Expected transmission time: {expected_time:.2f} seconds")
 
-    start_time = time.perf_counter()  # start timing the transmission
+    start_time = time.perf_counter() #START
+    setup_items = keyboard.keyboard_setup()
+    time.sleep(0.1)
+    keyboard.set_colour_timed(setup_items, key_IDs, (255, 0, 0), t1)
+    keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), t2)
+
     for signal_set in signal_sets:
         modulation.send_binary_signals_with_CLK_and_SGL(
             setup_items,
@@ -77,7 +85,7 @@ def transmit_image_using_ASK(setup_items, key_IDs, p1_image_path, frequency, HAM
     actual_time = end_time - start_time
     print(f"Actual transmission time: {actual_time:.2f} seconds")
 
-    keyboard.set_colour(setup_items, key_IDs, (0, 0, 0))
+    keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), t2) 
 
 if __name__ == '__main__':
     ## Define file paths ##
@@ -97,13 +105,6 @@ if __name__ == '__main__':
     ## Load keys ##
     key_IDs = fh.csv_to_list(key_ids_path)
 
-    ## Prepare Keyboard ##
-    setup_items = keyboard.keyboard_setup()
-    time.sleep(0.1)
-    keyboard.set_colour_timed(setup_items, key_IDs, (255, 0, 0), 4)
-    keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 1)
-
     #### MAIN FUNCTION ####
-    for frequency in [10, 20, 30, 40]:
-        transmit_image_using_ASK(setup_items, key_IDs, p1_image_path, frequency, HAMMING_ENCODE)
-        keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 1) 
+    for frequency in [10, 15]:
+        transmit_image_using_ASK(key_IDs, p1_image_path, frequency, HAMMING_ENCODE)

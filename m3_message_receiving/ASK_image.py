@@ -44,14 +44,50 @@ SGL_csv_path = os.path.join(key_levels_and_events_folder, 'light_levels_SGL.csv'
 binary_csv_path = 'files/spreadsheets/s8_binary.csv'
 output_image_path = 'files/images/received_image.pbm'
 
+# Diagnostic: Check if the log directory exists and is writable
+log_dir = os.path.dirname(log_file_path)
+if not os.path.exists(log_dir):
+    print(f"Log directory '{log_dir}' does not exist. Creating it...")
+    os.makedirs(log_dir, exist_ok=True)
+else:
+    print(f"Log directory '{log_dir}' exists.")
+
+# Diagnostic: Check if the log file is writable
+try:
+    with open(log_file_path, 'w') as test_log_file:
+        test_log_file.write("Log file is writable.\n")
+    print(f"Log file '{log_file_path}' is writable.")
+except Exception as e:
+    print(f"Error: Cannot write to log file '{log_file_path}'. Exception: {e}")
+
 # Configure the logger
 logging.basicConfig(
     filename=log_file_path,
-    filemode='w',
+    filemode='w',  # Overwrite the log file each run
     format='%(asctime)s \t %(levelname)s \t %(message)s',
-    level=logging.INFO
+    level=logging.DEBUG  # Set to DEBUG to capture all logs
 )
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+# Remove the console handler to avoid excessive terminal output
+for handler in logger.handlers[:]:
+    logger.removeHandler(handler)
+
+# Add a file handler to ensure logs go to the file
+file_handler = logging.FileHandler(log_file_path)
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(logging.Formatter('%(asctime)s \t %(levelname)s \t %(message)s'))
+logger.addHandler(file_handler)
+
+# Add a console handler for minimal terminal output (optional)
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.ERROR)  # Only show errors in the terminal
+console_handler.setFormatter(logging.Formatter('%(asctime)s \t %(levelname)s \t %(message)s'))
+logger.addHandler(console_handler)
+
+# Test log message
+logger.info("Logger initialized successfully. Starting script...")
 
 ## Signal parameters ##
 codeword_bits = 11  # for Hamming; adjust if needed
@@ -121,6 +157,16 @@ total_signals = len(overall_signals)
 logger.info(f"Total signals reassembled: {total_signals}")
 logger.info(f"Expected total signals: {expected_total_signals}")
 
+## Helper function: extend_frame ##
+def extend_frame(frame, expected_length):
+    """Extend a frame by repeating its last bit until it reaches the expected length.
+    If the frame is longer than expected, it is truncated."""
+    if len(frame) < expected_length:
+        frame += frame[-1] * (expected_length - len(frame))
+    elif len(frame) > expected_length:
+        frame = frame[:expected_length]
+    return frame
+
 ## Reassemble Image Rows ##
 rows = []
 if total_signals < expected_total_signals:
@@ -130,8 +176,17 @@ else:
     for row_index in range(EXPECTED_HEIGHT):
         # Each row consists of SIGNALS_PER_ROW signals.
         row_signals = overall_signals[row_index * SIGNALS_PER_ROW:(row_index + 1) * SIGNALS_PER_ROW]
-        row_bin_str = "".join(row_signals)
+        # Extend each frame if its length is less than CHUNK_SIZE.
+        extended_frames = []
+        for i, frame in enumerate(row_signals):
+            if len(frame) < CHUNK_SIZE:
+                erroneous_frame = frame
+                frame = extend_frame(erroneous_frame, CHUNK_SIZE)
+                logger.info(f"Extending frame {i}: {erroneous_frame}   ->   {frame}")
+            extended_frames.append(frame)
+        row_bin_str = "".join(extended_frames)
         logger.info(f"Row {row_index+1}: {row_bin_str}")
+        # Convert the binary string into a list of integers (pixels)
         row = [int(bit) for bit in row_bin_str]
         rows.append(row)
 
