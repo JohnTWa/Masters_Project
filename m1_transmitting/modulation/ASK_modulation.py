@@ -134,7 +134,7 @@ def send_binary_signals_with_CLK_and_SGL(setup_items, binary_signals, data_ids, 
     clock_state = 0  # start with CLK off
 
     # Pre-calculate SGL "on" color (white)
-    sgl_on_color = (255, 255, 255)
+    sgl_on_color = (255, 0, 0)
 
     # Build the complete key list for combined updates:
     all_keys = data_ids + CLK_ids + SGL_ids
@@ -162,7 +162,7 @@ def send_binary_signals_with_CLK_and_SGL(setup_items, binary_signals, data_ids, 
         # Helper to build CLK colors for current state:
         def build_clk_colours(state):
             if state == 1:
-                return [(255, 255, 255)] * len(CLK_ids)
+                return [(255, 0, 0)] * len(CLK_ids)
             else:
                 return [(0, 0, 0)] * len(CLK_ids)
 
@@ -214,12 +214,11 @@ if __name__ == "__main__":
     time.sleep(0.1)
     
     keyboard.set_colour_timed(setup_items, key_IDs, (255, 0, 0), 5)
-
+    keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 1)
     send_binary_signals_with_CLK_and_SGL(setup_items,
-                                        binary_signals=['1101100011']*len(key_IDs),
+                                        binary_signals=['10110001']*len(key_IDs),
                                         data_ids=data_IDs,
                                         CLK_ids=[0],
                                         SGL_ids=[1],
-                                        frequency=1)
-    
-    keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 0.5)
+                                        frequency=10)
+    keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 1)

@@ -27,7 +27,7 @@ spreadsheets_folder = 'files/spreadsheets'
 
 ## Define file paths
 
-video_path = 'files/ASK Image Transmission 30Hz.mp4'
+video_path = 'files/10110001.mp4'
 input_image_path = frames_folder + '/frame_0.png'
 corners_csv_path = spreadsheets_folder + '/s2_corner_coordinates.csv'
 warped_image_path = warped_frames_folder + '/warped_frame_0.png'
@@ -55,7 +55,7 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 
 ## Reset Files as Required ##
 
-reset(frames_folder)
+# reset(frames_folder)
 reset(warped_frames_folder)
 reset('files/keyboard_vectors/coloured_keyboards', rgb_csv_path)
 

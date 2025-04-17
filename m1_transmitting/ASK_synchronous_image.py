@@ -90,7 +90,7 @@ def transmit_image_using_ASK(key_IDs, p1_image_path, frequency, HAMMING_ENCODE=F
 if __name__ == '__main__':
     ## Define file paths ##
     key_ids_path = 'files/spreadsheets/s1_key_IDs.csv'
-    image_path = 'files/images/dog.png'
+    image_path = 'files/images/dog.png' 
 
     ## Define transmission parameters ##
     pause_time = 1
@@ -106,5 +106,5 @@ if __name__ == '__main__':
     key_IDs = fh.csv_to_list(key_ids_path)
 
     #### MAIN FUNCTION ####
-    for frequency in [10, 15]:
+    for frequency in [20]:
         transmit_image_using_ASK(key_IDs, p1_image_path, frequency, HAMMING_ENCODE)

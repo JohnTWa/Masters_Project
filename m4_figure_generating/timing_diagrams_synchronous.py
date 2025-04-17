@@ -1,8 +1,12 @@
 from _SETUP_ import set_directory
 set_directory()
 
+from common.figure_formatting import set_global_font
+set_global_font()
+
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 def display_synchronous_timing_diagram_labelled(binary_string, idle_bits, major_fontsize, minor_fontsize):
     """
@@ -108,5 +112,100 @@ def display_synchronous_timing_diagram_labelled(binary_string, idle_bits, major_
     plt.tight_layout()
     plt.show()
 
+def display_synchronous_received(bit_freq, rgb_csv, SGL_column, CLK_column, DATA_column, sample_rate, start_row, major_fontsize, normalise=False):
+    # Calculate total frame duration (10 bits: 8 bits + 2 idle bits).
+    total_bits = 10
+    duration = total_bits / bit_freq  # Duration in seconds.
+    n_samples = int(sample_rate * duration)  # Number of samples corresponding to the duration.
+
+    # Read CSV (no header) and extract the rows, skipping the first `start_row` rows.
+    df = pd.read_csv(rgb_csv, header=None)
+    df_sampled = df.iloc[start_row : start_row + n_samples, :]
+
+    # Create the time axis. Each sample is 1/sample_rate seconds apart.
+    t = np.arange(n_samples) / sample_rate
+
+    # Create figure with 3 subplots sharing the same x-axis.
+    fig, axs = plt.subplots(3, 1, sharex=True, figsize=(12, 8))
+
+    # Define the fixed y-axis limits and ticks.
+    fixed_ylim = (-51, 306)
+    fixed_yticks = [0, 255]
+
+    # ----- SGL Subplot -----
+    y_SGL = df_sampled.iloc[:, SGL_column]
+    if normalise:
+        min_val = y_SGL.min()
+        max_val = y_SGL.max()
+        if max_val != min_val:
+            y_SGL = (y_SGL - min_val) / (max_val - min_val) * 255
+        else:
+            y_SGL = y_SGL * 0
+    axs[0].plot(t, y_SGL, color='black', linewidth=2)
+    axs[0].set_ylabel("SGL", fontsize=major_fontsize)
+    axs[0].set_ylim(fixed_ylim)
+    axs[0].set_yticks(fixed_yticks)
+    axs[0].spines.top.set_visible(False)
+    axs[0].spines.right.set_visible(False)
+    # Remove bottom spine and adjust left spine bounds.
+    axs[0].spines.bottom.set_visible(False)
+    axs[0].spines.left.set_bounds(fixed_yticks[0], fixed_yticks[1])
+    # Hide x-axis tick labels.
+    axs[0].tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
+
+    # ----- CLK Subplot -----
+    y_CLK = df_sampled.iloc[:, CLK_column]
+    if normalise:
+        min_val = y_CLK.min()
+        max_val = y_CLK.max()
+        if max_val != min_val:
+            y_CLK = (y_CLK - min_val) / (max_val - min_val) * 255
+        else:
+            y_CLK = y_CLK * 0
+    axs[1].plot(t, y_CLK, color='black', linewidth=2)
+    axs[1].set_ylabel("CLK", fontsize=major_fontsize)
+    axs[1].set_ylim(fixed_ylim)
+    axs[1].set_yticks(fixed_yticks)
+    axs[1].spines.top.set_visible(False)
+    axs[1].spines.right.set_visible(False)
+    # Remove bottom spine and adjust left spine bounds.
+    axs[1].spines.bottom.set_visible(False)
+    axs[1].spines.left.set_bounds(fixed_yticks[0], fixed_yticks[1])
+    # Hide x-axis tick labels.
+    axs[1].tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
+
+    # ----- DATA0 Subplot -----
+    y_DATA = df_sampled.iloc[:, DATA_column]
+    if normalise:
+        min_val = y_DATA.min()
+        max_val = y_DATA.max()
+        if max_val != min_val:
+            y_DATA = (y_DATA - min_val) / (max_val - min_val) * 255
+        else:
+            y_DATA = y_DATA * 0
+    axs[2].plot(t, y_DATA, color='black', linewidth=2)
+    axs[2].set_ylabel("DATA0", fontsize=major_fontsize)
+    axs[2].set_ylim(fixed_ylim)
+    axs[2].set_yticks(fixed_yticks)
+    axs[2].set_xlabel("Time (s)", fontsize=major_fontsize)
+    axs[2].spines.top.set_visible(False)
+    axs[2].spines.right.set_visible(False)
+    # Adjust bottom spine to span the full x-axis range and left spine bounds.
+    axs[2].spines.bottom.set_bounds(t[0], t[-1])
+    axs[2].spines.left.set_bounds(fixed_yticks[0], fixed_yticks[1])
+
+    # Calculate T_bit (duration of one bit) and set x-axis ticks in intervals of T_bit.
+    T_bit = 1 / bit_freq
+    xticks = np.arange(t[0], t[-1] + T_bit, T_bit)
+    axs[2].set_xticks(xticks)
+
+    # Apply tick label size to all subplots.
+    for ax in axs:
+        ax.tick_params(axis='both', which='major', labelsize=major_fontsize)
+
+    plt.tight_layout()
+    plt.show()
+    
 # Example usage
 display_synchronous_timing_diagram_labelled(binary_string='10110001', idle_bits=1, major_fontsize=24, minor_fontsize=20)
+display_synchronous_received(bit_freq=10, rgb_csv='files/spreadsheets/s5_rgb_normalised.csv', SGL_column=3, CLK_column=0, DATA_column=6, sample_rate=67, start_row=125, major_fontsize=24, normalise=True)
