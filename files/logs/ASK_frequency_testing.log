@@ -1,0 +1,1740 @@
+2025-04-19 14:56:20,246 	 INFO 	 Key 3, Colour , Column {column}
+2025-04-19 14:56:20,816 	 INFO 	 Number of pauses: 22
+2025-04-19 14:56:20,820 	 INFO 	 |Pause 0 Start row: 2, End row: 135
+2025-04-19 14:56:20,820 	 INFO 	 |Frequency 10 Hz between rows 125 and 1341, with 20 frames
+2025-04-19 14:56:20,820 	 INFO 	 |Pause 1 Start row: 1331, End row: 1406
+2025-04-19 14:56:20,821 	 INFO 	 |Frequency 11 Hz between rows 1396 and 2513, with 20 frames
+2025-04-19 14:56:20,821 	 INFO 	 |Pause 2 Start row: 2503, End row: 2576
+2025-04-19 14:56:20,821 	 INFO 	 |Frequency 12 Hz between rows 2566 and 3586, with 20 frames
+2025-04-19 14:56:20,821 	 INFO 	 |Pause 3 Start row: 3576, End row: 3647
+2025-04-19 14:56:20,821 	 INFO 	 |Frequency 13 Hz between rows 3637 and 4580, with 20 frames
+2025-04-19 14:56:20,821 	 INFO 	 |Pause 4 Start row: 4570, End row: 4642
+2025-04-19 14:56:20,822 	 INFO 	 |Frequency 14 Hz between rows 4632 and 5509, with 20 frames
+2025-04-19 14:56:20,822 	 INFO 	 |Pause 5 Start row: 5499, End row: 5569
+2025-04-19 14:56:20,822 	 INFO 	 |Frequency 15 Hz between rows 5559 and 6384, with 20 frames
+2025-04-19 14:56:20,823 	 INFO 	 |Pause 6 Start row: 6374, End row: 6446
+2025-04-19 14:56:20,823 	 INFO 	 |Frequency 16 Hz between rows 6436 and 7205, with 20 frames
+2025-04-19 14:56:20,823 	 INFO 	 |Pause 7 Start row: 7195, End row: 7265
+2025-04-19 14:56:20,824 	 INFO 	 |Frequency 17 Hz between rows 7255 and 7985, with 20 frames
+2025-04-19 14:56:20,824 	 INFO 	 |Pause 8 Start row: 7975, End row: 8043
+2025-04-19 14:56:20,824 	 INFO 	 |Frequency 18 Hz between rows 8033 and 8725, with 20 frames
+2025-04-19 14:56:20,824 	 INFO 	 |Pause 9 Start row: 8715, End row: 8782
+2025-04-19 14:56:20,824 	 INFO 	 |Frequency 19 Hz between rows 8772 and 9426, with 20 frames
+2025-04-19 14:56:20,824 	 INFO 	 |Pause 10 Start row: 9416, End row: 9486
+2025-04-19 14:56:20,824 	 INFO 	 |Frequency 20 Hz between rows 9476 and 10099, with 20 frames
+2025-04-19 14:56:20,825 	 INFO 	 |Pause 11 Start row: 10089, End row: 10157
+2025-04-19 14:56:20,825 	 INFO 	 |Frequency 21 Hz between rows 10147 and 10746, with 20 frames
+2025-04-19 14:56:20,825 	 INFO 	 |Pause 12 Start row: 10736, End row: 10802
+2025-04-19 14:56:20,825 	 INFO 	 |Frequency 22 Hz between rows 10792 and 11365, with 20 frames
+2025-04-19 14:56:20,825 	 INFO 	 |Pause 13 Start row: 11355, End row: 11421
+2025-04-19 14:56:20,825 	 INFO 	 |Frequency 23 Hz between rows 11411 and 11962, with 20 frames
+2025-04-19 14:56:20,825 	 INFO 	 |Pause 14 Start row: 11952, End row: 12017
+2025-04-19 14:56:20,825 	 INFO 	 |Frequency 24 Hz between rows 12007 and 12548, with 20 frames
+2025-04-19 14:56:20,825 	 INFO 	 |Pause 15 Start row: 12538, End row: 12604
+2025-04-19 14:56:20,826 	 INFO 	 |Frequency 25 Hz between rows 12594 and 13104, with 20 frames
+2025-04-19 14:56:20,826 	 INFO 	 |Pause 16 Start row: 13094, End row: 13156
+2025-04-19 14:56:20,826 	 INFO 	 |Frequency 26 Hz between rows 13146 and 13634, with 20 frames
+2025-04-19 14:56:20,826 	 INFO 	 |Pause 17 Start row: 13624, End row: 13694
+2025-04-19 14:56:20,826 	 INFO 	 |Frequency 27 Hz between rows 13684 and 14157, with 19 frames
+2025-04-19 14:56:20,826 	 INFO 	 |Pause 18 Start row: 14147, End row: 14216
+2025-04-19 14:56:20,826 	 INFO 	 |Frequency 28 Hz between rows 14206 and 14655, with 20 frames
+2025-04-19 14:56:20,826 	 INFO 	 |Pause 19 Start row: 14645, End row: 14715
+2025-04-19 14:56:20,826 	 INFO 	 |Frequency 29 Hz between rows 14705 and 15147, with 18 frames
+2025-04-19 14:56:20,826 	 INFO 	 |Pause 20 Start row: 15137, End row: 15200
+2025-04-19 14:56:20,826 	 INFO 	 |Frequency 30 Hz between rows 15190 and 15617, with 16 frames
+2025-04-19 14:56:20,826 	 INFO 	 |Pause 21 Start row: 15607, End row: 16172
+2025-04-19 14:56:20,826 	 INFO 	 |Reached pause with no more frequencies to assign
+2025-04-19 14:56:20,827 	 INFO 	 Reading 20 frames at frequency 10 Hz
+2025-04-19 14:56:20,827 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:20,827 	 INFO 	 ||Start row: 134, End row: 182
+2025-04-19 14:56:20,864 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:20,864 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:20,864 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:20,864 	 INFO 	 ||Start row: 186, End row: 242
+2025-04-19 14:56:20,925 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:20,925 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:20,925 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:20,925 	 INFO 	 ||Start row: 247, End row: 303
+2025-04-19 14:56:20,964 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:20,965 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:20,965 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:20,965 	 INFO 	 ||Start row: 307, End row: 364
+2025-04-19 14:56:21,000 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,001 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,001 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:21,001 	 INFO 	 ||Start row: 368, End row: 424
+2025-04-19 14:56:21,068 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,069 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,069 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:21,070 	 INFO 	 ||Start row: 429, End row: 484
+2025-04-19 14:56:21,108 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,109 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,109 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:21,109 	 INFO 	 ||Start row: 489, End row: 545
+2025-04-19 14:56:21,158 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,159 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,160 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:21,160 	 INFO 	 ||Start row: 550, End row: 603
+2025-04-19 14:56:21,313 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,314 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,314 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:21,314 	 INFO 	 ||Start row: 610, End row: 664
+2025-04-19 14:56:21,368 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,369 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,369 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:21,369 	 INFO 	 ||Start row: 671, End row: 725
+2025-04-19 14:56:21,419 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,422 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,422 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:21,422 	 INFO 	 ||Start row: 731, End row: 790
+2025-04-19 14:56:21,534 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,535 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,536 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:21,536 	 INFO 	 ||Start row: 794, End row: 848
+2025-04-19 14:56:21,617 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,617 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,617 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:21,618 	 INFO 	 ||Start row: 855, End row: 909
+2025-04-19 14:56:21,683 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,684 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,684 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:21,684 	 INFO 	 ||Start row: 916, End row: 969
+2025-04-19 14:56:21,784 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,785 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,785 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:21,785 	 INFO 	 ||Start row: 976, End row: 1030
+2025-04-19 14:56:21,818 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,819 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,819 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:21,819 	 INFO 	 ||Start row: 1037, End row: 1090
+2025-04-19 14:56:21,877 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,878 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,878 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:21,878 	 INFO 	 ||Start row: 1097, End row: 1151
+2025-04-19 14:56:21,922 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,924 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,925 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:21,925 	 INFO 	 ||Start row: 1158, End row: 1211
+2025-04-19 14:56:21,978 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:21,979 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:21,979 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:21,979 	 INFO 	 ||Start row: 1218, End row: 1272
+2025-04-19 14:56:22,012 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,012 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,012 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:22,013 	 INFO 	 ||Start row: 1279, End row: 1333
+2025-04-19 14:56:22,078 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:22,078 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:22,078 	 INFO 	 |Total BER for frequency 10 Hz: 0.0125
+2025-04-19 14:56:22,079 	 INFO 	 Reading 20 frames at frequency 11 Hz
+2025-04-19 14:56:22,079 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:22,079 	 INFO 	 ||Start row: 1398, End row: 1449
+2025-04-19 14:56:22,122 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,123 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,124 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:22,124 	 INFO 	 ||Start row: 1453, End row: 1502
+2025-04-19 14:56:22,156 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,157 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,157 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:22,157 	 INFO 	 ||Start row: 1509, End row: 1558
+2025-04-19 14:56:22,195 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,195 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,195 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:22,195 	 INFO 	 ||Start row: 1563, End row: 1614
+2025-04-19 14:56:22,234 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,234 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,235 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:22,235 	 INFO 	 ||Start row: 1618, End row: 1677
+2025-04-19 14:56:22,291 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,292 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,293 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:22,294 	 INFO 	 ||Start row: 1682, End row: 1733
+2025-04-19 14:56:22,371 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,373 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,373 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:22,373 	 INFO 	 ||Start row: 1737, End row: 1786
+2025-04-19 14:56:22,409 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,410 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,410 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:22,410 	 INFO 	 ||Start row: 1793, End row: 1842
+2025-04-19 14:56:22,444 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,444 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,445 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:22,445 	 INFO 	 ||Start row: 1847, End row: 1898
+2025-04-19 14:56:22,478 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,480 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,480 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:22,480 	 INFO 	 ||Start row: 1902, End row: 1954
+2025-04-19 14:56:22,513 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,513 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,513 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:22,513 	 INFO 	 ||Start row: 1958, End row: 2007
+2025-04-19 14:56:22,545 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,546 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,546 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:22,546 	 INFO 	 ||Start row: 2014, End row: 2063
+2025-04-19 14:56:22,606 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,606 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,607 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:22,607 	 INFO 	 ||Start row: 2067, End row: 2119
+2025-04-19 14:56:22,663 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,664 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,664 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:22,664 	 INFO 	 ||Start row: 2123, End row: 2172
+2025-04-19 14:56:22,707 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,708 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,708 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:22,708 	 INFO 	 ||Start row: 2179, End row: 2228
+2025-04-19 14:56:22,746 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,746 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,746 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:22,747 	 INFO 	 ||Start row: 2232, End row: 2284
+2025-04-19 14:56:22,780 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,781 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,781 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:22,781 	 INFO 	 ||Start row: 2288, End row: 2337
+2025-04-19 14:56:22,818 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,819 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,819 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:22,819 	 INFO 	 ||Start row: 2344, End row: 2393
+2025-04-19 14:56:22,881 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,882 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,882 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:22,882 	 INFO 	 ||Start row: 2397, End row: 2450
+2025-04-19 14:56:22,926 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,927 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,927 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:22,927 	 INFO 	 ||Start row: 2455, End row: 2504
+2025-04-19 14:56:22,967 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:22,968 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:22,968 	 INFO 	 |Total BER for frequency 11 Hz: 0.0
+2025-04-19 14:56:22,969 	 INFO 	 Reading 20 frames at frequency 12 Hz
+2025-04-19 14:56:22,969 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:22,969 	 INFO 	 ||Start row: 2569, End row: 2616
+2025-04-19 14:56:23,004 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:23,004 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:23,004 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:23,004 	 INFO 	 ||Start row: 2620, End row: 2667
+2025-04-19 14:56:23,037 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,037 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,038 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:23,038 	 INFO 	 ||Start row: 2671, End row: 2717
+2025-04-19 14:56:23,068 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,068 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,069 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:23,069 	 INFO 	 ||Start row: 2722, End row: 2766
+2025-04-19 14:56:23,128 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,129 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,129 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:23,129 	 INFO 	 ||Start row: 2773, End row: 2818
+2025-04-19 14:56:23,161 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,161 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,161 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:23,161 	 INFO 	 ||Start row: 2824, End row: 2868
+2025-04-19 14:56:23,193 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:23,193 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:23,193 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:23,193 	 INFO 	 ||Start row: 2872, End row: 2921
+2025-04-19 14:56:23,229 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,230 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,230 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:23,230 	 INFO 	 ||Start row: 2923, End row: 2970
+2025-04-19 14:56:23,269 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,270 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,270 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:23,270 	 INFO 	 ||Start row: 2974, End row: 3020
+2025-04-19 14:56:23,305 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,305 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,305 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:23,305 	 INFO 	 ||Start row: 3025, End row: 3072
+2025-04-19 14:56:23,355 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,356 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,356 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:23,356 	 INFO 	 ||Start row: 3076, End row: 3122
+2025-04-19 14:56:23,417 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,417 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,417 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:23,417 	 INFO 	 ||Start row: 3127, End row: 3171
+2025-04-19 14:56:23,457 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:23,457 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:23,458 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:23,458 	 INFO 	 ||Start row: 3175, End row: 3224
+2025-04-19 14:56:23,491 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,491 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,491 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:23,491 	 INFO 	 ||Start row: 3229, End row: 3275
+2025-04-19 14:56:23,529 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,530 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,530 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:23,530 	 INFO 	 ||Start row: 3280, End row: 3326
+2025-04-19 14:56:23,570 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,571 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,571 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:23,571 	 INFO 	 ||Start row: 3330, End row: 3374
+2025-04-19 14:56:23,603 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,604 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,604 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:23,604 	 INFO 	 ||Start row: 3379, End row: 3425
+2025-04-19 14:56:23,663 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,664 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,664 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:23,664 	 INFO 	 ||Start row: 3430, End row: 3476
+2025-04-19 14:56:23,711 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,712 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,712 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:23,712 	 INFO 	 ||Start row: 3481, End row: 3527
+2025-04-19 14:56:23,757 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,758 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,759 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:23,759 	 INFO 	 ||Start row: 3531, End row: 3578
+2025-04-19 14:56:23,818 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,819 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,820 	 INFO 	 |Total BER for frequency 12 Hz: 0.01875
+2025-04-19 14:56:23,821 	 INFO 	 Reading 20 frames at frequency 13 Hz
+2025-04-19 14:56:23,821 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:23,821 	 INFO 	 ||Start row: 3640, End row: 3685
+2025-04-19 14:56:23,870 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,872 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,872 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:23,872 	 INFO 	 ||Start row: 3689, End row: 3731
+2025-04-19 14:56:23,924 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:23,925 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:23,925 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:23,925 	 INFO 	 ||Start row: 3735, End row: 3777
+2025-04-19 14:56:24,006 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,007 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,007 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:24,007 	 INFO 	 ||Start row: 3781, End row: 3823
+2025-04-19 14:56:24,060 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,061 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,061 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:24,061 	 INFO 	 ||Start row: 3827, End row: 3870
+2025-04-19 14:56:24,127 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,128 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,128 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:24,128 	 INFO 	 ||Start row: 3873, End row: 3917
+2025-04-19 14:56:24,217 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,217 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,218 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:24,218 	 INFO 	 ||Start row: 3922, End row: 3966
+2025-04-19 14:56:24,264 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:24,265 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:24,265 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:24,265 	 INFO 	 ||Start row: 3970, End row: 4012
+2025-04-19 14:56:24,308 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,308 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,308 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:24,308 	 INFO 	 ||Start row: 4016, End row: 4060
+2025-04-19 14:56:24,373 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,373 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,373 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:24,373 	 INFO 	 ||Start row: 4062, End row: 4106
+2025-04-19 14:56:24,416 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,416 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,417 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:24,417 	 INFO 	 ||Start row: 4111, End row: 4152
+2025-04-19 14:56:24,461 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:24,461 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:24,461 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:24,461 	 INFO 	 ||Start row: 4157, End row: 4198
+2025-04-19 14:56:24,500 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,501 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,501 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:24,501 	 INFO 	 ||Start row: 4203, End row: 4244
+2025-04-19 14:56:24,545 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:24,546 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:24,546 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:24,546 	 INFO 	 ||Start row: 4249, End row: 4293
+2025-04-19 14:56:24,596 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,596 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,596 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:24,596 	 INFO 	 ||Start row: 4295, End row: 4339
+2025-04-19 14:56:24,664 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,665 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,665 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:24,665 	 INFO 	 ||Start row: 4343, End row: 4385
+2025-04-19 14:56:24,711 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:24,711 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:24,711 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:24,711 	 INFO 	 ||Start row: 4389, End row: 4431
+2025-04-19 14:56:24,752 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,753 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,753 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:24,753 	 INFO 	 ||Start row: 4435, End row: 4480
+2025-04-19 14:56:24,788 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,788 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,788 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:24,788 	 INFO 	 ||Start row: 4482, End row: 4526
+2025-04-19 14:56:24,959 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:24,960 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:24,960 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:24,960 	 INFO 	 ||Start row: 4530, End row: 4572
+2025-04-19 14:56:24,997 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:24,997 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:24,998 	 INFO 	 |Total BER for frequency 13 Hz: 0.03125
+2025-04-19 14:56:24,998 	 INFO 	 Reading 20 frames at frequency 14 Hz
+2025-04-19 14:56:24,998 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:24,998 	 INFO 	 ||Start row: 4637, End row: 4676
+2025-04-19 14:56:25,075 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:25,075 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,076 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:25,076 	 INFO 	 ||Start row: 4680, End row: 4720
+2025-04-19 14:56:25,112 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:25,113 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,113 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:25,113 	 INFO 	 ||Start row: 4724, End row: 4764
+2025-04-19 14:56:25,164 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:25,164 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:25,165 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:25,165 	 INFO 	 ||Start row: 4770, End row: 4807
+2025-04-19 14:56:25,219 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:25,220 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,220 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:25,220 	 INFO 	 ||Start row: 4809, End row: 4850
+2025-04-19 14:56:25,269 	 INFO 	 ||Payload: 10100001
+2025-04-19 14:56:25,269 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,269 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:25,270 	 INFO 	 ||Start row: 4853, End row: 4892
+2025-04-19 14:56:25,315 	 INFO 	 ||Payload: 10110000
+2025-04-19 14:56:25,316 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,316 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:25,316 	 INFO 	 ||Start row: 4896, End row: 4936
+2025-04-19 14:56:25,388 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:25,389 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:25,389 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:25,389 	 INFO 	 ||Start row: 4940, End row: 4979
+2025-04-19 14:56:25,438 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:25,439 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,439 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:25,440 	 INFO 	 ||Start row: 4984, End row: 5023
+2025-04-19 14:56:25,493 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:25,494 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,494 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:25,494 	 INFO 	 ||Start row: 5027, End row: 5067
+2025-04-19 14:56:25,544 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:25,545 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:25,545 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:25,545 	 INFO 	 ||Start row: 5071, End row: 5110
+2025-04-19 14:56:25,603 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:25,604 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,605 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:25,605 	 INFO 	 ||Start row: 5112, End row: 5154
+2025-04-19 14:56:25,658 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:25,659 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,659 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:25,659 	 INFO 	 ||Start row: 5156, End row: 5196
+2025-04-19 14:56:25,748 	 INFO 	 ||Payload: 101101
+2025-04-19 14:56:25,748 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,749 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:25,749 	 INFO 	 ||Start row: 5199, End row: 5240
+2025-04-19 14:56:25,803 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:25,804 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:25,804 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:25,804 	 INFO 	 ||Start row: 5243, End row: 5282
+2025-04-19 14:56:25,859 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:25,860 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:25,860 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:25,860 	 INFO 	 ||Start row: 5287, End row: 5328
+2025-04-19 14:56:25,922 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:25,923 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:25,923 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:25,923 	 INFO 	 ||Start row: 5330, End row: 5370
+2025-04-19 14:56:25,976 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:25,978 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:25,978 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:25,978 	 INFO 	 ||Start row: 5374, End row: 5413
+2025-04-19 14:56:26,030 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:26,030 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:26,031 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:26,031 	 INFO 	 ||Start row: 5418, End row: 5457
+2025-04-19 14:56:26,116 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:26,117 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:26,117 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:26,117 	 INFO 	 ||Start row: 5463, End row: 5500
+2025-04-19 14:56:26,168 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:26,169 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:26,170 	 INFO 	 |Total BER for frequency 14 Hz: 0.1
+2025-04-19 14:56:26,171 	 INFO 	 Reading 20 frames at frequency 15 Hz
+2025-04-19 14:56:26,171 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:26,171 	 INFO 	 ||Start row: 5563, End row: 5600
+2025-04-19 14:56:26,226 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:26,227 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:26,227 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:26,227 	 INFO 	 ||Start row: 5604, End row: 5641
+2025-04-19 14:56:26,281 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:26,281 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:26,282 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:26,282 	 INFO 	 ||Start row: 5647, End row: 5682
+2025-04-19 14:56:26,334 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:26,335 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:26,335 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:26,335 	 INFO 	 ||Start row: 5684, End row: 5722
+2025-04-19 14:56:26,405 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:26,406 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:26,406 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:26,406 	 INFO 	 ||Start row: 5725, End row: 5762
+2025-04-19 14:56:26,497 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:26,498 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:26,498 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:26,498 	 INFO 	 ||Start row: 5766, End row: 5803
+2025-04-19 14:56:26,557 	 INFO 	 ||Payload: 101001
+2025-04-19 14:56:26,558 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:26,558 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:26,558 	 INFO 	 ||Start row: 5809, End row: 5844
+2025-04-19 14:56:26,619 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:26,620 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:26,620 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:26,620 	 INFO 	 ||Start row: 5846, End row: 5885
+2025-04-19 14:56:26,674 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:26,675 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:26,675 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:26,675 	 INFO 	 ||Start row: 5887, End row: 5924
+2025-04-19 14:56:26,745 	 INFO 	 ||Payload: 11110011
+2025-04-19 14:56:26,745 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:26,746 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:26,746 	 INFO 	 ||Start row: 5929, End row: 5965
+2025-04-19 14:56:26,806 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:26,807 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:26,807 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:26,808 	 INFO 	 ||Start row: 5968, End row: 6010
+2025-04-19 14:56:26,894 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:26,895 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:26,895 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:26,895 	 INFO 	 ||Start row: 6014, End row: 6051
+2025-04-19 14:56:26,949 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:26,950 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:26,950 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:26,950 	 INFO 	 ||Start row: 6057, End row: 6092
+2025-04-19 14:56:27,002 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,003 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,004 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:27,004 	 INFO 	 ||Start row: 6094, End row: 6133
+2025-04-19 14:56:27,057 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,058 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,058 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:27,059 	 INFO 	 ||Start row: 6135, End row: 6172
+2025-04-19 14:56:27,121 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:27,123 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:27,123 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:27,123 	 INFO 	 ||Start row: 6176, End row: 6213
+2025-04-19 14:56:27,188 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,189 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,189 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:27,189 	 INFO 	 ||Start row: 6219, End row: 6254
+2025-04-19 14:56:27,270 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,271 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,271 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:27,271 	 INFO 	 ||Start row: 6256, End row: 6293
+2025-04-19 14:56:27,318 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,320 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,320 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:27,320 	 INFO 	 ||Start row: 6297, End row: 6334
+2025-04-19 14:56:27,367 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:27,368 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:27,368 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:27,368 	 INFO 	 ||Start row: 6338, End row: 6375
+2025-04-19 14:56:27,412 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,413 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,413 	 INFO 	 |Total BER for frequency 15 Hz: 0.09375
+2025-04-19 14:56:27,414 	 INFO 	 Reading 20 frames at frequency 16 Hz
+2025-04-19 14:56:27,414 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:27,414 	 INFO 	 ||Start row: 6438, End row: 6472
+2025-04-19 14:56:27,458 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,459 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,459 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:27,459 	 INFO 	 ||Start row: 6477, End row: 6511
+2025-04-19 14:56:27,514 	 INFO 	 ||Payload: 00010001
+2025-04-19 14:56:27,515 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:27,515 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:27,515 	 INFO 	 ||Start row: 6513, End row: 6549
+2025-04-19 14:56:27,599 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,600 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,600 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:27,600 	 INFO 	 ||Start row: 6552, End row: 6586
+2025-04-19 14:56:27,645 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:27,646 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:27,646 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:27,646 	 INFO 	 ||Start row: 6590, End row: 6626
+2025-04-19 14:56:27,692 	 INFO 	 ||Payload: 00100001
+2025-04-19 14:56:27,693 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:27,693 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:27,693 	 INFO 	 ||Start row: 6629, End row: 6664
+2025-04-19 14:56:27,754 	 INFO 	 ||Payload: 10110000
+2025-04-19 14:56:27,755 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:27,755 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:27,755 	 INFO 	 ||Start row: 6670, End row: 6702
+2025-04-19 14:56:27,801 	 INFO 	 ||Payload: 10011011
+2025-04-19 14:56:27,801 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:27,803 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:27,803 	 INFO 	 ||Start row: 6704, End row: 6740
+2025-04-19 14:56:27,847 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:27,847 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:27,848 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:27,848 	 INFO 	 ||Start row: 6743, End row: 6778
+2025-04-19 14:56:27,938 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:27,939 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:27,939 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:27,939 	 INFO 	 ||Start row: 6782, End row: 6816
+2025-04-19 14:56:27,999 	 INFO 	 ||Payload: 00010001
+2025-04-19 14:56:28,000 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:28,001 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:28,001 	 INFO 	 ||Start row: 6818, End row: 6854
+2025-04-19 14:56:28,050 	 INFO 	 ||Payload: 101101
+2025-04-19 14:56:28,051 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:28,051 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:28,051 	 INFO 	 ||Start row: 6857, End row: 6892
+2025-04-19 14:56:28,100 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:28,101 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:28,102 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:28,102 	 INFO 	 ||Start row: 6897, End row: 6930
+2025-04-19 14:56:28,151 	 INFO 	 ||Payload: 10010000
+2025-04-19 14:56:28,151 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:28,151 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:28,151 	 INFO 	 ||Start row: 6932, End row: 6969
+2025-04-19 14:56:28,203 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:28,204 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:28,204 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:28,204 	 INFO 	 ||Start row: 6971, End row: 7006
+2025-04-19 14:56:28,291 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:28,292 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:28,292 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:28,292 	 INFO 	 ||Start row: 7010, End row: 7044
+2025-04-19 14:56:28,358 	 INFO 	 ||Payload: 00010001
+2025-04-19 14:56:28,359 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:28,359 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:28,359 	 INFO 	 ||Start row: 7046, End row: 7082
+2025-04-19 14:56:28,408 	 INFO 	 ||Payload: 1001
+2025-04-19 14:56:28,408 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:28,408 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:28,409 	 INFO 	 ||Start row: 7085, End row: 7119
+2025-04-19 14:56:28,456 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:28,457 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:28,457 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:28,457 	 INFO 	 ||Start row: 7124, End row: 7158
+2025-04-19 14:56:28,507 	 INFO 	 ||Payload: 00010000
+2025-04-19 14:56:28,508 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:28,508 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:28,508 	 INFO 	 ||Start row: 7160, End row: 7197
+2025-04-19 14:56:28,556 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:28,556 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:28,557 	 INFO 	 |Total BER for frequency 16 Hz: 0.1625
+2025-04-19 14:56:28,557 	 INFO 	 Reading 20 frames at frequency 17 Hz
+2025-04-19 14:56:28,557 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:28,558 	 INFO 	 ||Start row: 7259, End row: 7292
+2025-04-19 14:56:28,638 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:28,639 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:28,639 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:28,640 	 INFO 	 ||Start row: 7298, End row: 7328
+2025-04-19 14:56:28,693 	 INFO 	 ||Payload: 1000
+2025-04-19 14:56:28,693 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:28,693 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:28,694 	 INFO 	 ||Start row: 7330, End row: 7364
+2025-04-19 14:56:28,749 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:28,750 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:28,750 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:28,750 	 INFO 	 ||Start row: 7366, End row: 7400
+2025-04-19 14:56:28,802 	 INFO 	 ||Payload: 10110011
+2025-04-19 14:56:28,803 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:28,803 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:28,803 	 INFO 	 ||Start row: 7402, End row: 7436
+2025-04-19 14:56:28,854 	 INFO 	 ||Payload: 00011001
+2025-04-19 14:56:28,855 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:28,855 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:28,855 	 INFO 	 ||Start row: 7439, End row: 7471
+2025-04-19 14:56:28,913 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:28,914 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:28,914 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:28,915 	 INFO 	 ||Start row: 7477, End row: 7507
+2025-04-19 14:56:29,002 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:29,003 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:29,003 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:29,003 	 INFO 	 ||Start row: 7509, End row: 7543
+2025-04-19 14:56:29,054 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:29,054 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:29,055 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:29,055 	 INFO 	 ||Start row: 7545, End row: 7579
+2025-04-19 14:56:29,113 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:29,114 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:29,114 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:29,114 	 INFO 	 ||Start row: 7582, End row: 7614
+2025-04-19 14:56:29,166 	 INFO 	 ||Payload: 00011001
+2025-04-19 14:56:29,167 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:29,168 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:29,168 	 INFO 	 ||Start row: 7620, End row: 7650
+2025-04-19 14:56:29,236 	 INFO 	 ||Payload: 11110000
+2025-04-19 14:56:29,237 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:29,237 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:29,237 	 INFO 	 ||Start row: 7652, End row: 7687
+2025-04-19 14:56:29,301 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:29,302 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:29,302 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:29,302 	 INFO 	 ||Start row: 7688, End row: 7724
+2025-04-19 14:56:29,401 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:29,402 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:29,402 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:29,402 	 INFO 	 ||Start row: 7726, End row: 7759
+2025-04-19 14:56:29,468 	 INFO 	 ||Payload: 00011001
+2025-04-19 14:56:29,468 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:29,469 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:29,469 	 INFO 	 ||Start row: 7765, End row: 7796
+2025-04-19 14:56:29,540 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:29,541 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:29,541 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:29,541 	 INFO 	 ||Start row: 7798, End row: 7832
+2025-04-19 14:56:29,605 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:29,606 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:29,607 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:29,607 	 INFO 	 ||Start row: 7834, End row: 7868
+2025-04-19 14:56:29,670 	 INFO 	 ||Payload: 10110011
+2025-04-19 14:56:29,672 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:29,672 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:29,672 	 INFO 	 ||Start row: 7870, End row: 7904
+2025-04-19 14:56:29,747 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:29,748 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:29,749 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:29,749 	 INFO 	 ||Start row: 7907, End row: 7939
+2025-04-19 14:56:29,861 	 INFO 	 ||Payload: 00011001
+2025-04-19 14:56:29,862 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:29,863 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:29,863 	 INFO 	 ||Start row: 7945, End row: 7975
+2025-04-19 14:56:29,929 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:29,930 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:29,930 	 INFO 	 |Total BER for frequency 17 Hz: 0.225
+2025-04-19 14:56:29,931 	 INFO 	 Reading 20 frames at frequency 18 Hz
+2025-04-19 14:56:29,931 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:29,931 	 INFO 	 ||Start row: 8038, End row: 8070
+2025-04-19 14:56:30,005 	 INFO 	 ||Payload: 000101
+2025-04-19 14:56:30,006 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:30,006 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:30,006 	 INFO 	 ||Start row: 8072, End row: 8104
+2025-04-19 14:56:30,073 	 INFO 	 ||Payload: 00010001
+2025-04-19 14:56:30,074 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:30,074 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:30,074 	 INFO 	 ||Start row: 8105, End row: 8138
+2025-04-19 14:56:30,161 	 INFO 	 ||Payload: 00010000
+2025-04-19 14:56:30,161 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:30,163 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:30,163 	 INFO 	 ||Start row: 8139, End row: 8171
+2025-04-19 14:56:30,237 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:30,238 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:30,238 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:30,238 	 INFO 	 ||Start row: 8173, End row: 8205
+2025-04-19 14:56:30,336 	 INFO 	 ||Payload: 10110000
+2025-04-19 14:56:30,336 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:30,337 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:30,337 	 INFO 	 ||Start row: 8207, End row: 8239
+2025-04-19 14:56:30,395 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:30,396 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:30,396 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:30,396 	 INFO 	 ||Start row: 8241, End row: 8272
+2025-04-19 14:56:30,454 	 INFO 	 ||Payload: 00111001
+2025-04-19 14:56:30,454 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:30,455 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:30,455 	 INFO 	 ||Start row: 8275, End row: 8307
+2025-04-19 14:56:30,519 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:30,520 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:30,520 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:30,520 	 INFO 	 ||Start row: 8309, End row: 8341
+2025-04-19 14:56:30,579 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:30,579 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:30,579 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:30,581 	 INFO 	 ||Start row: 8343, End row: 8375
+2025-04-19 14:56:30,639 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:30,641 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:30,641 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:30,641 	 INFO 	 ||Start row: 8377, End row: 8409
+2025-04-19 14:56:30,729 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:30,730 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:30,730 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:30,730 	 INFO 	 ||Start row: 8411, End row: 8443
+2025-04-19 14:56:30,786 	 INFO 	 ||Payload: 100001
+2025-04-19 14:56:30,787 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:30,787 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:30,788 	 INFO 	 ||Start row: 8445, End row: 8477
+2025-04-19 14:56:30,853 	 INFO 	 ||Payload: 000001
+2025-04-19 14:56:30,854 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:30,854 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:30,854 	 INFO 	 ||Start row: 8479, End row: 8510
+2025-04-19 14:56:30,906 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:30,907 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:30,907 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:30,907 	 INFO 	 ||Start row: 8513, End row: 8544
+2025-04-19 14:56:30,958 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:30,958 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:30,958 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:30,959 	 INFO 	 ||Start row: 8547, End row: 8578
+2025-04-19 14:56:31,009 	 INFO 	 ||Payload: 010001
+2025-04-19 14:56:31,010 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:31,010 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:31,010 	 INFO 	 ||Start row: 8582, End row: 8612
+2025-04-19 14:56:31,094 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:31,095 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:31,095 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:31,095 	 INFO 	 ||Start row: 8616, End row: 8646
+2025-04-19 14:56:31,146 	 INFO 	 ||Payload: 100001
+2025-04-19 14:56:31,147 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:31,147 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:31,147 	 INFO 	 ||Start row: 8650, End row: 8679
+2025-04-19 14:56:31,196 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:31,197 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:31,197 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:31,197 	 INFO 	 ||Start row: 8684, End row: 8712
+2025-04-19 14:56:31,254 	 INFO 	 ||Payload: 10110000
+2025-04-19 14:56:31,254 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:31,255 	 INFO 	 |Total BER for frequency 18 Hz: 0.28125
+2025-04-19 14:56:31,255 	 INFO 	 Reading 20 frames at frequency 19 Hz
+2025-04-19 14:56:31,255 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:31,255 	 INFO 	 ||Start row: 8774, End row: 8805
+2025-04-19 14:56:31,301 	 INFO 	 ||Payload: 10010011
+2025-04-19 14:56:31,303 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:31,303 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:31,303 	 INFO 	 ||Start row: 8810, End row: 8838
+2025-04-19 14:56:31,349 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:31,350 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:31,350 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:31,350 	 INFO 	 ||Start row: 8840, End row: 8869
+2025-04-19 14:56:31,396 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:31,397 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:31,397 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:31,398 	 INFO 	 ||Start row: 8871, End row: 8902
+2025-04-19 14:56:31,467 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:31,468 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:31,468 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:31,468 	 INFO 	 ||Start row: 8907, End row: 8934
+2025-04-19 14:56:31,509 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:31,510 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:31,510 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:31,510 	 INFO 	 ||Start row: 8938, End row: 8966
+2025-04-19 14:56:31,551 	 INFO 	 ||Payload: 11111000
+2025-04-19 14:56:31,552 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:31,552 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:31,552 	 INFO 	 ||Start row: 8968, End row: 8998
+2025-04-19 14:56:31,593 	 INFO 	 ||Payload: 10110000
+2025-04-19 14:56:31,594 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:31,594 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:31,594 	 INFO 	 ||Start row: 9000, End row: 9030
+2025-04-19 14:56:31,639 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:31,640 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:31,640 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:31,640 	 INFO 	 ||Start row: 9031, End row: 9062
+2025-04-19 14:56:31,682 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:31,683 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:31,683 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:31,683 	 INFO 	 ||Start row: 9067, End row: 9095
+2025-04-19 14:56:31,750 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:31,751 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:31,751 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:31,751 	 INFO 	 ||Start row: 9097, End row: 9126
+2025-04-19 14:56:31,794 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:31,795 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:31,795 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:31,795 	 INFO 	 ||Start row: 9128, End row: 9158
+2025-04-19 14:56:31,837 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:31,837 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:31,837 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:31,837 	 INFO 	 ||Start row: 9160, End row: 9191
+2025-04-19 14:56:31,888 	 INFO 	 ||Payload: 100011
+2025-04-19 14:56:31,889 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:31,889 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:31,889 	 INFO 	 ||Start row: 9195, End row: 9223
+2025-04-19 14:56:31,937 	 INFO 	 ||Payload: 10111000
+2025-04-19 14:56:31,938 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:31,938 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:31,938 	 INFO 	 ||Start row: 9225, End row: 9255
+2025-04-19 14:56:31,981 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:31,983 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:31,983 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:31,983 	 INFO 	 ||Start row: 9257, End row: 9287
+2025-04-19 14:56:32,050 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:32,051 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:32,051 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:32,051 	 INFO 	 ||Start row: 9292, End row: 9320
+2025-04-19 14:56:32,095 	 INFO 	 ||Payload: 10111000
+2025-04-19 14:56:32,096 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:32,096 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:32,096 	 INFO 	 ||Start row: 9322, End row: 9352
+2025-04-19 14:56:32,142 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:32,143 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:32,143 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:32,143 	 INFO 	 ||Start row: 9354, End row: 9385
+2025-04-19 14:56:32,208 	 INFO 	 ||Payload: 100001
+2025-04-19 14:56:32,209 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:32,209 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:32,209 	 INFO 	 ||Start row: 9386, End row: 9416
+2025-04-19 14:56:32,253 	 INFO 	 ||Payload: 11010011
+2025-04-19 14:56:32,254 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:32,255 	 INFO 	 |Total BER for frequency 19 Hz: 0.2375
+2025-04-19 14:56:32,256 	 INFO 	 Reading 20 frames at frequency 20 Hz
+2025-04-19 14:56:32,256 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:32,256 	 INFO 	 ||Start row: 9478, End row: 9508
+2025-04-19 14:56:32,301 	 INFO 	 ||Payload: 11110000
+2025-04-19 14:56:32,301 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:32,301 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:32,301 	 INFO 	 ||Start row: 9511, End row: 9538
+2025-04-19 14:56:32,373 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:32,374 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:32,374 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:32,374 	 INFO 	 ||Start row: 9539, End row: 9568
+2025-04-19 14:56:32,419 	 INFO 	 ||Payload: 10010000
+2025-04-19 14:56:32,420 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:32,420 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:32,421 	 INFO 	 ||Start row: 9570, End row: 9599
+2025-04-19 14:56:32,474 	 INFO 	 ||Payload: 01111000
+2025-04-19 14:56:32,475 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:32,475 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:32,475 	 INFO 	 ||Start row: 9603, End row: 9630
+2025-04-19 14:56:32,523 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:32,523 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:32,524 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:32,524 	 INFO 	 ||Start row: 9631, End row: 9660
+2025-04-19 14:56:32,632 	 INFO 	 ||Payload: 10010000
+2025-04-19 14:56:32,632 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:32,634 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:32,634 	 INFO 	 ||Start row: 9662, End row: 9691
+2025-04-19 14:56:32,703 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:32,703 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:32,704 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:32,704 	 INFO 	 ||Start row: 9695, End row: 9721
+2025-04-19 14:56:32,789 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:32,790 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:32,790 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:32,790 	 INFO 	 ||Start row: 9723, End row: 9752
+2025-04-19 14:56:32,841 	 INFO 	 ||Payload: 01111000
+2025-04-19 14:56:32,842 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:32,842 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:32,842 	 INFO 	 ||Start row: 9756, End row: 9781
+2025-04-19 14:56:32,894 	 INFO 	 ||Payload: 100001
+2025-04-19 14:56:32,895 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:32,895 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:32,895 	 INFO 	 ||Start row: 9783, End row: 9815
+2025-04-19 14:56:32,946 	 INFO 	 ||Payload: 100000
+2025-04-19 14:56:32,947 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:32,947 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:32,947 	 INFO 	 ||Start row: 9816, End row: 9845
+2025-04-19 14:56:33,005 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:33,005 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:33,006 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:33,006 	 INFO 	 ||Start row: 9846, End row: 9875
+2025-04-19 14:56:33,059 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:33,060 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:33,060 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:33,060 	 INFO 	 ||Start row: 9880, End row: 9905
+2025-04-19 14:56:33,162 	 INFO 	 ||Payload: 110100
+2025-04-19 14:56:33,163 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:33,163 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:33,163 	 INFO 	 ||Start row: 9907, End row: 9937
+2025-04-19 14:56:33,233 	 INFO 	 ||Payload: 01111001
+2025-04-19 14:56:33,235 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:33,235 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:33,235 	 INFO 	 ||Start row: 9940, End row: 9967
+2025-04-19 14:56:33,302 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:33,303 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:33,304 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:33,304 	 INFO 	 ||Start row: 9968, End row: 9997
+2025-04-19 14:56:33,373 	 INFO 	 ||Payload: 100000
+2025-04-19 14:56:33,374 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:33,374 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:33,374 	 INFO 	 ||Start row: 9999, End row: 10028
+2025-04-19 14:56:33,439 	 INFO 	 ||Payload: 00111001
+2025-04-19 14:56:33,440 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:33,440 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:33,440 	 INFO 	 ||Start row: 10032, End row: 10058
+2025-04-19 14:56:33,516 	 INFO 	 ||Payload: 10010000
+2025-04-19 14:56:33,517 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:33,517 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:33,517 	 INFO 	 ||Start row: 10060, End row: 10089
+2025-04-19 14:56:33,650 	 INFO 	 ||Payload: 01110000
+2025-04-19 14:56:33,651 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:33,651 	 INFO 	 |Total BER for frequency 20 Hz: 0.25625
+2025-04-19 14:56:33,652 	 INFO 	 Reading 20 frames at frequency 21 Hz
+2025-04-19 14:56:33,652 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:33,652 	 INFO 	 ||Start row: 10154, End row: 10178
+2025-04-19 14:56:33,746 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:33,747 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:33,747 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:33,747 	 INFO 	 ||Start row: 10183, End row: 10207
+2025-04-19 14:56:33,827 	 INFO 	 ||Payload: 10010000
+2025-04-19 14:56:33,828 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:33,829 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:33,829 	 INFO 	 ||Start row: 10212, End row: 10237
+2025-04-19 14:56:33,893 	 INFO 	 ||Payload: 10011000
+2025-04-19 14:56:33,895 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:33,895 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:33,895 	 INFO 	 ||Start row: 10238, End row: 10265
+2025-04-19 14:56:34,000 	 INFO 	 ||Payload: 11111011
+2025-04-19 14:56:34,001 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:34,001 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:34,001 	 INFO 	 ||Start row: 10267, End row: 10295
+2025-04-19 14:56:34,073 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:34,074 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:34,074 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:34,074 	 INFO 	 ||Start row: 10296, End row: 10325
+2025-04-19 14:56:34,174 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:34,175 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:34,175 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:34,175 	 INFO 	 ||Start row: 10326, End row: 10354
+2025-04-19 14:56:34,299 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:34,300 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:34,300 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:34,300 	 INFO 	 ||Start row: 10356, End row: 10383
+2025-04-19 14:56:34,379 	 INFO 	 ||Payload: 01111000
+2025-04-19 14:56:34,380 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:34,380 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:34,380 	 INFO 	 ||Start row: 10385, End row: 10412
+2025-04-19 14:56:34,439 	 INFO 	 ||Payload: 01111010
+2025-04-19 14:56:34,440 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:34,440 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:34,440 	 INFO 	 ||Start row: 10414, End row: 10441
+2025-04-19 14:56:34,515 	 INFO 	 ||Payload: 01111010
+2025-04-19 14:56:34,516 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:34,516 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:34,516 	 INFO 	 ||Start row: 10443, End row: 10470
+2025-04-19 14:56:34,573 	 INFO 	 ||Payload: 00111010
+2025-04-19 14:56:34,573 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:34,573 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:34,573 	 INFO 	 ||Start row: 10472, End row: 10499
+2025-04-19 14:56:34,664 	 INFO 	 ||Payload: 01111010
+2025-04-19 14:56:34,665 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:34,665 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:34,665 	 INFO 	 ||Start row: 10501, End row: 10531
+2025-04-19 14:56:34,728 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:34,729 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:34,730 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:34,730 	 INFO 	 ||Start row: 10533, End row: 10560
+2025-04-19 14:56:34,789 	 INFO 	 ||Payload: 01110000
+2025-04-19 14:56:34,790 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:34,790 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:34,790 	 INFO 	 ||Start row: 10562, End row: 10589
+2025-04-19 14:56:34,848 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:34,849 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:34,849 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:34,849 	 INFO 	 ||Start row: 10593, End row: 10618
+2025-04-19 14:56:34,915 	 INFO 	 ||Payload: 110100
+2025-04-19 14:56:34,916 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:34,916 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:34,917 	 INFO 	 ||Start row: 10622, End row: 10647
+2025-04-19 14:56:34,972 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:34,973 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:34,973 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:34,973 	 INFO 	 ||Start row: 10651, End row: 10676
+2025-04-19 14:56:35,059 	 INFO 	 ||Payload: 110000
+2025-04-19 14:56:35,060 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,061 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:35,061 	 INFO 	 ||Start row: 10680, End row: 10705
+2025-04-19 14:56:35,115 	 INFO 	 ||Payload: 10000001
+2025-04-19 14:56:35,116 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,117 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:35,117 	 INFO 	 ||Start row: 10709, End row: 10736
+2025-04-19 14:56:35,168 	 INFO 	 ||Payload: 10010011
+2025-04-19 14:56:35,169 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,169 	 INFO 	 |Total BER for frequency 21 Hz: 0.35625
+2025-04-19 14:56:35,169 	 INFO 	 Reading 20 frames at frequency 22 Hz
+2025-04-19 14:56:35,170 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:35,170 	 INFO 	 ||Start row: 10797, End row: 10823
+2025-04-19 14:56:35,217 	 INFO 	 ||Payload: 011101
+2025-04-19 14:56:35,217 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,218 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:35,218 	 INFO 	 ||Start row: 10828, End row: 10851
+2025-04-19 14:56:35,268 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:35,269 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,269 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:35,269 	 INFO 	 ||Start row: 10853, End row: 10879
+2025-04-19 14:56:35,316 	 INFO 	 ||Payload: 011101
+2025-04-19 14:56:35,317 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,317 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:35,317 	 INFO 	 ||Start row: 10881, End row: 10907
+2025-04-19 14:56:35,394 	 INFO 	 ||Payload: 11111000
+2025-04-19 14:56:35,394 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,395 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:35,395 	 INFO 	 ||Start row: 10909, End row: 10935
+2025-04-19 14:56:35,438 	 INFO 	 ||Payload: 01010001
+2025-04-19 14:56:35,439 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,439 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:35,439 	 INFO 	 ||Start row: 10936, End row: 10963
+2025-04-19 14:56:35,481 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:35,482 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,482 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:35,482 	 INFO 	 ||Start row: 10966, End row: 10991
+2025-04-19 14:56:35,526 	 INFO 	 ||Payload: 10010001
+2025-04-19 14:56:35,527 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:35,527 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:35,527 	 INFO 	 ||Start row: 10992, End row: 11018
+2025-04-19 14:56:35,571 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:35,571 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,571 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:35,571 	 INFO 	 ||Start row: 11022, End row: 11046
+2025-04-19 14:56:35,615 	 INFO 	 ||Payload: 110000
+2025-04-19 14:56:35,615 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:35,616 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:35,616 	 INFO 	 ||Start row: 11051, End row: 11076
+2025-04-19 14:56:35,687 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:35,688 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,688 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:35,688 	 INFO 	 ||Start row: 11077, End row: 11102
+2025-04-19 14:56:35,736 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:35,737 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,737 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:35,737 	 INFO 	 ||Start row: 11107, End row: 11130
+2025-04-19 14:56:35,781 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:35,782 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,782 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:35,782 	 INFO 	 ||Start row: 11132, End row: 11158
+2025-04-19 14:56:35,827 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:35,828 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,828 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:35,828 	 INFO 	 ||Start row: 11163, End row: 11186
+2025-04-19 14:56:35,876 	 INFO 	 ||Payload: 101001
+2025-04-19 14:56:35,877 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,877 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:35,877 	 INFO 	 ||Start row: 11187, End row: 11215
+2025-04-19 14:56:35,923 	 INFO 	 ||Payload: 00111001
+2025-04-19 14:56:35,924 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:35,924 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:35,924 	 INFO 	 ||Start row: 11217, End row: 11243
+2025-04-19 14:56:35,996 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:35,997 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:35,997 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:35,997 	 INFO 	 ||Start row: 11247, End row: 11270
+2025-04-19 14:56:36,049 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:36,050 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,050 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:36,051 	 INFO 	 ||Start row: 11272, End row: 11299
+2025-04-19 14:56:36,110 	 INFO 	 ||Payload: 101001
+2025-04-19 14:56:36,111 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,111 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:36,111 	 INFO 	 ||Start row: 11303, End row: 11326
+2025-04-19 14:56:36,161 	 INFO 	 ||Payload: 11110010
+2025-04-19 14:56:36,162 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,162 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:36,162 	 INFO 	 ||Start row: 11328, End row: 11354
+2025-04-19 14:56:36,220 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:36,221 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,221 	 INFO 	 |Total BER for frequency 22 Hz: 0.2875
+2025-04-19 14:56:36,223 	 INFO 	 Reading 20 frames at frequency 23 Hz
+2025-04-19 14:56:36,223 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:36,223 	 INFO 	 ||Start row: 11415, End row: 11442
+2025-04-19 14:56:36,278 	 INFO 	 ||Payload: 001001
+2025-04-19 14:56:36,279 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,279 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:36,280 	 INFO 	 ||Start row: 11443, End row: 11468
+2025-04-19 14:56:36,364 	 INFO 	 ||Payload: 01110000
+2025-04-19 14:56:36,364 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,365 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:36,365 	 INFO 	 ||Start row: 11470, End row: 11495
+2025-04-19 14:56:36,416 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:36,417 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,418 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:36,418 	 INFO 	 ||Start row: 11496, End row: 11521
+2025-04-19 14:56:36,474 	 INFO 	 ||Payload: 100011
+2025-04-19 14:56:36,475 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:36,475 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:36,475 	 INFO 	 ||Start row: 11523, End row: 11548
+2025-04-19 14:56:36,528 	 INFO 	 ||Payload: 011101
+2025-04-19 14:56:36,529 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,529 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:36,530 	 INFO 	 ||Start row: 11549, End row: 11575
+2025-04-19 14:56:36,583 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:36,584 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,584 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:36,584 	 INFO 	 ||Start row: 11576, End row: 11602
+2025-04-19 14:56:36,671 	 INFO 	 ||Payload: 00100000
+2025-04-19 14:56:36,672 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,673 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:36,673 	 INFO 	 ||Start row: 11603, End row: 11628
+2025-04-19 14:56:36,789 	 INFO 	 ||Payload: 001101
+2025-04-19 14:56:36,790 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,790 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:36,790 	 INFO 	 ||Start row: 11630, End row: 11656
+2025-04-19 14:56:36,865 	 INFO 	 ||Payload: 01110000
+2025-04-19 14:56:36,866 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,866 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:36,866 	 INFO 	 ||Start row: 11660, End row: 11683
+2025-04-19 14:56:36,932 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:36,933 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:36,933 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:36,934 	 INFO 	 ||Start row: 11686, End row: 11709
+2025-04-19 14:56:36,998 	 INFO 	 ||Payload: 10111000
+2025-04-19 14:56:36,999 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:36,999 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:36,999 	 INFO 	 ||Start row: 11713, End row: 11735
+2025-04-19 14:56:37,064 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:37,065 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:37,065 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:37,065 	 INFO 	 ||Start row: 11740, End row: 11762
+2025-04-19 14:56:37,131 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:37,132 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:37,133 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:37,133 	 INFO 	 ||Start row: 11766, End row: 11788
+2025-04-19 14:56:37,248 	 INFO 	 ||Payload: 10111000
+2025-04-19 14:56:37,249 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:37,250 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:37,250 	 INFO 	 ||Start row: 11793, End row: 11815
+2025-04-19 14:56:37,335 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:37,336 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:37,336 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:37,336 	 INFO 	 ||Start row: 11820, End row: 11843
+2025-04-19 14:56:37,416 	 INFO 	 ||Payload: 101001
+2025-04-19 14:56:37,417 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:37,417 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:37,417 	 INFO 	 ||Start row: 11846, End row: 11869
+2025-04-19 14:56:37,488 	 INFO 	 ||Payload: 10111000
+2025-04-19 14:56:37,489 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:37,489 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:37,489 	 INFO 	 ||Start row: 11873, End row: 11896
+2025-04-19 14:56:37,555 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:37,556 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:37,556 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:37,556 	 INFO 	 ||Start row: 11900, End row: 11923
+2025-04-19 14:56:37,621 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:37,623 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:37,623 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:37,623 	 INFO 	 ||Start row: 11926, End row: 11949
+2025-04-19 14:56:37,729 	 INFO 	 ||Payload: 10111010
+2025-04-19 14:56:37,730 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:37,731 	 INFO 	 |Total BER for frequency 23 Hz: 0.325
+2025-04-19 14:56:37,731 	 INFO 	 Reading 20 frames at frequency 24 Hz
+2025-04-19 14:56:37,731 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:37,731 	 INFO 	 ||Start row: 12009, End row: 12036
+2025-04-19 14:56:37,799 	 INFO 	 ||Payload: 101001
+2025-04-19 14:56:37,800 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:37,800 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:37,800 	 INFO 	 ||Start row: 12037, End row: 12061
+2025-04-19 14:56:37,926 	 INFO 	 ||Payload: 01110000
+2025-04-19 14:56:37,928 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:37,928 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:37,928 	 INFO 	 ||Start row: 12064, End row: 12087
+2025-04-19 14:56:38,014 	 INFO 	 ||Payload: 101000
+2025-04-19 14:56:38,015 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:38,015 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:38,016 	 INFO 	 ||Start row: 12088, End row: 12116
+2025-04-19 14:56:38,087 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:38,095 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:38,096 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:38,096 	 INFO 	 ||Start row: 12120, End row: 12142
+2025-04-19 14:56:38,181 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:38,182 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:38,183 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:38,183 	 INFO 	 ||Start row: 12144, End row: 12169
+2025-04-19 14:56:38,293 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:38,295 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:38,295 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:38,295 	 INFO 	 ||Start row: 12170, End row: 12194
+2025-04-19 14:56:38,372 	 INFO 	 ||Payload: 010100
+2025-04-19 14:56:38,373 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:38,374 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:38,374 	 INFO 	 ||Start row: 12198, End row: 12220
+2025-04-19 14:56:38,440 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:38,441 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:38,441 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:38,441 	 INFO 	 ||Start row: 12225, End row: 12247
+2025-04-19 14:56:38,513 	 INFO 	 ||Payload: 11111001
+2025-04-19 14:56:38,513 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:38,513 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:38,513 	 INFO 	 ||Start row: 12248, End row: 12272
+2025-04-19 14:56:38,576 	 INFO 	 ||Payload: 01110000
+2025-04-19 14:56:38,577 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:38,577 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:38,577 	 INFO 	 ||Start row: 12274, End row: 12299
+2025-04-19 14:56:38,644 	 INFO 	 ||Payload: 01111001
+2025-04-19 14:56:38,645 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:38,646 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:38,646 	 INFO 	 ||Start row: 12302, End row: 12324
+2025-04-19 14:56:38,753 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:38,754 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:38,755 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:38,755 	 INFO 	 ||Start row: 12325, End row: 12349
+2025-04-19 14:56:38,816 	 INFO 	 ||Payload: 01011001
+2025-04-19 14:56:38,817 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:38,817 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:38,817 	 INFO 	 ||Start row: 12353, End row: 12375
+2025-04-19 14:56:38,880 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:38,881 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:38,881 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:38,881 	 INFO 	 ||Start row: 12376, End row: 12400
+2025-04-19 14:56:38,945 	 INFO 	 ||Payload: 110010
+2025-04-19 14:56:38,946 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:38,946 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:38,946 	 INFO 	 ||Start row: 12402, End row: 12427
+2025-04-19 14:56:39,010 	 INFO 	 ||Payload: 01111001
+2025-04-19 14:56:39,011 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:39,011 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:39,011 	 INFO 	 ||Start row: 12430, End row: 12452
+2025-04-19 14:56:39,077 	 INFO 	 ||Payload: 101000
+2025-04-19 14:56:39,078 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:39,078 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:39,079 	 INFO 	 ||Start row: 12454, End row: 12478
+2025-04-19 14:56:39,179 	 INFO 	 ||Payload: 01110001
+2025-04-19 14:56:39,180 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:39,180 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:39,180 	 INFO 	 ||Start row: 12481, End row: 12511
+2025-04-19 14:56:39,248 	 INFO 	 ||Payload: 10111001
+2025-04-19 14:56:39,249 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:39,249 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:39,249 	 INFO 	 ||Start row: 12512, End row: 12536
+2025-04-19 14:56:39,301 	 INFO 	 ||Payload: 00110001
+2025-04-19 14:56:39,301 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:39,302 	 INFO 	 |Total BER for frequency 24 Hz: 0.2625
+2025-04-19 14:56:39,303 	 INFO 	 Reading 20 frames at frequency 25 Hz
+2025-04-19 14:56:39,303 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:39,303 	 INFO 	 ||Start row: 12600, End row: 12621
+2025-04-19 14:56:39,355 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:39,356 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:39,356 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:39,356 	 INFO 	 ||Start row: 12624, End row: 12645
+2025-04-19 14:56:39,402 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:39,403 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:39,403 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:39,403 	 INFO 	 ||Start row: 12648, End row: 12671
+2025-04-19 14:56:39,451 	 INFO 	 ||Payload: 1000
+2025-04-19 14:56:39,451 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:39,452 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:39,452 	 INFO 	 ||Start row: 12672, End row: 12695
+2025-04-19 14:56:39,527 	 INFO 	 ||Payload: 01011001
+2025-04-19 14:56:39,528 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:39,528 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:39,528 	 INFO 	 ||Start row: 12696, End row: 12719
+2025-04-19 14:56:39,571 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:39,573 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:39,573 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:39,573 	 INFO 	 ||Start row: 12720, End row: 12744
+2025-04-19 14:56:39,619 	 INFO 	 ||Payload: 01011000
+2025-04-19 14:56:39,620 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:39,620 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:39,620 	 INFO 	 ||Start row: 12745, End row: 12768
+2025-04-19 14:56:39,685 	 INFO 	 ||Payload: 01011000
+2025-04-19 14:56:39,686 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:39,686 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:39,686 	 INFO 	 ||Start row: 12769, End row: 12793
+2025-04-19 14:56:39,747 	 INFO 	 ||Payload: 000001
+2025-04-19 14:56:39,748 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:39,748 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:39,748 	 INFO 	 ||Start row: 12796, End row: 12817
+2025-04-19 14:56:39,815 	 INFO 	 ||Payload: 101010
+2025-04-19 14:56:39,816 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:39,816 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:39,817 	 INFO 	 ||Start row: 12821, End row: 12841
+2025-04-19 14:56:40,053 	 INFO 	 ||Payload: 100000
+2025-04-19 14:56:40,054 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:40,055 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:40,055 	 INFO 	 ||Start row: 12845, End row: 12865
+2025-04-19 14:56:40,151 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:40,153 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:40,153 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:40,153 	 INFO 	 ||Start row: 12869, End row: 12891
+2025-04-19 14:56:40,227 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:40,230 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:40,231 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:40,231 	 INFO 	 ||Start row: 12893, End row: 12919
+2025-04-19 14:56:40,318 	 INFO 	 ||Payload: 01011000
+2025-04-19 14:56:40,319 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:40,320 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:40,320 	 INFO 	 ||Start row: 12923, End row: 12943
+2025-04-19 14:56:40,394 	 INFO 	 ||Payload: 100001
+2025-04-19 14:56:40,395 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:40,396 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:40,396 	 INFO 	 ||Start row: 12947, End row: 12969
+2025-04-19 14:56:40,456 	 INFO 	 ||Payload: 11110001
+2025-04-19 14:56:40,457 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:40,457 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:40,457 	 INFO 	 ||Start row: 12970, End row: 12993
+2025-04-19 14:56:40,525 	 INFO 	 ||Payload: 00011001
+2025-04-19 14:56:40,526 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:40,526 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:40,526 	 INFO 	 ||Start row: 12994, End row: 13017
+2025-04-19 14:56:40,631 	 INFO 	 ||Payload: 00011000
+2025-04-19 14:56:40,632 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:40,632 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:40,632 	 INFO 	 ||Start row: 13019, End row: 13042
+2025-04-19 14:56:40,698 	 INFO 	 ||Payload: 01011000
+2025-04-19 14:56:40,700 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:40,700 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:40,700 	 INFO 	 ||Start row: 13043, End row: 13067
+2025-04-19 14:56:40,768 	 INFO 	 ||Payload: 000001
+2025-04-19 14:56:40,769 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:40,769 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:40,769 	 INFO 	 ||Start row: 13070, End row: 13091
+2025-04-19 14:56:40,834 	 INFO 	 ||Payload: 1010
+2025-04-19 14:56:40,835 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:40,835 	 INFO 	 |Total BER for frequency 25 Hz: 0.3875
+2025-04-19 14:56:40,836 	 INFO 	 Reading 20 frames at frequency 26 Hz
+2025-04-19 14:56:40,836 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:40,837 	 INFO 	 ||Start row: 13151, End row: 13175
+2025-04-19 14:56:40,917 	 INFO 	 ||Payload: 01111001
+2025-04-19 14:56:40,919 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:40,919 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:40,919 	 INFO 	 ||Start row: 13176, End row: 13199
+2025-04-19 14:56:40,996 	 INFO 	 ||Payload: 00111001
+2025-04-19 14:56:40,997 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:40,997 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:40,997 	 INFO 	 ||Start row: 13202, End row: 13222
+2025-04-19 14:56:41,091 	 INFO 	 ||Payload: 101101
+2025-04-19 14:56:41,092 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:41,093 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:41,093 	 INFO 	 ||Start row: 13225, End row: 13245
+2025-04-19 14:56:41,151 	 INFO 	 ||Payload: 10100
+2025-04-19 14:56:41,152 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:41,152 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:41,152 	 INFO 	 ||Start row: 13246, End row: 13269
+2025-04-19 14:56:41,208 	 INFO 	 ||Payload: 001011000
+2025-04-19 14:56:41,210 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:41,210 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:41,210 	 INFO 	 ||Start row: 13271, End row: 13292
+2025-04-19 14:56:41,266 	 INFO 	 ||Payload: 011010
+2025-04-19 14:56:41,267 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:41,268 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:41,268 	 INFO 	 ||Start row: 13296, End row: 13316
+2025-04-19 14:56:41,342 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:41,344 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:41,344 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:41,345 	 INFO 	 ||Start row: 13317, End row: 13341
+2025-04-19 14:56:41,420 	 INFO 	 ||Payload: 01010001
+2025-04-19 14:56:41,421 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:41,421 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:41,421 	 INFO 	 ||Start row: 13344, End row: 13364
+2025-04-19 14:56:41,530 	 INFO 	 ||Payload: 101001
+2025-04-19 14:56:41,531 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:41,531 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:41,531 	 INFO 	 ||Start row: 13365, End row: 13388
+2025-04-19 14:56:41,599 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:41,600 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:41,600 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:41,600 	 INFO 	 ||Start row: 13389, End row: 13412
+2025-04-19 14:56:41,664 	 INFO 	 ||Payload: 00011001
+2025-04-19 14:56:41,665 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:41,666 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:41,666 	 INFO 	 ||Start row: 13414, End row: 13435
+2025-04-19 14:56:41,729 	 INFO 	 ||Payload: 01010000
+2025-04-19 14:56:41,730 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:41,730 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:41,730 	 INFO 	 ||Start row: 13438, End row: 13459
+2025-04-19 14:56:41,790 	 INFO 	 ||Payload: 10100010
+2025-04-19 14:56:41,791 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:41,791 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:41,792 	 INFO 	 ||Start row: 13463, End row: 13482
+2025-04-19 14:56:41,856 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:41,856 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:41,856 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:41,856 	 INFO 	 ||Start row: 13484, End row: 13507
+2025-04-19 14:56:41,946 	 INFO 	 ||Payload: 01011001
+2025-04-19 14:56:41,947 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:41,947 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:41,947 	 INFO 	 ||Start row: 13508, End row: 13529
+2025-04-19 14:56:42,018 	 INFO 	 ||Payload: 01000001
+2025-04-19 14:56:42,019 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:42,019 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:42,019 	 INFO 	 ||Start row: 13533, End row: 13554
+2025-04-19 14:56:42,090 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:42,091 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:42,091 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:42,091 	 INFO 	 ||Start row: 13557, End row: 13577
+2025-04-19 14:56:42,153 	 INFO 	 ||Payload: 1101
+2025-04-19 14:56:42,154 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:42,154 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:42,154 	 INFO 	 ||Start row: 13578, End row: 13601
+2025-04-19 14:56:42,215 	 INFO 	 ||Payload: 10011001
+2025-04-19 14:56:42,216 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:42,216 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:42,216 	 INFO 	 ||Start row: 13602, End row: 13623
+2025-04-19 14:56:42,277 	 INFO 	 ||Payload: 01011000
+2025-04-19 14:56:42,278 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:42,278 	 INFO 	 |Total BER for frequency 26 Hz: 0.375
+2025-04-19 14:56:42,279 	 INFO 	 Reading 19 frames at frequency 27 Hz
+2025-04-19 14:56:42,279 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:42,279 	 INFO 	 ||Start row: 13688, End row: 13708
+2025-04-19 14:56:42,363 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:42,364 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:42,364 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:42,364 	 INFO 	 ||Start row: 13710, End row: 13730
+2025-04-19 14:56:42,421 	 INFO 	 ||Payload: 10111000
+2025-04-19 14:56:42,421 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:42,421 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:42,421 	 INFO 	 ||Start row: 13734, End row: 13754
+2025-04-19 14:56:42,478 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:42,479 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:42,479 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:42,479 	 INFO 	 ||Start row: 13755, End row: 13777
+2025-04-19 14:56:42,540 	 INFO 	 ||Payload: 10000001
+2025-04-19 14:56:42,542 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:42,542 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:42,542 	 INFO 	 ||Start row: 13780, End row: 13800
+2025-04-19 14:56:42,601 	 INFO 	 ||Payload: 111101
+2025-04-19 14:56:42,601 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:42,603 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:42,603 	 INFO 	 ||Start row: 13801, End row: 13823
+2025-04-19 14:56:42,659 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:42,660 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:42,661 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:42,661 	 INFO 	 ||Start row: 13826, End row: 13846
+2025-04-19 14:56:42,761 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:42,762 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:42,762 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:42,762 	 INFO 	 ||Start row: 13848, End row: 13868
+2025-04-19 14:56:42,817 	 INFO 	 ||Payload: 10110001
+2025-04-19 14:56:42,818 	 INFO 	 ||Hamming distance: 0
+2025-04-19 14:56:42,819 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:42,819 	 INFO 	 ||Start row: 13869, End row: 13890
+2025-04-19 14:56:42,880 	 INFO 	 ||Payload: 01011001
+2025-04-19 14:56:42,881 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:42,881 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:42,881 	 INFO 	 ||Start row: 13894, End row: 13914
+2025-04-19 14:56:42,942 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:42,943 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:42,944 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:42,944 	 INFO 	 ||Start row: 13915, End row: 13958
+2025-04-19 14:56:43,001 	 INFO 	 ||Payload: 0111000101111001
+2025-04-19 14:56:43,002 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:43,002 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:43,002 	 INFO 	 ||Start row: 13962, End row: 13986
+2025-04-19 14:56:43,059 	 INFO 	 ||Payload: 110110
+2025-04-19 14:56:43,060 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,060 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:43,060 	 INFO 	 ||Start row: 13988, End row: 14009
+2025-04-19 14:56:43,147 	 INFO 	 ||Payload: 01111000
+2025-04-19 14:56:43,148 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:43,148 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:43,148 	 INFO 	 ||Start row: 14013, End row: 14033
+2025-04-19 14:56:43,207 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:43,208 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,208 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:43,208 	 INFO 	 ||Start row: 14035, End row: 14054
+2025-04-19 14:56:43,263 	 INFO 	 ||Payload: 1111000
+2025-04-19 14:56:43,264 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:43,265 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:43,265 	 INFO 	 ||Start row: 14056, End row: 14077
+2025-04-19 14:56:43,318 	 INFO 	 ||Payload: 01011010
+2025-04-19 14:56:43,318 	 INFO 	 ||Hamming distance: 6
+2025-04-19 14:56:43,319 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:43,319 	 INFO 	 ||Start row: 14081, End row: 14101
+2025-04-19 14:56:43,371 	 INFO 	 ||Payload: 1100
+2025-04-19 14:56:43,373 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,373 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:43,373 	 INFO 	 ||Start row: 14102, End row: 14123
+2025-04-19 14:56:43,424 	 INFO 	 ||Payload: 011010
+2025-04-19 14:56:43,425 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:43,425 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:43,425 	 INFO 	 ||Start row: 14127, End row: 14146
+2025-04-19 14:56:43,501 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:43,501 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,502 	 INFO 	 |Total BER for frequency 27 Hz: 0.40625
+2025-04-19 14:56:43,502 	 INFO 	 Reading 20 frames at frequency 28 Hz
+2025-04-19 14:56:43,502 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:43,502 	 INFO 	 ||Start row: 14209, End row: 14228
+2025-04-19 14:56:43,551 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:43,552 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:43,552 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:43,552 	 INFO 	 ||Start row: 14231, End row: 14249
+2025-04-19 14:56:43,595 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:43,596 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,596 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:43,596 	 INFO 	 ||Start row: 14253, End row: 14273
+2025-04-19 14:56:43,639 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:43,641 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,641 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:43,641 	 INFO 	 ||Start row: 14275, End row: 14294
+2025-04-19 14:56:43,683 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:43,683 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:43,683 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:43,683 	 INFO 	 ||Start row: 14297, End row: 14316
+2025-04-19 14:56:43,723 	 INFO 	 ||Payload: 1100
+2025-04-19 14:56:43,724 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,724 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:43,724 	 INFO 	 ||Start row: 14318, End row: 14338
+2025-04-19 14:56:43,787 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:43,787 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:43,787 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:43,787 	 INFO 	 ||Start row: 14339, End row: 14360
+2025-04-19 14:56:43,826 	 INFO 	 ||Payload: 0110
+2025-04-19 14:56:43,827 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,827 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:43,827 	 INFO 	 ||Start row: 14361, End row: 14387
+2025-04-19 14:56:43,864 	 INFO 	 ||Payload: 00010011
+2025-04-19 14:56:43,865 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,865 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:43,865 	 INFO 	 ||Start row: 14389, End row: 14408
+2025-04-19 14:56:43,902 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:43,903 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:43,903 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:43,903 	 INFO 	 ||Start row: 14411, End row: 14430
+2025-04-19 14:56:43,942 	 INFO 	 ||Payload: 1100
+2025-04-19 14:56:43,942 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:43,943 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:43,943 	 INFO 	 ||Start row: 14433, End row: 14452
+2025-04-19 14:56:43,984 	 INFO 	 ||Payload: 1101
+2025-04-19 14:56:43,984 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:43,985 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:43,985 	 INFO 	 ||Start row: 14455, End row: 14474
+2025-04-19 14:56:44,050 	 INFO 	 ||Payload: 1101
+2025-04-19 14:56:44,051 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,051 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:44,051 	 INFO 	 ||Start row: 14475, End row: 14496
+2025-04-19 14:56:44,091 	 INFO 	 ||Payload: 0101
+2025-04-19 14:56:44,092 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,092 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:44,092 	 INFO 	 ||Start row: 14497, End row: 14518
+2025-04-19 14:56:44,130 	 INFO 	 ||Payload: 0101
+2025-04-19 14:56:44,131 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,131 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:44,131 	 INFO 	 ||Start row: 14519, End row: 14540
+2025-04-19 14:56:44,171 	 INFO 	 ||Payload: 001100
+2025-04-19 14:56:44,171 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:44,171 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:44,171 	 INFO 	 ||Start row: 14541, End row: 14561
+2025-04-19 14:56:44,210 	 INFO 	 ||Payload: 001100
+2025-04-19 14:56:44,211 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:44,211 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:44,211 	 INFO 	 ||Start row: 14563, End row: 14583
+2025-04-19 14:56:44,251 	 INFO 	 ||Payload: 0111
+2025-04-19 14:56:44,252 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,252 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:44,252 	 INFO 	 ||Start row: 14584, End row: 14605
+2025-04-19 14:56:44,314 	 INFO 	 ||Payload: 0110
+2025-04-19 14:56:44,315 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,315 	 INFO 	 ||Reading signal 18
+2025-04-19 14:56:44,315 	 INFO 	 ||Start row: 14606, End row: 14627
+2025-04-19 14:56:44,353 	 INFO 	 ||Payload: 0111
+2025-04-19 14:56:44,354 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,354 	 INFO 	 ||Reading signal 19
+2025-04-19 14:56:44,354 	 INFO 	 ||Start row: 14628, End row: 14649
+2025-04-19 14:56:44,393 	 INFO 	 ||Payload: 111100
+2025-04-19 14:56:44,394 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:44,394 	 INFO 	 |Total BER for frequency 28 Hz: 0.3125
+2025-04-19 14:56:44,394 	 INFO 	 Reading 18 frames at frequency 29 Hz
+2025-04-19 14:56:44,395 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:44,395 	 INFO 	 ||Start row: 14711, End row: 14730
+2025-04-19 14:56:44,436 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:44,437 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,437 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:44,437 	 INFO 	 ||Start row: 14733, End row: 14751
+2025-04-19 14:56:44,481 	 INFO 	 ||Payload: 10000001
+2025-04-19 14:56:44,481 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,481 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:44,481 	 INFO 	 ||Start row: 14752, End row: 14772
+2025-04-19 14:56:44,522 	 INFO 	 ||Payload: 011100
+2025-04-19 14:56:44,523 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,523 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:44,523 	 INFO 	 ||Start row: 14775, End row: 14792
+2025-04-19 14:56:44,589 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:44,589 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,590 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:44,590 	 INFO 	 ||Start row: 14796, End row: 14817
+2025-04-19 14:56:44,632 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:44,633 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,633 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:44,633 	 INFO 	 ||Start row: 14820, End row: 14860
+2025-04-19 14:56:44,680 	 INFO 	 ||Payload: 111001010100
+2025-04-19 14:56:44,681 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,681 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:44,681 	 INFO 	 ||Start row: 14861, End row: 14882
+2025-04-19 14:56:44,727 	 INFO 	 ||Payload: 011100
+2025-04-19 14:56:44,728 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:44,728 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:44,728 	 INFO 	 ||Start row: 14884, End row: 14902
+2025-04-19 14:56:44,770 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:44,770 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,770 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:44,770 	 INFO 	 ||Start row: 14905, End row: 14923
+2025-04-19 14:56:44,811 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:44,812 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:44,812 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:44,812 	 INFO 	 ||Start row: 14924, End row: 14944
+2025-04-19 14:56:44,877 	 INFO 	 ||Payload: 0101
+2025-04-19 14:56:44,878 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,878 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:44,878 	 INFO 	 ||Start row: 14946, End row: 14964
+2025-04-19 14:56:44,918 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:44,919 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,919 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:44,919 	 INFO 	 ||Start row: 14968, End row: 14987
+2025-04-19 14:56:44,959 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:44,960 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:44,960 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:44,960 	 INFO 	 ||Start row: 14990, End row: 15008
+2025-04-19 14:56:45,007 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:45,008 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:45,008 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:45,008 	 INFO 	 ||Start row: 15009, End row: 15029
+2025-04-19 14:56:45,051 	 INFO 	 ||Payload: 011101
+2025-04-19 14:56:45,051 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,051 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:45,051 	 INFO 	 ||Start row: 15032, End row: 15049
+2025-04-19 14:56:45,094 	 INFO 	 ||Payload: 111000
+2025-04-19 14:56:45,096 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:45,096 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:45,096 	 INFO 	 ||Start row: 15053, End row: 15092
+2025-04-19 14:56:45,167 	 INFO 	 ||Payload: 1110010110
+2025-04-19 14:56:45,168 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,168 	 INFO 	 ||Reading signal 16
+2025-04-19 14:56:45,168 	 INFO 	 ||Start row: 15094, End row: 15114
+2025-04-19 14:56:45,210 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:45,211 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:45,211 	 INFO 	 ||Reading signal 17
+2025-04-19 14:56:45,211 	 INFO 	 ||Start row: 15117, End row: 15134
+2025-04-19 14:56:45,255 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:45,256 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,256 	 INFO 	 |Total BER for frequency 29 Hz: 0.41875
+2025-04-19 14:56:45,257 	 INFO 	 Reading 16 frames at frequency 30 Hz
+2025-04-19 14:56:45,257 	 INFO 	 ||Reading signal 0
+2025-04-19 14:56:45,258 	 INFO 	 ||Start row: 15195, End row: 15214
+2025-04-19 14:56:45,300 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:45,301 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,301 	 INFO 	 ||Reading signal 1
+2025-04-19 14:56:45,301 	 INFO 	 ||Start row: 15218, End row: 15235
+2025-04-19 14:56:45,343 	 INFO 	 ||Payload: 00
+2025-04-19 14:56:45,343 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:45,344 	 INFO 	 ||Reading signal 2
+2025-04-19 14:56:45,344 	 INFO 	 ||Start row: 15237, End row: 15256
+2025-04-19 14:56:45,385 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:45,385 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:45,386 	 INFO 	 ||Reading signal 3
+2025-04-19 14:56:45,386 	 INFO 	 ||Start row: 15259, End row: 15277
+2025-04-19 14:56:45,474 	 INFO 	 ||Payload: 1001
+2025-04-19 14:56:45,475 	 INFO 	 ||Hamming distance: 1
+2025-04-19 14:56:45,475 	 INFO 	 ||Reading signal 4
+2025-04-19 14:56:45,475 	 INFO 	 ||Start row: 15279, End row: 15318
+2025-04-19 14:56:45,535 	 INFO 	 ||Payload: 111000000101
+2025-04-19 14:56:45,536 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,536 	 INFO 	 ||Reading signal 5
+2025-04-19 14:56:45,536 	 INFO 	 ||Start row: 15320, End row: 15359
+2025-04-19 14:56:45,592 	 INFO 	 ||Payload: 111010000101
+2025-04-19 14:56:45,593 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:45,593 	 INFO 	 ||Reading signal 6
+2025-04-19 14:56:45,593 	 INFO 	 ||Start row: 15362, End row: 15379
+2025-04-19 14:56:45,648 	 INFO 	 ||Payload: 110001
+2025-04-19 14:56:45,649 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:45,649 	 INFO 	 ||Reading signal 7
+2025-04-19 14:56:45,649 	 INFO 	 ||Start row: 15380, End row: 15398
+2025-04-19 14:56:45,704 	 INFO 	 ||Payload: 011000
+2025-04-19 14:56:45,705 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,705 	 INFO 	 ||Reading signal 8
+2025-04-19 14:56:45,705 	 INFO 	 ||Start row: 15402, End row: 15420
+2025-04-19 14:56:45,760 	 INFO 	 ||Payload: 0110
+2025-04-19 14:56:45,761 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,761 	 INFO 	 ||Reading signal 9
+2025-04-19 14:56:45,761 	 INFO 	 ||Start row: 15421, End row: 15440
+2025-04-19 14:56:45,843 	 INFO 	 ||Payload: 001000
+2025-04-19 14:56:45,844 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:45,844 	 INFO 	 ||Reading signal 10
+2025-04-19 14:56:45,844 	 INFO 	 ||Start row: 15444, End row: 15461
+2025-04-19 14:56:45,897 	 INFO 	 ||Payload: 000101
+2025-04-19 14:56:45,898 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,898 	 INFO 	 ||Reading signal 11
+2025-04-19 14:56:45,898 	 INFO 	 ||Start row: 15464, End row: 15502
+2025-04-19 14:56:45,949 	 INFO 	 ||Payload: 111000010101
+2025-04-19 14:56:45,950 	 INFO 	 ||Hamming distance: 2
+2025-04-19 14:56:45,950 	 INFO 	 ||Reading signal 12
+2025-04-19 14:56:45,950 	 INFO 	 ||Start row: 15505, End row: 15522
+2025-04-19 14:56:45,998 	 INFO 	 ||Payload: 111001
+2025-04-19 14:56:45,999 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:45,999 	 INFO 	 ||Reading signal 13
+2025-04-19 14:56:45,999 	 INFO 	 ||Start row: 15523, End row: 15544
+2025-04-19 14:56:46,046 	 INFO 	 ||Payload: 01011000
+2025-04-19 14:56:46,047 	 INFO 	 ||Hamming distance: 5
+2025-04-19 14:56:46,047 	 INFO 	 ||Reading signal 14
+2025-04-19 14:56:46,047 	 INFO 	 ||Start row: 15548, End row: 15565
+2025-04-19 14:56:46,095 	 INFO 	 ||Payload: 011001
+2025-04-19 14:56:46,095 	 INFO 	 ||Hamming distance: 4
+2025-04-19 14:56:46,096 	 INFO 	 ||Reading signal 15
+2025-04-19 14:56:46,096 	 INFO 	 ||Start row: 15568, End row: 15606
+2025-04-19 14:56:46,171 	 INFO 	 ||Payload: 111001011000
+2025-04-19 14:56:46,171 	 INFO 	 ||Hamming distance: 3
+2025-04-19 14:56:46,171 	 INFO 	 |Total BER for frequency 30 Hz: 0.5

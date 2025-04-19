@@ -143,7 +143,7 @@ def send_binary_signals_with_CLK_and_SGL(setup_items, binary_signals, data_ids, 
     # 3) Turn SGL on (start of transmission)
     # ─────────────────────────────────────────────────────────────
     # Use set_colours_timed for SGL keys only (uniform white, with zero delay)
-    keyboard.set_colour_timed(setup_items, SGL_ids, sgl_on_color, 0)
+    keyboard.set_colour_timed(setup_items, SGL_ids, sgl_on_color, half_period)
 
     # ─────────────────────────────────────────────────────────────
     # 4) Transmit signals bit by bit
@@ -187,12 +187,12 @@ def send_binary_signals_with_CLK_and_SGL(setup_items, binary_signals, data_ids, 
     # 5) Turn off data & SGL, then finally CLK (with extra half-bit delay)
     # ─────────────────────────────────────────────────────────────
     off_color = (0, 0, 0)
-    # Turn off data and SGL keys first:
-    data_sgl_keys = data_ids + SGL_ids
-    off_data_sgl = [off_color] * len(data_sgl_keys)
-    keyboard.set_colours_timed(setup_items, data_sgl_keys, off_data_sgl, half_period)
-    
-    # Then, after an extra half-period, turn off CLK keys:
+    # a) Turn off data keys, wait ½ bit
+    keyboard.set_colours_timed(
+        setup_items, data_ids, [off_color] * len(data_ids), half_period)
+    # b) Turn off SGL keys, wait ½ bit
+    keyboard.set_colours_timed(setup_items, SGL_ids, [off_color] * len(SGL_ids), half_period)
+    # c) Finally, turn off CLK keys immediately
     keyboard.set_colours_timed(setup_items, CLK_ids, [off_color] * len(CLK_ids), half_period)
 
 if __name__ == "__main__":
@@ -216,9 +216,9 @@ if __name__ == "__main__":
     keyboard.set_colour_timed(setup_items, key_IDs, (255, 0, 0), 5)
     keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 1)
     send_binary_signals_with_CLK_and_SGL(setup_items,
-                                        binary_signals=['10110001']*len(key_IDs),
+                                        binary_signals=['10110001']*len(data_IDs),
                                         data_ids=data_IDs,
                                         CLK_ids=[0],
                                         SGL_ids=[1],
-                                        frequency=10)
+                                        frequency=1)
     keyboard.set_colour_timed(setup_items, key_IDs, (0, 0, 0), 1)

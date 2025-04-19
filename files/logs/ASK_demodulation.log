@@ -1,0 +1,1128 @@
+2025-04-18 10:45:23,992 	 INFO 	 Key 3, Colour R, Column 6
+2025-04-18 10:45:24,074 	 INFO 	 |Reading key 3, column 6
+2025-04-18 10:45:24,075 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:24,075 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:24,088 	 INFO 	 ||Codeword: 0110110110
+2025-04-18 10:45:24,089 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,091 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:24,091 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:24,106 	 INFO 	 ||Codeword: 1111010010
+2025-04-18 10:45:24,106 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,107 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:24,108 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:24,123 	 INFO 	 ||Codeword: 000111111110
+2025-04-18 10:45:24,123 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,123 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:24,124 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:24,138 	 INFO 	 ||Codeword: 1110111111
+2025-04-18 10:45:24,138 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,146 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:24,146 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:24,159 	 INFO 	 ||Codeword: 011111111100
+2025-04-18 10:45:24,160 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,168 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:24,168 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:24,182 	 INFO 	 ||Codeword: 001011011110
+2025-04-18 10:45:24,183 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,190 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:24,190 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:24,202 	 INFO 	 ||Codeword: 010110010010
+2025-04-18 10:45:24,202 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,208 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:24,210 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:24,223 	 INFO 	 ||Codeword: 111011111111
+2025-04-18 10:45:24,224 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,231 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:24,231 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:24,258 	 INFO 	 ||Codeword: 000111011111
+2025-04-18 10:45:24,258 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,266 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:24,266 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:24,285 	 INFO 	 ||Codeword: 111011100111
+2025-04-18 10:45:24,285 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,292 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:24,293 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:24,308 	 INFO 	 ||Codeword: 001011111101
+2025-04-18 10:45:24,308 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,320 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:24,320 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:24,335 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:24,335 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,349 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:24,349 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:24,363 	 INFO 	 ||Codeword: 001110000110
+2025-04-18 10:45:24,363 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,372 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:24,372 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:24,399 	 INFO 	 ||Codeword: 001111001111
+2025-04-18 10:45:24,399 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,407 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:24,407 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:24,421 	 INFO 	 ||Codeword: 111111010110
+2025-04-18 10:45:24,421 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,429 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:24,429 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:24,445 	 INFO 	 ||Codeword: 1111101111
+2025-04-18 10:45:24,445 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,454 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:24,454 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:24,466 	 INFO 	 ||Codeword: 111010110000
+2025-04-18 10:45:24,466 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,478 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:24,478 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:24,494 	 INFO 	 ||Codeword: 001110101111
+2025-04-18 10:45:24,494 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,503 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:24,503 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:24,518 	 INFO 	 ||Codeword: 100111100011
+2025-04-18 10:45:24,518 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,526 	 INFO 	 Key 4, Colour G, Column 10
+2025-04-18 10:45:24,584 	 INFO 	 |Reading key 4, column 10
+2025-04-18 10:45:24,584 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:24,585 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:24,599 	 INFO 	 ||Codeword: 0110010111
+2025-04-18 10:45:24,599 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,607 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:24,607 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:24,631 	 INFO 	 ||Codeword: 1111010010
+2025-04-18 10:45:24,631 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,633 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:24,634 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:24,646 	 INFO 	 ||Codeword: 111001011101
+2025-04-18 10:45:24,648 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,649 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:24,649 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:24,663 	 INFO 	 ||Codeword: 1110111111
+2025-04-18 10:45:24,663 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,666 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:24,666 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:24,679 	 INFO 	 ||Codeword: 000111111011
+2025-04-18 10:45:24,679 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,682 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:24,682 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:24,696 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:24,697 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,698 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:24,698 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:24,711 	 INFO 	 ||Codeword: 110110100110
+2025-04-18 10:45:24,711 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,714 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:24,714 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:24,727 	 INFO 	 ||Codeword: 000110110111
+2025-04-18 10:45:24,727 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,730 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:24,730 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:24,752 	 INFO 	 ||Codeword: 000111111111
+2025-04-18 10:45:24,752 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,754 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:24,755 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:24,771 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:24,771 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,773 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:24,774 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:24,788 	 INFO 	 ||Codeword: 010110011010
+2025-04-18 10:45:24,788 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,790 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:24,790 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:24,805 	 INFO 	 ||Codeword: 000010101000
+2025-04-18 10:45:24,805 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,808 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:24,808 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:24,822 	 INFO 	 ||Codeword: 011101111011
+2025-04-18 10:45:24,822 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,825 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:24,825 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:24,838 	 INFO 	 ||Codeword: 011111011011
+2025-04-18 10:45:24,838 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,840 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:24,840 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:24,855 	 INFO 	 ||Codeword: 111110110000
+2025-04-18 10:45:24,855 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,857 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:24,857 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:24,870 	 INFO 	 ||Codeword: 1111011101
+2025-04-18 10:45:24,871 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,874 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:24,874 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:24,887 	 INFO 	 ||Codeword: 111110110111
+2025-04-18 10:45:24,887 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,890 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:24,890 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:24,903 	 INFO 	 ||Codeword: 000011110011
+2025-04-18 10:45:24,903 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,906 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:24,906 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:24,920 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:24,920 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,922 	 INFO 	 Key 5, Colour B, Column 14
+2025-04-18 10:45:24,976 	 INFO 	 |Reading key 5, column 14
+2025-04-18 10:45:24,977 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:24,977 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:24,988 	 INFO 	 ||Codeword: 0000001111
+2025-04-18 10:45:24,988 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:24,990 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:24,991 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:25,007 	 INFO 	 ||Codeword: 1111001110
+2025-04-18 10:45:25,007 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,009 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:25,009 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:25,023 	 INFO 	 ||Codeword: 010110101111
+2025-04-18 10:45:25,023 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,025 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:25,025 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:25,040 	 INFO 	 ||Codeword: 1000111110
+2025-04-18 10:45:25,040 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,042 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:25,042 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:25,056 	 INFO 	 ||Codeword: 110111000111
+2025-04-18 10:45:25,056 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,058 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:25,058 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:25,073 	 INFO 	 ||Codeword: 011011101010
+2025-04-18 10:45:25,073 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,076 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:25,076 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:25,090 	 INFO 	 ||Codeword: 111001011011
+2025-04-18 10:45:25,091 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,093 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:25,093 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:25,109 	 INFO 	 ||Codeword: 000110110111
+2025-04-18 10:45:25,109 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,111 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:25,111 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:25,128 	 INFO 	 ||Codeword: 010011100001
+2025-04-18 10:45:25,129 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,132 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:25,132 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:25,149 	 INFO 	 ||Codeword: 111010100110
+2025-04-18 10:45:25,149 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,150 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:25,151 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:25,166 	 INFO 	 ||Codeword: 011101011010
+2025-04-18 10:45:25,167 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,169 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:25,169 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:25,183 	 INFO 	 ||Codeword: 110111001111
+2025-04-18 10:45:25,183 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,185 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:25,185 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:25,200 	 INFO 	 ||Codeword: 011011100111
+2025-04-18 10:45:25,200 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,203 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:25,203 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:25,217 	 INFO 	 ||Codeword: 000111100100
+2025-04-18 10:45:25,217 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,220 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:25,220 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:25,234 	 INFO 	 ||Codeword: 101001101111
+2025-04-18 10:45:25,235 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,237 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:25,237 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:25,252 	 INFO 	 ||Codeword: 0001010100
+2025-04-18 10:45:25,252 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,254 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:25,254 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:25,271 	 INFO 	 ||Codeword: 101001001111
+2025-04-18 10:45:25,271 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,273 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:25,273 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:25,288 	 INFO 	 ||Codeword: 000111111110
+2025-04-18 10:45:25,288 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,290 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:25,290 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:25,304 	 INFO 	 ||Codeword: 100110101111
+2025-04-18 10:45:25,304 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,306 	 INFO 	 Key 6, Colour R, Column 15
+2025-04-18 10:45:25,376 	 INFO 	 |Reading key 6, column 15
+2025-04-18 10:45:25,376 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:25,376 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:25,392 	 INFO 	 ||Codeword: 1110101111
+2025-04-18 10:45:25,393 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,396 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:25,396 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:25,413 	 INFO 	 ||Codeword: 1111010010
+2025-04-18 10:45:25,414 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,417 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:25,417 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:25,435 	 INFO 	 ||Codeword: 111111111110
+2025-04-18 10:45:25,435 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,438 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:25,438 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:25,457 	 INFO 	 ||Codeword: 0101101111
+2025-04-18 10:45:25,457 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,459 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:25,459 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:25,477 	 INFO 	 ||Codeword: 111111111111
+2025-04-18 10:45:25,478 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,481 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:25,481 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:25,501 	 INFO 	 ||Codeword: 111101001010
+2025-04-18 10:45:25,502 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,504 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:25,505 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:25,521 	 INFO 	 ||Codeword: 010110101111
+2025-04-18 10:45:25,522 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,524 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:25,524 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:25,541 	 INFO 	 ||Codeword: 000000000000
+2025-04-18 10:45:25,541 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,544 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:25,544 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:25,562 	 INFO 	 ||Codeword: 011011101111
+2025-04-18 10:45:25,562 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,567 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:25,567 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:25,585 	 INFO 	 ||Codeword: 111001011011
+2025-04-18 10:45:25,586 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,588 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:25,588 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:25,605 	 INFO 	 ||Codeword: 011101111111
+2025-04-18 10:45:25,605 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,608 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:25,608 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:25,624 	 INFO 	 ||Codeword: 100011110111
+2025-04-18 10:45:25,625 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,628 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:25,628 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:25,648 	 INFO 	 ||Codeword: 011111101111
+2025-04-18 10:45:25,648 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,652 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:25,652 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:25,670 	 INFO 	 ||Codeword: 000111101100
+2025-04-18 10:45:25,670 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,672 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:25,673 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:25,692 	 INFO 	 ||Codeword: 111001101111
+2025-04-18 10:45:25,692 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,695 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:25,695 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:25,717 	 INFO 	 ||Codeword: 1111001010
+2025-04-18 10:45:25,718 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,720 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:25,720 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:25,738 	 INFO 	 ||Codeword: 111011111111
+2025-04-18 10:45:25,738 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,741 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:25,741 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:25,760 	 INFO 	 ||Codeword: 011111111111
+2025-04-18 10:45:25,760 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,764 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:25,764 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:25,786 	 INFO 	 ||Codeword: 100011111110
+2025-04-18 10:45:25,787 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,789 	 INFO 	 Key 7, Colour G, Column 19
+2025-04-18 10:45:25,882 	 INFO 	 |Reading key 7, column 19
+2025-04-18 10:45:25,882 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:25,882 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:25,925 	 INFO 	 ||Codeword: 1111111011
+2025-04-18 10:45:25,925 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,928 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:25,928 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:25,950 	 INFO 	 ||Codeword: 1111010010
+2025-04-18 10:45:25,951 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,954 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:25,954 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:25,974 	 INFO 	 ||Codeword: 001001101010
+2025-04-18 10:45:25,974 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:25,977 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:25,977 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:25,998 	 INFO 	 ||Codeword: 1110111111
+2025-04-18 10:45:25,998 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,002 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:26,002 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:26,023 	 INFO 	 ||Codeword: 111011100111
+2025-04-18 10:45:26,023 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,027 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:26,027 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:26,050 	 INFO 	 ||Codeword: 111010101010
+2025-04-18 10:45:26,050 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,053 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:26,053 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:26,074 	 INFO 	 ||Codeword: 001111001111
+2025-04-18 10:45:26,074 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,077 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:26,077 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:26,098 	 INFO 	 ||Codeword: 000110110111
+2025-04-18 10:45:26,099 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,102 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:26,102 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:26,125 	 INFO 	 ||Codeword: 011111101111
+2025-04-18 10:45:26,125 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,129 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:26,129 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:26,150 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:26,150 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,153 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:26,154 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:26,174 	 INFO 	 ||Codeword: 011011100111
+2025-04-18 10:45:26,174 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,177 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:26,177 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:26,200 	 INFO 	 ||Codeword: 101001001111
+2025-04-18 10:45:26,200 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,203 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:26,203 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:26,272 	 INFO 	 ||Codeword: 011111101111
+2025-04-18 10:45:26,272 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,275 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:26,275 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:26,299 	 INFO 	 ||Codeword: 011111111100
+2025-04-18 10:45:26,299 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,303 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:26,303 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:26,323 	 INFO 	 ||Codeword: 101110111111
+2025-04-18 10:45:26,323 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,326 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:26,327 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:26,348 	 INFO 	 ||Codeword: 1111001010
+2025-04-18 10:45:26,349 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,352 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:26,352 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:26,372 	 INFO 	 ||Codeword: 101011111001
+2025-04-18 10:45:26,372 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,376 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:26,376 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:26,398 	 INFO 	 ||Codeword: 000110000001
+2025-04-18 10:45:26,398 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,401 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:26,401 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:26,423 	 INFO 	 ||Codeword: 111001000101
+2025-04-18 10:45:26,423 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,426 	 INFO 	 Key 8, Colour B, Column 23
+2025-04-18 10:45:26,600 	 INFO 	 |Reading key 8, column 23
+2025-04-18 10:45:26,600 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:26,600 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:26,629 	 INFO 	 ||Codeword: 0000001010
+2025-04-18 10:45:26,630 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,634 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:26,634 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:26,658 	 INFO 	 ||Codeword: 0110010101
+2025-04-18 10:45:26,659 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,663 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:26,663 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:26,683 	 INFO 	 ||Codeword: 111101001010
+2025-04-18 10:45:26,683 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,688 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:26,688 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:26,714 	 INFO 	 ||Codeword: 1111100001
+2025-04-18 10:45:26,714 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,717 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:26,717 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:26,740 	 INFO 	 ||Codeword: 111111100110
+2025-04-18 10:45:26,740 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,743 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:26,743 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:26,766 	 INFO 	 ||Codeword: 111001111011
+2025-04-18 10:45:26,768 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,770 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:26,770 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:26,793 	 INFO 	 ||Codeword: 001111111101
+2025-04-18 10:45:26,793 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,797 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:26,797 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:26,819 	 INFO 	 ||Codeword: 000010110110
+2025-04-18 10:45:26,820 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,823 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:26,823 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:26,845 	 INFO 	 ||Codeword: 001111111111
+2025-04-18 10:45:26,845 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,849 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:26,849 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:26,871 	 INFO 	 ||Codeword: 111001100110
+2025-04-18 10:45:26,871 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,874 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:26,874 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:26,897 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:26,897 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,899 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:26,900 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:26,922 	 INFO 	 ||Codeword: 100011001000
+2025-04-18 10:45:26,922 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,925 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:26,925 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:26,959 	 INFO 	 ||Codeword: 011101111101
+2025-04-18 10:45:26,960 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,963 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:26,963 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:26,984 	 INFO 	 ||Codeword: 100011001011
+2025-04-18 10:45:26,985 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:26,988 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:26,988 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:27,007 	 INFO 	 ||Codeword: 111111111111
+2025-04-18 10:45:27,007 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,011 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:27,011 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:27,032 	 INFO 	 ||Codeword: 1111011011
+2025-04-18 10:45:27,033 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,035 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:27,036 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:27,057 	 INFO 	 ||Codeword: 001011111111
+2025-04-18 10:45:27,057 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,060 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:27,061 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:27,084 	 INFO 	 ||Codeword: 011110000001
+2025-04-18 10:45:27,084 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,087 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:27,087 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:27,109 	 INFO 	 ||Codeword: 111111001111
+2025-04-18 10:45:27,110 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,113 	 INFO 	 Key 9, Colour R, Column 24
+2025-04-18 10:45:27,202 	 INFO 	 |Reading key 9, column 24
+2025-04-18 10:45:27,202 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:27,202 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:27,221 	 INFO 	 ||Codeword: 1110000110
+2025-04-18 10:45:27,222 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,224 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:27,224 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:27,243 	 INFO 	 ||Codeword: 0000101010
+2025-04-18 10:45:27,243 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,246 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:27,247 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:27,266 	 INFO 	 ||Codeword: 111101001010
+2025-04-18 10:45:27,266 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,269 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:27,269 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:27,286 	 INFO 	 ||Codeword: 1101111111
+2025-04-18 10:45:27,288 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,290 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:27,290 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:27,310 	 INFO 	 ||Codeword: 001111000111
+2025-04-18 10:45:27,310 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,313 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:27,313 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:27,331 	 INFO 	 ||Codeword: 010110101111
+2025-04-18 10:45:27,331 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,335 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:27,335 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:27,352 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:27,353 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,355 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:27,355 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:27,372 	 INFO 	 ||Codeword: 111101001000
+2025-04-18 10:45:27,373 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,376 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:27,376 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:27,392 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:27,393 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,395 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:27,396 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:27,413 	 INFO 	 ||Codeword: 111001100110
+2025-04-18 10:45:27,413 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,416 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:27,416 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:27,433 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:27,433 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,436 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:27,436 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:27,454 	 INFO 	 ||Codeword: 000110100111
+2025-04-18 10:45:27,454 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,456 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:27,456 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:27,497 	 INFO 	 ||Codeword: 000010000101
+2025-04-18 10:45:27,497 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,500 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:27,500 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:27,519 	 INFO 	 ||Codeword: 000111111111
+2025-04-18 10:45:27,520 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,523 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:27,523 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:27,540 	 INFO 	 ||Codeword: 111111001000
+2025-04-18 10:45:27,540 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,543 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:27,544 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:27,562 	 INFO 	 ||Codeword: 0011111101
+2025-04-18 10:45:27,563 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,566 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:27,566 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:27,583 	 INFO 	 ||Codeword: 100010110000
+2025-04-18 10:45:27,584 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,586 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:27,587 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:27,603 	 INFO 	 ||Codeword: 000011101110
+2025-04-18 10:45:27,603 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,606 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:27,606 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:27,624 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:27,624 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,627 	 INFO 	 Key 10, Colour G, Column 28
+2025-04-18 10:45:27,714 	 INFO 	 |Reading key 10, column 28
+2025-04-18 10:45:27,714 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:27,714 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:27,736 	 INFO 	 ||Codeword: 0111101010
+2025-04-18 10:45:27,736 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,741 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:27,741 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:27,764 	 INFO 	 ||Codeword: 0110010101
+2025-04-18 10:45:27,765 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,767 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:27,768 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:27,799 	 INFO 	 ||Codeword: 011000100101
+2025-04-18 10:45:27,799 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,802 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:27,802 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:27,826 	 INFO 	 ||Codeword: 1110111111
+2025-04-18 10:45:27,828 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,831 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:27,832 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:27,853 	 INFO 	 ||Codeword: 000111100100
+2025-04-18 10:45:27,853 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,857 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:27,857 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:27,877 	 INFO 	 ||Codeword: 101011111011
+2025-04-18 10:45:27,877 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,881 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:27,881 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:27,901 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:27,902 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,905 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:27,905 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:27,925 	 INFO 	 ||Codeword: 101001001111
+2025-04-18 10:45:27,925 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,929 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:27,929 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:27,949 	 INFO 	 ||Codeword: 001111111111
+2025-04-18 10:45:27,949 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,952 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:27,952 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:27,973 	 INFO 	 ||Codeword: 111011100111
+2025-04-18 10:45:27,973 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,976 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:27,976 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:27,996 	 INFO 	 ||Codeword: 001101100101
+2025-04-18 10:45:27,997 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:27,998 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:27,999 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:28,018 	 INFO 	 ||Codeword: 000011101111
+2025-04-18 10:45:28,018 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,022 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:28,022 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:28,044 	 INFO 	 ||Codeword: 000010000101
+2025-04-18 10:45:28,044 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,047 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:28,047 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:28,070 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:28,070 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,076 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:28,076 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:28,095 	 INFO 	 ||Codeword: 111111101000
+2025-04-18 10:45:28,095 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,099 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:28,099 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:28,118 	 INFO 	 ||Codeword: 0111100110
+2025-04-18 10:45:28,119 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,121 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:28,122 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:28,140 	 INFO 	 ||Codeword: 111101001000
+2025-04-18 10:45:28,141 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,144 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:28,144 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:28,164 	 INFO 	 ||Codeword: 011111110011
+2025-04-18 10:45:28,164 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,167 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:28,167 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:28,187 	 INFO 	 ||Codeword: 111001011011
+2025-04-18 10:45:28,188 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,190 	 INFO 	 Key 11, Colour B, Column 32
+2025-04-18 10:45:28,286 	 INFO 	 |Reading key 11, column 32
+2025-04-18 10:45:28,286 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:28,286 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:28,309 	 INFO 	 ||Codeword: 0111101010
+2025-04-18 10:45:28,310 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,313 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:28,313 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:28,332 	 INFO 	 ||Codeword: 0110011110
+2025-04-18 10:45:28,332 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,335 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:28,335 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:28,361 	 INFO 	 ||Codeword: 100111011011
+2025-04-18 10:45:28,361 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,364 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:28,364 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:28,384 	 INFO 	 ||Codeword: 0110110011
+2025-04-18 10:45:28,384 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,387 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:28,387 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:28,407 	 INFO 	 ||Codeword: 100011000011
+2025-04-18 10:45:28,408 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,410 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:28,410 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:28,432 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:28,433 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,436 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:28,436 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:28,455 	 INFO 	 ||Codeword: 111110111011
+2025-04-18 10:45:28,455 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,458 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:28,458 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:28,479 	 INFO 	 ||Codeword: 101110111111
+2025-04-18 10:45:28,480 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,483 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:28,483 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:28,503 	 INFO 	 ||Codeword: 001110010011
+2025-04-18 10:45:28,503 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,507 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:28,507 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:28,527 	 INFO 	 ||Codeword: 100011100111
+2025-04-18 10:45:28,527 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,530 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:28,530 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:28,549 	 INFO 	 ||Codeword: 011010111010
+2025-04-18 10:45:28,550 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,553 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:28,553 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:28,573 	 INFO 	 ||Codeword: 011011110111
+2025-04-18 10:45:28,574 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,578 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:28,578 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:28,611 	 INFO 	 ||Codeword: 000010001110
+2025-04-18 10:45:28,611 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,614 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:28,615 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:28,637 	 INFO 	 ||Codeword: 000011101111
+2025-04-18 10:45:28,637 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,640 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:28,640 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:28,664 	 INFO 	 ||Codeword: 011001111111
+2025-04-18 10:45:28,664 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,668 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:28,668 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:28,699 	 INFO 	 ||Codeword: 0111110111
+2025-04-18 10:45:28,699 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,702 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:28,702 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:28,737 	 INFO 	 ||Codeword: 011000110111
+2025-04-18 10:45:28,737 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,739 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:28,740 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:28,762 	 INFO 	 ||Codeword: 011111101111
+2025-04-18 10:45:28,762 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,766 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:28,766 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:28,787 	 INFO 	 ||Codeword: 111001100110
+2025-04-18 10:45:28,787 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,789 	 INFO 	 Key 12, Colour R, Column 33
+2025-04-18 10:45:28,880 	 INFO 	 |Reading key 12, column 33
+2025-04-18 10:45:28,881 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:28,881 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:28,900 	 INFO 	 ||Codeword: 1111001010
+2025-04-18 10:45:28,901 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,904 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:28,904 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:28,932 	 INFO 	 ||Codeword: 1110111011
+2025-04-18 10:45:28,933 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,936 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:28,936 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:28,952 	 INFO 	 ||Codeword: 000110101110
+2025-04-18 10:45:28,954 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,957 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:28,957 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:28,974 	 INFO 	 ||Codeword: 0111101101
+2025-04-18 10:45:28,975 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,977 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:28,977 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:28,997 	 INFO 	 ||Codeword: 101100011111
+2025-04-18 10:45:28,997 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:28,999 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:28,999 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:29,017 	 INFO 	 ||Codeword: 011101101111
+2025-04-18 10:45:29,017 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,020 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:29,020 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:29,039 	 INFO 	 ||Codeword: 100111011011
+2025-04-18 10:45:29,039 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,043 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:29,043 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:29,061 	 INFO 	 ||Codeword: 111101001000
+2025-04-18 10:45:29,061 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,065 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:29,065 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:29,082 	 INFO 	 ||Codeword: 011001011111
+2025-04-18 10:45:29,082 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,085 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:29,086 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:29,104 	 INFO 	 ||Codeword: 011111100110
+2025-04-18 10:45:29,104 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,107 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:29,107 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:29,125 	 INFO 	 ||Codeword: 111010111010
+2025-04-18 10:45:29,126 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,128 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:29,128 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:29,148 	 INFO 	 ||Codeword: 001001101000
+2025-04-18 10:45:29,148 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,151 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:29,151 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:29,169 	 INFO 	 ||Codeword: 010010001010
+2025-04-18 10:45:29,169 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,172 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:29,172 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:29,188 	 INFO 	 ||Codeword: 111101000011
+2025-04-18 10:45:29,189 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,192 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:29,192 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:29,212 	 INFO 	 ||Codeword: 000110100111
+2025-04-18 10:45:29,213 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,216 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:29,216 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:29,233 	 INFO 	 ||Codeword: 0001101111
+2025-04-18 10:45:29,233 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,237 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:29,237 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:29,254 	 INFO 	 ||Codeword: 110001001111
+2025-04-18 10:45:29,255 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,257 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:29,257 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:29,274 	 INFO 	 ||Codeword: 000110100101
+2025-04-18 10:45:29,274 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,277 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:29,277 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:29,293 	 INFO 	 ||Codeword: 000101100101
+2025-04-18 10:45:29,294 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,297 	 INFO 	 Key 13, Colour G, Column 37
+2025-04-18 10:45:29,378 	 INFO 	 |Reading key 13, column 37
+2025-04-18 10:45:29,378 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:29,378 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:29,395 	 INFO 	 ||Codeword: 1111101010
+2025-04-18 10:45:29,395 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,398 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:29,398 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:29,425 	 INFO 	 ||Codeword: 0111110111
+2025-04-18 10:45:29,426 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,433 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:29,433 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:29,452 	 INFO 	 ||Codeword: 101011111011
+2025-04-18 10:45:29,454 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,456 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:29,456 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:29,473 	 INFO 	 ||Codeword: 0001100101
+2025-04-18 10:45:29,473 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,476 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:29,476 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:29,493 	 INFO 	 ||Codeword: 001000000000
+2025-04-18 10:45:29,493 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,496 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:29,496 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:29,512 	 INFO 	 ||Codeword: 000111111101
+2025-04-18 10:45:29,513 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,516 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:29,516 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:29,533 	 INFO 	 ||Codeword: 100111011011
+2025-04-18 10:45:29,533 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,536 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:29,536 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:29,553 	 INFO 	 ||Codeword: 111101001000
+2025-04-18 10:45:29,553 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,556 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:29,556 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:29,573 	 INFO 	 ||Codeword: 010110010011
+2025-04-18 10:45:29,574 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,576 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:29,576 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:29,597 	 INFO 	 ||Codeword: 111101000010
+2025-04-18 10:45:29,597 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,599 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:29,600 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:29,616 	 INFO 	 ||Codeword: 001110100111
+2025-04-18 10:45:29,616 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,619 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:29,619 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:29,637 	 INFO 	 ||Codeword: 111001011001
+2025-04-18 10:45:29,637 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,640 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:29,640 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:29,656 	 INFO 	 ||Codeword: 011101111111
+2025-04-18 10:45:29,657 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,660 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:29,661 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:29,676 	 INFO 	 ||Codeword: 111100001011
+2025-04-18 10:45:29,676 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,680 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:29,680 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:29,698 	 INFO 	 ||Codeword: 010110101111
+2025-04-18 10:45:29,698 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,701 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:29,701 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:29,718 	 INFO 	 ||Codeword: 0111001010
+2025-04-18 10:45:29,718 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,721 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:29,721 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:29,739 	 INFO 	 ||Codeword: 101101111111
+2025-04-18 10:45:29,739 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,743 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:29,743 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:29,760 	 INFO 	 ||Codeword: 000100010000
+2025-04-18 10:45:29,760 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,763 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:29,763 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:29,780 	 INFO 	 ||Codeword: 111010100110
+2025-04-18 10:45:29,781 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,783 	 INFO 	 Key 14, Colour B, Column 41
+2025-04-18 10:45:29,857 	 INFO 	 |Reading key 14, column 41
+2025-04-18 10:45:29,857 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:29,857 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:29,875 	 INFO 	 ||Codeword: 1111101010
+2025-04-18 10:45:29,876 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,879 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:29,879 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:29,898 	 INFO 	 ||Codeword: 0111111010
+2025-04-18 10:45:29,898 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,901 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:29,901 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:29,917 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:29,917 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,919 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:29,919 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:29,937 	 INFO 	 ||Codeword: 1100100010
+2025-04-18 10:45:29,937 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,940 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:29,941 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:29,957 	 INFO 	 ||Codeword: 111011100111
+2025-04-18 10:45:29,957 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,959 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:29,960 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:29,974 	 INFO 	 ||Codeword: 111001100101
+2025-04-18 10:45:29,974 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,976 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:29,976 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:29,994 	 INFO 	 ||Codeword: 000111111110
+2025-04-18 10:45:29,994 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:29,996 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:29,996 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:30,011 	 INFO 	 ||Codeword: 111101001000
+2025-04-18 10:45:30,012 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,014 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:30,014 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:30,032 	 INFO 	 ||Codeword: 000011110011
+2025-04-18 10:45:30,032 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,035 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:30,035 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:30,050 	 INFO 	 ||Codeword: 111011100111
+2025-04-18 10:45:30,050 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,052 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:30,052 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:30,068 	 INFO 	 ||Codeword: 010111011111
+2025-04-18 10:45:30,068 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,071 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:30,071 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:30,086 	 INFO 	 ||Codeword: 000110100111
+2025-04-18 10:45:30,086 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,088 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:30,089 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:30,103 	 INFO 	 ||Codeword: 011111100111
+2025-04-18 10:45:30,103 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,106 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:30,106 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:30,121 	 INFO 	 ||Codeword: 011000100100
+2025-04-18 10:45:30,122 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,124 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:30,124 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:30,141 	 INFO 	 ||Codeword: 111001111111
+2025-04-18 10:45:30,141 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,144 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:30,144 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:30,160 	 INFO 	 ||Codeword: 0111011101
+2025-04-18 10:45:30,160 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,162 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:30,162 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:30,178 	 INFO 	 ||Codeword: 111011111111
+2025-04-18 10:45:30,179 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,181 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:30,181 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:30,197 	 INFO 	 ||Codeword: 010110001110
+2025-04-18 10:45:30,197 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,200 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:30,200 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:30,215 	 INFO 	 ||Codeword: 111101001010
+2025-04-18 10:45:30,215 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,217 	 INFO 	 Key 15, Colour R, Column 42
+2025-04-18 10:45:30,284 	 INFO 	 |Reading key 15, column 42
+2025-04-18 10:45:30,284 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:30,285 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:30,302 	 INFO 	 ||Codeword: 1111101010
+2025-04-18 10:45:30,302 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,305 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:30,305 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:30,333 	 INFO 	 ||Codeword: 0111101101
+2025-04-18 10:45:30,333 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,335 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:30,335 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:30,353 	 INFO 	 ||Codeword: 110110110111
+2025-04-18 10:45:30,353 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,356 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:30,356 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:30,371 	 INFO 	 ||Codeword: 1110011111
+2025-04-18 10:45:30,371 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,373 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:30,373 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:30,388 	 INFO 	 ||Codeword: 001111000111
+2025-04-18 10:45:30,388 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,391 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:30,391 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:30,406 	 INFO 	 ||Codeword: 000100110010
+2025-04-18 10:45:30,406 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,409 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:30,409 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:30,425 	 INFO 	 ||Codeword: 111111111110
+2025-04-18 10:45:30,425 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,427 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:30,427 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:30,442 	 INFO 	 ||Codeword: 111001000111
+2025-04-18 10:45:30,443 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,445 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:30,445 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:30,463 	 INFO 	 ||Codeword: 011011110111
+2025-04-18 10:45:30,463 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,466 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:30,466 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:30,481 	 INFO 	 ||Codeword: 100111100111
+2025-04-18 10:45:30,482 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,484 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:30,484 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:30,500 	 INFO 	 ||Codeword: 011111100110
+2025-04-18 10:45:30,501 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,503 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:30,503 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:30,519 	 INFO 	 ||Codeword: 111110111001
+2025-04-18 10:45:30,520 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,522 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:30,522 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:30,539 	 INFO 	 ||Codeword: 011111101111
+2025-04-18 10:45:30,539 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,542 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:30,542 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:30,558 	 INFO 	 ||Codeword: 000100001011
+2025-04-18 10:45:30,558 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,560 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:30,561 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:30,577 	 INFO 	 ||Codeword: 001001111111
+2025-04-18 10:45:30,577 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,579 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:30,580 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:30,596 	 INFO 	 ||Codeword: 1011011110
+2025-04-18 10:45:30,596 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,598 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:30,598 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:30,616 	 INFO 	 ||Codeword: 101010111110
+2025-04-18 10:45:30,616 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,618 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:30,618 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:30,634 	 INFO 	 ||Codeword: 000110000001
+2025-04-18 10:45:30,635 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,636 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:30,636 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:30,655 	 INFO 	 ||Codeword: 000101100101
+2025-04-18 10:45:30,656 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,658 	 INFO 	 Key 16, Colour G, Column 46
+2025-04-18 10:45:30,737 	 INFO 	 |Reading key 16, column 46
+2025-04-18 10:45:30,737 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:30,737 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:30,757 	 INFO 	 ||Codeword: 0111101010
+2025-04-18 10:45:30,758 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,763 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:30,763 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:30,783 	 INFO 	 ||Codeword: 1110010111
+2025-04-18 10:45:30,790 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,795 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:30,795 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:30,814 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:30,815 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,817 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:30,817 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:30,834 	 INFO 	 ||Codeword: 0001111101
+2025-04-18 10:45:30,835 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,838 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:30,838 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:30,856 	 INFO 	 ||Codeword: 011111111100
+2025-04-18 10:45:30,856 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,859 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:30,859 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:30,878 	 INFO 	 ||Codeword: 111011101111
+2025-04-18 10:45:30,878 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,881 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:30,882 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:30,898 	 INFO 	 ||Codeword: 001101111011
+2025-04-18 10:45:30,898 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,901 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:30,901 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:30,919 	 INFO 	 ||Codeword: 100011001000
+2025-04-18 10:45:30,920 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,922 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:30,922 	 INFO 	 ||Start: 594, End: 646
+2025-04-18 10:45:30,938 	 INFO 	 ||Codeword: 011110000001
+2025-04-18 10:45:30,938 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,941 	 INFO 	 ||Reading signal 10, between rows (648, 697)
+2025-04-18 10:45:30,941 	 INFO 	 ||Start: 648, End: 697
+2025-04-18 10:45:30,960 	 INFO 	 ||Codeword: 100100000101
+2025-04-18 10:45:30,960 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,963 	 INFO 	 ||Reading signal 11, between rows (701, 750)
+2025-04-18 10:45:30,963 	 INFO 	 ||Start: 701, End: 750
+2025-04-18 10:45:30,980 	 INFO 	 ||Codeword: 011001011101
+2025-04-18 10:45:30,980 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:30,983 	 INFO 	 ||Reading signal 12, between rows (755, 803)
+2025-04-18 10:45:30,983 	 INFO 	 ||Start: 755, End: 803
+2025-04-18 10:45:31,000 	 INFO 	 ||Codeword: 000010101000
+2025-04-18 10:45:31,001 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,004 	 INFO 	 ||Reading signal 13, between rows (805, 857)
+2025-04-18 10:45:31,004 	 INFO 	 ||Start: 805, End: 857
+2025-04-18 10:45:31,023 	 INFO 	 ||Codeword: 011111100010
+2025-04-18 10:45:31,023 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,026 	 INFO 	 ||Reading signal 14, between rows (859, 908)
+2025-04-18 10:45:31,026 	 INFO 	 ||Start: 859, End: 908
+2025-04-18 10:45:31,061 	 INFO 	 ||Codeword: 111100110011
+2025-04-18 10:45:31,061 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,064 	 INFO 	 ||Reading signal 15, between rows (912, 961)
+2025-04-18 10:45:31,064 	 INFO 	 ||Start: 912, End: 961
+2025-04-18 10:45:31,084 	 INFO 	 ||Codeword: 111000110110
+2025-04-18 10:45:31,085 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,087 	 INFO 	 ||Reading signal 16, between rows (966, 1014)
+2025-04-18 10:45:31,087 	 INFO 	 ||Start: 966, End: 1014
+2025-04-18 10:45:31,108 	 INFO 	 ||Codeword: 0011100101
+2025-04-18 10:45:31,109 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,111 	 INFO 	 ||Reading signal 17, between rows (1019, 1067)
+2025-04-18 10:45:31,112 	 INFO 	 ||Start: 1019, End: 1067
+2025-04-18 10:45:31,134 	 INFO 	 ||Codeword: 111011111111
+2025-04-18 10:45:31,134 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,136 	 INFO 	 ||Reading signal 18, between rows (1069, 1121)
+2025-04-18 10:45:31,136 	 INFO 	 ||Start: 1069, End: 1121
+2025-04-18 10:45:31,161 	 INFO 	 ||Codeword: 010011111111
+2025-04-18 10:45:31,162 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,164 	 INFO 	 ||Reading signal 19, between rows (1123, 1172)
+2025-04-18 10:45:31,164 	 INFO 	 ||Start: 1123, End: 1172
+2025-04-18 10:45:31,185 	 INFO 	 ||Codeword: 011010100000
+2025-04-18 10:45:31,186 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,188 	 INFO 	 Key 17, Colour B, Column 50
+2025-04-18 10:45:31,276 	 INFO 	 |Reading key 17, column 50
+2025-04-18 10:45:31,277 	 INFO 	 ||Reading signal 1, between rows (170, 222)
+2025-04-18 10:45:31,277 	 INFO 	 ||Start: 170, End: 222
+2025-04-18 10:45:31,295 	 INFO 	 ||Codeword: 0111101010
+2025-04-18 10:45:31,295 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,298 	 INFO 	 ||Reading signal 2, between rows (226, 275)
+2025-04-18 10:45:31,298 	 INFO 	 ||Start: 226, End: 275
+2025-04-18 10:45:31,317 	 INFO 	 ||Codeword: 0001101111
+2025-04-18 10:45:31,317 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,320 	 INFO 	 ||Reading signal 3, between rows (280, 328)
+2025-04-18 10:45:31,320 	 INFO 	 ||Start: 280, End: 328
+2025-04-18 10:45:31,337 	 INFO 	 ||Codeword: 011110111101
+2025-04-18 10:45:31,337 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,340 	 INFO 	 ||Reading signal 4, between rows (331, 382)
+2025-04-18 10:45:31,340 	 INFO 	 ||Start: 331, End: 382
+2025-04-18 10:45:31,358 	 INFO 	 ||Codeword: 0000111111
+2025-04-18 10:45:31,358 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,361 	 INFO 	 ||Reading signal 5, between rows (384, 433)
+2025-04-18 10:45:31,361 	 INFO 	 ||Start: 384, End: 433
+2025-04-18 10:45:31,379 	 INFO 	 ||Codeword: 011000011100
+2025-04-18 10:45:31,380 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,383 	 INFO 	 ||Reading signal 6, between rows (437, 486)
+2025-04-18 10:45:31,383 	 INFO 	 ||Start: 437, End: 486
+2025-04-18 10:45:31,400 	 INFO 	 ||Codeword: 011011110111
+2025-04-18 10:45:31,401 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,403 	 INFO 	 ||Reading signal 7, between rows (490, 539)
+2025-04-18 10:45:31,403 	 INFO 	 ||Start: 490, End: 539
+2025-04-18 10:45:31,424 	 INFO 	 ||Codeword: 111110111011
+2025-04-18 10:45:31,424 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,427 	 INFO 	 ||Reading signal 8, between rows (544, 592)
+2025-04-18 10:45:31,427 	 INFO 	 ||Start: 544, End: 592
+2025-04-18 10:45:31,445 	 INFO 	 ||Codeword: 111001001001
+2025-04-18 10:45:31,445 	 INFO 	 ||Character: Error: Input must be a 7-bit binary string.
+2025-04-18 10:45:31,448 	 INFO 	 ||Reading signal 9, between rows (594, 646)
+2025-04-18 10:45:31,448 	 INFO 	 ||Start: 594, End: 646

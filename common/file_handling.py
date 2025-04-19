@@ -66,7 +66,7 @@ def append_to_txt(txt_path, row_number, *args):
 
     Parameters:
     - txt_path (str): Path to the text file.
-    - row_number (int): The 1-based row number to append the data to.
+    - row_number (int): The 1-indexed row number to append the data to.
     - *args: Data to be concatenated and appended to the specified row.
     """
     try:

@@ -92,12 +92,12 @@ if __name__ == '__main__':
     key_ids_path = 'files/spreadsheets/s1_key_IDs.csv'
     image_path = 'files/images/dog.png' 
 
-    ## Define transmission parameters ##
+    ## Define transmission parameters ##+
     pause_time = 1
     frequency = 10
     framerate = 60
     idle_bits = 1
-    HAMMING_ENCODE = False
+    HAMMING_ENCODE = True
 
     ## Process image ##
     p1_image_path = process_image(image_path)
@@ -106,5 +106,5 @@ if __name__ == '__main__':
     key_IDs = fh.csv_to_list(key_ids_path)
 
     #### MAIN FUNCTION ####
-    for frequency in [20]:
-        transmit_image_using_ASK(key_IDs, p1_image_path, frequency, HAMMING_ENCODE)
+    
+    transmit_image_using_ASK(key_IDs, p1_image_path, frequency, HAMMING_ENCODE)

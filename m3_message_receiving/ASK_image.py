@@ -14,7 +14,7 @@ import os
 import time
 
 ## Boolean flag: Choose whether to use Hamming decoding
-HAMMING_DECODE = False
+HAMMING_DECODE = True
 
 ## Expected Image Dimensions and Chunk Parameters ##
 EXPECTED_WIDTH = 128   # in pixels
