@@ -3,10 +3,10 @@ set_directory()
 
 from common.file_handling import append_to_txt
 from common.reset import reset
-from m3_message_receiving.edge_detection import detect_edges_with_orig_index
+from m4_demodulation_and_decoding.edge_detection import detect_edges_with_orig_index
 from common.hamming_code import hamming_decode
 from common.ASCII import binary_to_ascii
-from m3_message_receiving.ASK_synchronous.determine_states import determine_states
+from m4_demodulation_and_decoding.ASK_synchronous.determine_states import determine_states
 
 # Packages
 import logging
@@ -24,7 +24,7 @@ output_text_path = 'files/t2_received_text.txt'
 # Configure the logger to write to a file, e.g., 'app.log'
 logging.basicConfig(
     filename=log_file_path,        # log file name
-    filemode='w',              # append mode; use 'w' to overwrite each time
+    filemode='w',
     format='%(asctime)s \t %(levelname)s \t %(message)s',
     level=logging.INFO         # logging level; adjust as needed
 )

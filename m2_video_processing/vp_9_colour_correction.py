@@ -2,6 +2,25 @@ import pandas as pd
 import numpy as np
 import pandas as pd
 
+def inverse_gamma_csv(input_csv, output_csv, gamma=2.2):
+    """
+    Reads an RGB CSV (no header, columns assumed to be in [0,255]), applies a
+    power-law inverse gamma to each value, and writes the result (rounded to
+    integers in [0,255]) to output_csv.
+    """
+    # Load data
+    df = pd.read_csv(input_csv, header=None)
+
+    # Apply inverse gamma per column
+    for col in df.columns:
+        # normalize to [0,1], apply power-law, rescale to [0,255]
+        lin = ((df[col] / 255.0) ** gamma) * 255.0
+        # clip, round, and convert to integer
+        df[col] = lin.clip(0, 255).round().astype(int)
+
+    # Save result
+    df.to_csv(output_csv, header=False, index=False)
+
 def normalise_rgb(rgb_averages_csv, normalised_rgb_averages_csv):
     """
     Reads an RGB averages CSV (assumed to have no header) and normalises each column
@@ -17,25 +36,3 @@ def normalise_rgb(rgb_averages_csv, normalised_rgb_averages_csv):
     
     df.to_csv(normalised_rgb_averages_csv, header=False, index=False)
 
-def predict_rgb_values(rgb_csv_path, predicted_rgb_values_csv_path, model):
-    """
-    Uses a regression model to produce predicted rgb values from the input rgb csv.
-    Predicted values below 0 are set to 0 and values above 255 are set to 255.
-    """
-    df = pd.read_csv(rgb_csv_path, header=None)
-    df_input = pd.DataFrame()
-    df_input['R'] = df.iloc[:, 0]
-    df_input['G'] = df.iloc[:, 1]
-    df_input['B'] = df.iloc[:, 2]
-
-    X = df_input[['R', 'G', 'B']].values
-    predictions = model.predict(X)
-    
-    # Clip predictions to the range 0 to 255 and convert to integers.
-    predictions = np.clip(predictions, 0, 255).round().astype(int)
-    
-    df_pred = pd.DataFrame(predictions, columns=['R', 'G', 'B'])
-    df_pred.to_csv(predicted_rgb_values_csv_path, index=False, header=False)
-
-if __name__ == "__main__":
-    normalise_rgb("files\spreadsheets\s4_rgb_averages.csv", "files\spreadsheets\s5_rgb_normalised.csv")

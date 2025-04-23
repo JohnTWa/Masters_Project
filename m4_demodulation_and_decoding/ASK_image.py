@@ -2,9 +2,9 @@ from _SETUP_ import set_directory
 set_directory()
 
 from common.reset import reset
-from m3_message_receiving.edge_detection import detect_edges_with_orig_index
+from m4_demodulation_and_decoding.edge_detection import detect_edges_with_orig_index
 from common.hamming_code import hamming_decode
-from m3_message_receiving.ASK_synchronous.determine_states import determine_states
+from m4_demodulation_and_decoding.ASK_synchronous.determine_states import determine_states
 import common.binary_image as bin_img
 import common.image_displaying as img_disp
 

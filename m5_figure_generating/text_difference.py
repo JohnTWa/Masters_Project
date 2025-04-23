@@ -124,6 +124,36 @@ def generate_docx_diff(file1_path, file2_path, output_docx_path):
     # Save the DOCX document.
     document.save(output_docx_path)
 
+def calculate_levenshtein_distance(text1, text2):
+    """
+    Calculates the Levenshtein distance between two strings,
+    i.e. the minimum number of single-character edits (insertions,
+    deletions or substitutions) required to change text1 into text2.
+    
+    Returns:
+      int: The Levenshtein distance.
+    """
+    # Ensure text1 is the longer string to minimize space usage.
+    if len(text1) < len(text2):
+        text1, text2 = text2, text1
+
+    # previous_row[j] is the distance between text1[:i] and text2[:j] at the previous iteration of i
+    previous_row = list(range(len(text2) + 1))
+
+    for i, c1 in enumerate(text1, start=1):
+        current_row = [i]  # distance from text1[:i] to empty text2 is i deletions
+        for j, c2 in enumerate(text2, start=1):
+            insert_cost = current_row[j-1] + 1
+            delete_cost = previous_row[j] + 1
+            replace_cost = previous_row[j-1] + (c1 != c2)
+            current_row.append(min(insert_cost, delete_cost, replace_cost))
+        previous_row = current_row
+
+    return previous_row[-1]
+
 if __name__ == '__main__':
     generate_html_diff('files/text_files/t1_transmission_text.txt', 'files/text_files/t2_received_text.txt', 'files/text_files/t3_text_diff.html')
     generate_docx_diff('files/text_files/t1_transmission_text.txt', 'files/text_files/t2_received_text.txt', 'files/text_files/t3_text_diff.docx')
+    Levenshtein = calculate_levenshtein_distance('files/text_files/t1_transmission_text.txt', 'files/text_files/t2_received_text.txt')
+
+    print(f"Levenshtein distance: {Levenshtein}")

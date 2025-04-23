@@ -3,12 +3,12 @@ set_directory()
 
 from common.file_handling import append_to_txt, write_to_csv_new_row
 from common.reset import reset
-from m3_message_receiving.edge_detection import detect_edges_with_orig_index
+from m4_demodulation_and_decoding.edge_detection import detect_edges_with_orig_index
 from common.hamming_code import hamming_decode
 from common.ASCII import binary_to_ascii
-from m3_message_receiving.ASK_synchronous.determine_states import determine_states
-from m3_message_receiving.ASK_asynchronous.pause_location import determine_pause_bounds
-import m4_figure_generating.BER_vs_f as BER_vs_f
+from m4_demodulation_and_decoding.ASK_synchronous.determine_states import determine_states
+from m4_demodulation_and_decoding.ASK_asynchronous.pause_location import determine_pause_bounds
+import m5_figure_generating.BER_vs_f as BER_vs_f
 
 # Packages
 import logging
