@@ -59,7 +59,7 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 # reset(warped_frames_folder)
 # reset('files/keyboard_vectors/coloured_keyboards', rgb_csv_path)
 
-# # ## Run the Process for Initial Frame
+# ## Run the Process for Initial Frame
 
 # video_frame_splitting(video_path, frames_folder)
 # point_selection(input_image_path, corners_csv_path)
@@ -76,12 +76,12 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 # produce_overlaid_image(None, warped_image_path, LED_mask_overlaid_path, LED_mask_image_path)
 # display_image(LED_mask_overlaid_path)
 
-## Repeat for all frames 
+# # Repeat for all frames 
 
 # frame_number = 0
 # while os.path.exists(input_image_path):
 
-#     image_warping(input_image_path, corners_csv_path, warped_image_path)
+#     image_warping(input_image_path, corners_csv_path, warped_image_path, inverse_gamma=True)
 #     LED_colour_averaging(warped_image_path, coordinates_csv_path, LED_mask_numpy_path, rgb_csv_path)
 
 #     frame_number += 1
@@ -90,6 +90,6 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 #     warped_image_path = f'files/warped_frames/warped_frame_{frame_number}.png'
 
 # frame_timestamping(video_path, first_frame, first_frame_timestamp, timestamps_csv_path)
-inverse_gamma_csv(rgb_csv_path, rgb_csv_path)
+# inverse_gamma_csv(rgb_csv_path, rgb_csv_path)
 normalise_rgb(rgb_csv_path, normalised_rgb_csv_path)
 # predict_rgb_values(rgb_csv_path, corrected_rgb_csv_path, model=joblib.load(model_filepath))

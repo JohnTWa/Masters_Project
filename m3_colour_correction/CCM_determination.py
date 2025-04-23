@@ -1,11 +1,13 @@
 import numpy as np
 import pandas as pd
+import joblib
 from _SETUP_ import set_directory
 set_directory()
 from common.reset import reset
-from m4_demodulation_and_decoding.edge_detection import detect_edges_with_orig_index
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
-
+from m4_demodulation_and_decoding.edge_detection import detect_edges_with_orig_index
 
 def load_target_data(path, delimiter=','):
     # Load CSV where each row is R,G,B,R,G,B,...
@@ -111,95 +113,121 @@ def train_test_split(raw, target, test_size=0.2, random_state=19450716112921):
     )
 
 def compute_color_correction_matrix(raw, target):
-    # Solve raw @ X = target in the least-squares sense, then transpose
     X, *_ = np.linalg.lstsq(raw, target, rcond=None)
     return X.T
 
-def main(raw_csv, CLK_csv, target_csv, ccm_npy, metrics_csv, data_npz,
+def main(raw_csv, CLK_csv, target_csv,
+         ccm_npy, ols_joblib, rf_joblib,
+         metrics_csv, data_npz,
          test_size=0.2, random_state=19450716112921):
-    # 1) Find CLK edges and sample accordingly
+    # 1) Edge sampling
     reset(CLK_csv)
     CLK = detect_edges_with_orig_index(raw_csv, 0, CLK_csv, threshold_fraction=0.2)
 
-    # 2) load
+    # 2) Load & align
     raw_samples    = load_raw_data(raw_csv, CLK)
     target_samples = load_target_data(target_csv)
-
-    # 3) check & align lengths
-    n_raw = raw_samples.shape[0]
-    n_tgt = target_samples.shape[0]
+    n_raw, n_tgt = raw_samples.shape[0], target_samples.shape[0]
     if n_raw != n_tgt:
         n_keep = min(n_raw, n_tgt)
-        print(f"WARNING: sample-count mismatch (raw={n_raw}, target={n_tgt}); "
-              f"truncating both to {n_keep} samples")
+        print(f"WARNING: truncating to {n_keep} samples (raw={n_raw}, tgt={n_tgt})")
         raw_samples    = raw_samples[-n_keep:]
         target_samples = target_samples[-n_keep:]
-        print(f"First raw sample: {raw_samples[0]} and target: {target_samples[0]}")
 
-    # 4) train/test split
-    raw_train, raw_test, tgt_train, tgt_test = train_test_split(
+    # 3) Split
+    raw_tr, raw_te, tgt_tr, tgt_te = train_test_split(
         raw_samples, target_samples,
         test_size=test_size, random_state=random_state
     )
 
-    # — baseline (no CCM) performance —
-    rmse_raw_train = np.sqrt(np.mean((raw_train - tgt_train)**2))
-    rmse_raw_test  = np.sqrt(np.mean((raw_test  - tgt_test )**2))
-    r2_raw_train   = r2_score(tgt_train, raw_train, multioutput='uniform_average')
-    r2_raw_test    = r2_score(tgt_test,  raw_test,  multioutput='uniform_average')
+    # 4) Train models
+    models = {}
 
-    # 5) train CCM
-    M = compute_color_correction_matrix(raw_train, tgt_train)
-    np.save(ccm_npy, M)
-    print(f"\nSaved colour correction matrix to '{ccm_npy}'")
+    # 4a) CCM
+    M = compute_color_correction_matrix(raw_tr, tgt_tr)
+    print("\n=== CCM parameters (3×3 matrix) ===")
+    print(M)
+    models['CCM'] = ('ccm', M)
 
-    # — CCM performance on train set —
-    pred_train = raw_train @ M.T
-    # clip predictions to [0,255]
-    pred_train = np.clip(pred_train, 0, 255)
+    # 4b) OLS
+    ols = LinearRegression(fit_intercept=True)
+    ols.fit(raw_tr, tgt_tr)
+    print("\n=== OLS parameters ===")
+    print("Coefficients (shape [n_targets×n_features]):")
+    print(ols.coef_)
+    print("Intercepts (one per target channel):")
+    print(ols.intercept_)
+    models['OLS'] = ('ols', ols)
 
-    rmse_ccm_train = np.sqrt(np.mean((pred_train - tgt_train)**2))
-    r2_ccm_train   = r2_score(tgt_train, pred_train, multioutput='uniform_average')
+    # 4c) Random Forest
+    rf = RandomForestRegressor(
+        n_estimators=100,
+        random_state=int(random_state/100000),
+        n_jobs=-1
+    )
+    rf.fit(raw_tr, tgt_tr)
+    print("\n=== Random Forest parameters ===")
+    print("Feature importances (averaged over all trees and outputs):")
+    print(rf.feature_importances_)
+    models['RF'] = ('rf', rf)
 
-    # — CCM performance on test set —
-    pred_test = raw_test @ M.T
-    # clip predictions to [0,255]
-    pred_test = np.clip(pred_test, 0, 255)
+    # 5) Evaluate & save
+    records = []
+    for name, (key, mdl) in models.items():
+        # choose prediction function
+        if name == 'CCM':
+            def predict_fn(X, M=mdl):
+                return np.clip(X @ M.T, 0, 255)
+        else:
+            def predict_fn(X, model=mdl):
+                return np.clip(model.predict(X), 0, 255)
 
-    rmse_ccm_test = np.sqrt(np.mean((pred_test - tgt_test)**2))
-    r2_ccm_test   = r2_score(tgt_test, pred_test, multioutput='uniform_average')
+        # train metrics
+        p_tr = predict_fn(raw_tr)
+        rmse_tr = np.sqrt(np.mean((p_tr - tgt_tr)**2))
+        r2_tr   = r2_score(tgt_tr, p_tr, multioutput='uniform_average')
+        records.append({'model': name, 'stage': 'train', 'RMSE': rmse_tr, 'R2': r2_tr})
 
-    # 6) build summary table and save to CSV
-    summary = pd.DataFrame([
-        {'stage': 'raw-train', 'RMSE': rmse_raw_train, 'R2': r2_raw_train},
-        {'stage': 'raw-test',  'RMSE': rmse_raw_test,  'R2': r2_raw_test},
-        {'stage': 'ccm-train', 'RMSE': rmse_ccm_train, 'R2': r2_ccm_train},
-        {'stage': 'ccm-test',  'RMSE': rmse_ccm_test,  'R2': r2_ccm_test},
-    ])
-    summary.to_csv(metrics_csv, index=False)
-    print(summary)
-    print(f"Saved performance summary to '{metrics_csv}'")
+        # test metrics
+        p_te = predict_fn(raw_te)
+        rmse_te = np.sqrt(np.mean((p_te - tgt_te)**2))
+        r2_te   = r2_score(tgt_te, p_te, multioutput='uniform_average')
+        records.append({'model': name, 'stage': 'test', 'RMSE': rmse_te, 'R2': r2_te})
 
-    # 7) save full datasets and predictions for later viz
+        # save
+        if name == 'CCM':
+            np.save(ccm_npy, mdl)
+            print(f"Saved CCM → {ccm_npy}")
+        else:
+            path = ols_joblib if name=='OLS' else rf_joblib
+            joblib.dump(mdl, path)
+            print(f"Saved {name} → {path}")
+
+    # 6) Save metrics table
+    dfm = pd.DataFrame.from_records(records)
+    dfm.to_csv(metrics_csv, index=False)
+    print(f"\nSaved metrics:\n{dfm}\n→ {metrics_csv}")
+
+    # 7) Save data for viz
     np.savez_compressed(
         data_npz,
         raw_samples=raw_samples,
         target_samples=target_samples,
-        raw_train=raw_train,
-        tgt_train=tgt_train,
-        pred_train=pred_train,
-        raw_test=raw_test,
-        tgt_test=tgt_test,
-        pred_test=pred_test,
+        raw_train=raw_tr,  tgt_train=tgt_tr,  pred_train=p_tr,
+        raw_test= raw_te,  tgt_test= tgt_te,  pred_test= p_te,
     )
-    print(f"Saved raw/target/predicted arrays to '{data_npz}'")
+    print(f"Saved data for viz → {data_npz}")
 
 if __name__ == "__main__":
-    
-    raw_csv = 'files/spreadsheets/s5_rgb_normalised.csv'
-    target_csv = 'files/spreadsheets/target_data.csv'
-    CLK_csv = 'files/key_light_levels/light_levels_CLK.csv'
-    ccm_npy = 'files/models/CCM.npy'
-    metrics_csv = 'files/spreadsheets/metrics.csv'
-    data_npz = 'files/models/data.npz'
-    main(raw_csv, CLK_csv, target_csv, ccm_npy, metrics_csv, data_npz)
+    raw_csv        = 'files/spreadsheets/s5_rgb_normalised.csv'
+    target_csv     = 'files/spreadsheets/target_data.csv'
+    CLK_csv        = 'files/key_light_levels/light_levels_CLK.csv'
+    ccm_npy        = 'files/models/CCM.npy'
+    ols_joblib     = 'files/models/OLS.joblib'
+    rf_joblib      = 'files/models/RF.joblib'
+    metrics_csv    = 'files/spreadsheets/metrics_all_models.csv'
+    data_npz       = 'files/models/data_all_models.npz'
+
+    main(raw_csv, CLK_csv, target_csv,
+         ccm_npy, ols_joblib, rf_joblib,
+         metrics_csv, data_npz)
