@@ -6,7 +6,7 @@ import tkinter as tk
 import threading
 import time
 
-from m1_transmitting.FSK_main import FSK_main
+from m1_transmitting.FSK_text import FSK_main
 
 def notepad(text_file_path):
     # Ensure the directory for the file exists

@@ -480,18 +480,24 @@ def plot_colour_frame_comparison(frame_timestamps_and_colours_csv_path, rgb_csv_
 
 # For Synchronous Communication: ##
 
-signal_csv_path = 'files/key_light_levels/light_levels_CLK.csv'
-display_binary_reading_with_markers(signal_csv_path)
+# signal_csv_path = 'files/key_light_levels/light_levels_CLK.csv'
+# display_binary_reading_with_markers(signal_csv_path)
 
-signal_csv_path = 'files/key_light_levels/light_levels_SGL.csv'
-display_binary_reading_with_markers(signal_csv_path)
+# signal_csv_path = 'files/key_light_levels/light_levels_SGL.csv'
+# display_binary_reading_with_markers(signal_csv_path)
 
-key = 3
+key = 0
 
 while key <= 108:
     print(f'key{key}')
     signal_csv_path = f'files/key_light_levels/light_levels_key_{key}.csv'
-    display_binary_reading_with_markers(signal_csv_path)
+    # display_binary_reading_with_markers(signal_csv_path)
+    print('RED')
+    display_FSK_reading('files/spreadsheets/s5_rgb_normalised.csv', key*3)
+    print('GREEN')
+    display_FSK_reading('files/spreadsheets/s5_rgb_normalised.csv', key*3+1, 60)
+    print('BLUE')
+    display_FSK_reading('files/spreadsheets/s5_rgb_normalised.csv', key*3+2, 60)
     key += 1
 
 ## For Analogue Communication: ##

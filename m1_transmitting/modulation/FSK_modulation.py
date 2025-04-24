@@ -3,202 +3,141 @@ import time
 from typing import List, Tuple
 from cuesdk import CueSdk
 
-def keyboard_setup():
+from _SETUP_ import set_directory
+set_directory()
+import common.keyboard_interface as keyboard
 
-    sdk = CueSdk()
-    def on_state_changed(evt):
-        print(evt.state)
-    err = sdk.connect(on_state_changed)
-    details, err = sdk.get_session_details()
-    print(details)
-    device_id = '{d9905297-d6d8-48b7-ac33-94e8ca286e24}'
-
-        # Define a class for LED colors
-    class CorsairLedColor:
-        def __init__(self, id, r, g, b, a=255):
-            self.id = id
-            self.r = r
-            self.g = g
-            self.b = b
-            self.a = a
-    
-    return sdk, device_id, CorsairLedColor
-
-def transmit_sine_wave(
-    sdk, 
-    device_id: str,
-    CorsairLedColor,
-    data_keys: List[int],
+def single_sine_wave(
+    setup_items: list,
+    key_IDs: List[int],
     frequency: float,
-    periods: int,
+    T_symbol: int,
     colour: Tuple[int, int, int],
-    SAMPLES_PER_PERIOD: int = 60,
-):
+    samples_per_second: int = 60,
+) -> None:
     """
-    Transmits a sine wave on all given data keys at the specified frequency for the given
-    number of periods. Each color channel is centered around half its maximum with amplitude
-    equal to half, so it varies from 0 up to its maximum in a sinusoidal manner.
+    Transmits a single-frequency sine wave on the specified keys.
 
-    Parameters:
-        data_keys (list of int): Key IDs to transmit the sine wave on.
-        frequency (float): Frequency (in Hz) of the sine wave.
-        periods (int): Number of wave periods to transmit before finishing.
-        colour (tuple): (R, G, B) maximum color values (0..255).
-        SAMPLES_PER_PERIOD (int): Number of steps to update per period (higher = smoother).
+    Each RGB channel oscillates from 0 → max in a sine pattern:
+      centre = max/2, amplitude = max/2.
+
+    Args:
+        setup_items (list): [sdk, device_id, CorsairLedColor] from keyboard_setup().
+        key_IDs (List[int]): IDs of keys to animate.
+        frequency (float): Wave frequency in Hz (must be > 0).
+        T_symbol (int): Transmission duration in seconds (must be > 0).
+        colour (Tuple[int,int,int]): Peak (R, G, B) values in [0..255].
+        samples_per_second (int): Updates per second (higher = smoother).
     """
-    # 1) Basic validation
-    if not data_keys:
-        print("No data keys provided.")
+    # 1) Validate inputs
+    if not key_IDs:
+        print("single_sine_wave: no key_IDs provided.")
         return
     if frequency <= 0:
-        print("Frequency must be > 0.")
+        print("single_sine_wave: frequency must be > 0.")
         return
-    if periods < 1:
-        print("Periods must be at least 1.")
+    if T_symbol <= 0:
+        print("single_sine_wave: T_symbol must be > 0.")
         return
 
-    # 2) Calculate total time and step duration
-    total_period_time = 1.0 / frequency  # length of one period in seconds
-    total_wave_time = periods * total_period_time  # how long to run in total
-    dt = total_period_time / SAMPLES_PER_PERIOD  # time step per update
+    # 2) Sampling setup
+    dt = 1.0 / samples_per_second
+    total_samples = int(samples_per_second * T_symbol)
 
-    # 3) Calculate center & amplitude per color channel
-    #    So the wave goes from 0 to color[channel].
-    #    e.g. for R=255 => center=127, amplitude=127
-    r_center = colour[0] / 2.0
-    r_amp = r_center
-    g_center = colour[1] / 2.0
-    g_amp = g_center
-    b_center = colour[2] / 2.0
-    b_amp = b_center
-
-    # 4) Main loop: step through the total number of samples
-    total_samples = periods * SAMPLES_PER_PERIOD
+    # 3) Precompute centre & amplitude for each channel
+    centres   = [c / 2.0 for c in colour]
+    amplitudes = centres[:]  # each swings ±centre
 
     start_time = time.perf_counter()
-    for sample_index in range(total_samples):
-        # Fraction of the current wave cycle
-        # sample_index goes from 0 .. total_samples-1
-        # wave_phase from 0 .. periods
-        wave_phase = float(sample_index) / float(SAMPLES_PER_PERIOD)  # wave # within [0..periods)
-        angle = 2.0 * math.pi * wave_phase  # one full sine wave per period
+    for i in range(total_samples):
+        # time t = i * dt → angle = 2π·f·t
+        angle = 2 * math.pi * frequency * (i * dt)
 
-        # Compute each channel’s instantaneous value
-        r_val = r_center + r_amp * math.sin(angle)
-        g_val = g_center + g_amp * math.sin(angle)
-        b_val = b_center + b_amp * math.sin(angle)
+        # compute and clamp each channel
+        rgb = []
+        for ctr, amp in zip(centres, amplitudes):
+            val = ctr + amp * math.sin(angle)
+            rgb.append(max(0, min(255, int(round(val)))))
 
-        # Clamp and round to ensure valid [0..255] integers
-        r_clamped = max(0, min(255, int(round(r_val))))
-        g_clamped = max(0, min(255, int(round(g_val))))
-        b_clamped = max(0, min(255, int(round(b_val))))
-
-        # Build the color array for all data keys
-        led_colors = [
-            CorsairLedColor(id=key_id, r=r_clamped, g=g_clamped, b=b_clamped)
-            for key_id in data_keys
-        ]
-
-        # Set the color on all data keys
-        result = sdk.set_led_colors(device_id, led_colors)
+        # apply uniform colour across all keys
+        result = keyboard.set_colour(setup_items, key_IDs, tuple(rgb))
         if result != 0:
-            print(f"Failed to set LED colors (error={result})")
+            print(f"single_sine_wave: error setting colour {tuple(rgb)} (code={result})")
 
-        # Sleep until the next sample
-        # Adjust to keep consistent timing if necessary
+        # maintain real-time pacing
         elapsed = time.perf_counter() - start_time
-        target_time = (sample_index + 1) * dt
-        remaining = target_time - elapsed
-        if remaining > 0:
-            time.sleep(remaining)
+        target  = (i + 1) * dt
+        if (delay := target - elapsed) > 0:
+            time.sleep(delay)
 
-    # 5) End of wave transmission
-    #    (Optionally, you could turn the keys off or do something else here)
-    print("Sine wave transmission complete.")
+    print("single_sine_wave: complete.")
 
-def transmit_triangle_wave(
-    data_keys: List[int],
-    frequency: float,
-    periods: int,
-    colour: Tuple[int, int, int],
-    SAMPLES_PER_PERIOD: int = 50
-):
+def multichannel_sine_waves(
+    setup_items: list,
+    key_IDs: List[int],
+    R_frequency: float,
+    G_frequency: float,
+    B_frequency: float,
+    T_symbol: float,
+    samples_per_second: int = 60,
+) -> None:
     """
-    Transmits a triangle wave on all given data keys at the specified frequency for the given
-    number of periods. For each channel in 'colour', the wave starts at 0, rises linearly to
-    the channel's max, then falls linearly back to 0 in one period.
+    Transmits independent sine waves on the R, G, and B channels.
 
-    Parameters:
-        data_keys (list of int): Key IDs to transmit the triangle wave on.
-        frequency (float): Frequency (in Hz) of the triangle wave.
-        periods (int): Number of wave periods to transmit before finishing.
-        colour (tuple): (R, G, B) maximum color values (0..255).
-        SAMPLES_PER_PERIOD (int): Number of steps to update per period (higher = smoother).
+    Each channel oscillates from 0 → 255 in a sine pattern:
+      centre = 127.5, amplitude = 127.5.
+
+    Args:
+        setup_items (list): [sdk, device_id, CorsairLedColor] from keyboard_setup().
+        key_IDs (List[int]): IDs of keys to animate.
+        R_frequency (float): Red-channel frequency in Hz (must be > 0).
+        G_frequency (float): Green-channel frequency in Hz (must be > 0).
+        B_frequency (float): Blue-channel frequency in Hz (must be > 0).
+        T_symbol (float): Total transmission duration in seconds (must be > 0).
+        samples_per_second (int): Updates per second (higher = smoother).
     """
-    # 1) Basic validation
-    if not data_keys:
-        print("No data keys provided.")
+    # 1) Validate inputs
+    if not key_IDs:
+        print("multichannel_sine_waves: no key_IDs provided.")
         return
-    if frequency <= 0:
-        print("Frequency must be > 0.")
+    if R_frequency <= 0 or G_frequency <= 0 or B_frequency <= 0:
+        print("multichannel_sine_waves: all frequencies must be > 0.")
         return
-    if periods < 1:
-        print("Periods must be at least 1.")
+    if T_symbol <= 0:
+        print("multichannel_sine_waves: T_symbol must be > 0.")
         return
 
-    # 2) Calculate total time for one period and the step duration
-    period_time = 1.0 / frequency  # seconds per period
-    total_wave_time = periods * period_time
-    dt = period_time / SAMPLES_PER_PERIOD
+    # 2) Sampling configuration
+    dt = 1.0 / samples_per_second
+    total_samples = int(samples_per_second * T_symbol)
 
-    # 3) Initialize the iCUE SDK objects
-    #    (Adjust these lines to match your actual setup/environment)
-    sdk, device_id, CorsairLedColor = keyboard_setup()
+    # 3) Precompute centre & amplitude (127.5 each)
+    centre = 255.0 / 2.0
+    amplitude = centre
 
-    # 4) Main loop: time-step through the total number of samples
-    total_samples = periods * SAMPLES_PER_PERIOD
     start_time = time.perf_counter()
+    for i in range(total_samples):
+        t = i * dt
+        # per-channel angles
+        angle_r = 2 * math.pi * R_frequency * t
+        angle_g = 2 * math.pi * G_frequency * t
+        angle_b = 2 * math.pi * B_frequency * t
 
-    for sample_index in range(total_samples):
-        # wave_phase => how many "periods" have elapsed so far (fraction)
-        # e.g. goes from 0 up to (periods - a tiny fraction).
-        wave_phase = float(sample_index) / float(SAMPLES_PER_PERIOD)
-        # frac is the fractional part within the current period [0..1)
-        frac = wave_phase - math.floor(wave_phase)
+        # compute and clamp each channel
+        r = int(round(centre + amplitude * math.sin(angle_r)))
+        g = int(round(centre + amplitude * math.sin(angle_g)))
+        b = int(round(centre + amplitude * math.sin(angle_b)))
+        r, g, b = max(0, min(255, r)), max(0, min(255, g)), max(0, min(255, b))
 
-        # Triangle formula: tri in [0..1..0]
-        # tri = 1 - abs(2*frac - 1)
-        # This yields 0 -> 1 -> 0 over one period
-        tri_value = 1.0 - abs(2.0 * frac - 1.0)
-
-        # Compute each channel’s instantaneous color
-        r_val = colour[0] * tri_value
-        g_val = colour[1] * tri_value
-        b_val = colour[2] * tri_value
-
-        # Convert to integers
-        r_clamped = max(0, min(255, int(round(r_val))))
-        g_clamped = max(0, min(255, int(round(g_val))))
-        b_clamped = max(0, min(255, int(round(b_val))))
-
-        # Build the color array for all data keys
-        led_colors = [
-            CorsairLedColor(id=key_id, r=r_clamped, g=g_clamped, b=b_clamped)
-            for key_id in data_keys
-        ]
-
-        # Send the color update
-        result = sdk.set_led_colors(device_id, led_colors)
+        # apply color to all keys
+        result = keyboard.set_colour(setup_items, key_IDs, (r, g, b))
         if result != 0:
-            print(f"Failed to set LED colors (error={result})")
+            print(f"multichannel_sine_waves: error setting colour ({r},{g},{b}) (code={result})")
 
-        # Sleep until the next sample
+        # maintain timing
         elapsed = time.perf_counter() - start_time
-        target_time = (sample_index + 1) * dt
-        remaining = target_time - elapsed
-        if remaining > 0:
-            time.sleep(remaining)
+        target  = (i + 1) * dt
+        if (delay := target - elapsed) > 0:
+            time.sleep(delay)
 
-    # 5) Done transmitting the wave
-    print("Triangle wave transmission complete.")
-    # (Optionally turn off keys here or leave them at final value)
+    print("multichannel_sine_waves: complete.")

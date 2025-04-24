@@ -1,5 +1,7 @@
 from _SETUP_ import set_directory
 set_directory()
+from common.figure_formatting import set_global_font
+set_global_font()
 
 import numpy as np
 import pandas as pd
@@ -10,6 +12,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.cm as cm
 from mpl_toolkits.mplot3d.art3d import Line3DCollection
+from matplotlib.colors import Normalize
 
 csv_path = "files\spreadsheets\s5_rgb_normalised.csv"
 
@@ -159,9 +162,101 @@ def plot_3d_waterfall_with_peak_colors(spectrogram_data, colormap=plt.cm.viridis
 
     plt.show()
 
+def plot_three_spectrograms(
+    csv_path,
+    columns=(0, 1, 2),
+    sampling_rate=60,
+    window_size=120,
+    overlap=0,
+    max_freq=2.5,
+    scale='dB',                       # 'dB' or 'linear'
+    cmap_list=('Reds', 'Greens', 'Blues'),
+    major_fontsize=24,
+    minor_fontsize=16,
+    vertical_spacing=0.2
+):
+    """
+    Compute and plot three vertically stacked spectrograms for R, G, B channels,
+    each using its own colormap and individual colorbars.
+
+    :param csv_path:        Path to CSV with at least three columns.
+    :param columns:         Tuple of three zero-indexed column IDs for R, G, B.
+    :param sampling_rate:   Sampling rate in Hz.
+    :param window_size:     FFT window length in samples.
+    :param overlap:         Overlap in samples between windows.
+    :param max_freq:        Max frequency (Hz) to display on y-axis.
+    :param scale:           'dB' for 10·log₁₀(power), or 'linear' for raw power.
+    :param cmap_list:       Tuple of three colormap names for R, G, B.
+    :param major_fontsize:  Font size for axis and colorbar labels.
+    :param minor_fontsize:  Font size for tick labels.
+    :param vertical_spacing: Vertical spacing between subplots (fraction of axis height).
+    """
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from matplotlib.colors import Normalize
+
+    # 1) Compute & transform spectrograms
+    specs = []
+    for col in columns:
+        spec = compute_fft_spectrogram(
+            csv_path=csv_path,
+            column=col,
+            sampling_rate=sampling_rate,
+            window_size=window_size,
+            overlap=overlap
+        )
+        intensity = spec["intensity_matrix"]
+        if scale.lower() == 'dB':
+            data = 10 * np.log10(intensity + 1e-10)
+        else:
+            data = intensity
+        specs.append((spec["times"], spec["frequencies"], data))
+
+    # 2) Determine common color scale (only up to max_freq)
+    vmins, vmaxs = [], []
+    for _, freqs, data in specs:
+        mask = freqs <= max_freq
+        vmins.append(data[mask, :].min())
+        vmaxs.append(data[mask, :].max())
+    norm = Normalize(vmin=min(vmins), vmax=max(vmaxs))
+
+    # 3) Build colorbar labels
+    if scale.lower() == 'dB':
+        bar_labels = [r'$P_{\mathrm{R}}$ (dB)', r'$P_{\mathrm{G}}$ (dB)', r'$P_{\mathrm{B}}$ (dB)']
+    else:
+        bar_labels = [r'$P_{\mathrm{R}}$', r'$P_{\mathrm{G}}$', r'$P_{\mathrm{B}}$']
+
+    # 4) Plot
+    fig, axes = plt.subplots(
+        nrows=3, ncols=1, figsize=(8, 12),
+        sharex=True,
+        gridspec_kw={'hspace': vertical_spacing}
+    )
+
+    for ax, (times, freqs, data), cmap, cbar_label in zip(axes, specs, cmap_list, bar_labels):
+        mesh = ax.pcolormesh(
+            times, freqs, data,
+            shading='auto',
+            cmap=cmap,
+            norm=norm
+        )
+        ax.set_ylabel(r'$f\ (\mathrm{Hz})$', fontsize=major_fontsize)
+        ax.set_ylim(0, max_freq)
+        ax.tick_params(labelsize=minor_fontsize)
+
+        cbar = fig.colorbar(mesh, ax=ax, orientation='vertical', pad=0.02)
+        cbar.set_label(cbar_label, fontsize=major_fontsize)
+        cbar.ax.tick_params(labelsize=minor_fontsize)
+
+    axes[-1].set_xlabel('Time (s)', fontsize=major_fontsize)
+    plt.tight_layout()
+    plt.show()
+
+if __name__ == '__main__':
+    plot_three_spectrograms('files/spreadsheets/s5_rgb_normalised.csv')
 # Example Usage:
-result = compute_fft_spectrogram(csv_path, consideration_bounds=(0, 474), sampling_rate=30, window_size=30)
-plot_fft_spectrogram(result)
+# result = compute_fft_spectrogram(csv_path, consideration_bounds=(0, 474), sampling_rate=30, window_size=30)
+# plot_fft_spectrogram(result)
 
 # result_2 = compute_fft_spectrogram(csv_path, consideration_bounds=(0, 1210), sampling_rate=60, window_size=120, overlap=90)
 # plot_3d_waterfall_with_peak_colors(result_2, freq_range=(1,5))

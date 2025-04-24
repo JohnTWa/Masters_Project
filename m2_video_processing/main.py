@@ -27,7 +27,7 @@ spreadsheets_folder = 'files/spreadsheets'
 
 ## Define file paths
 
-video_path = 'files/Training Video.mp4'
+video_path = 'files/M-FSK test.mp4'
 input_image_path = frames_folder + '/frame_0.png'
 corners_csv_path = spreadsheets_folder + '/s2_corner_coordinates.csv'
 warped_image_path = warped_frames_folder + '/warped_frame_0.png'
@@ -56,10 +56,10 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 # ## Reset Files as Required ##
 
 # reset(frames_folder)
-# reset(warped_frames_folder)
-# reset('files/keyboard_vectors/coloured_keyboards', rgb_csv_path)
+reset(warped_frames_folder)
+reset('files/keyboard_vectors/coloured_keyboards', rgb_csv_path)
 
-# ## Run the Process for Initial Frame
+# # ## Run the Process for Initial Frame
 
 # video_frame_splitting(video_path, frames_folder)
 # point_selection(input_image_path, corners_csv_path)
@@ -76,18 +76,18 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 # produce_overlaid_image(None, warped_image_path, LED_mask_overlaid_path, LED_mask_image_path)
 # display_image(LED_mask_overlaid_path)
 
-# # Repeat for all frames 
+# Repeat for all frames 
 
-# frame_number = 0
-# while os.path.exists(input_image_path):
+frame_number = 0
+while os.path.exists(input_image_path):
 
-#     image_warping(input_image_path, corners_csv_path, warped_image_path, inverse_gamma=True)
-#     LED_colour_averaging(warped_image_path, coordinates_csv_path, LED_mask_numpy_path, rgb_csv_path)
+    image_warping(input_image_path, corners_csv_path, warped_image_path, inverse_gamma=True)
+    LED_colour_averaging(warped_image_path, coordinates_csv_path, LED_mask_numpy_path, rgb_csv_path)
 
-#     frame_number += 1
+    frame_number += 1
 
-#     input_image_path = f'files/frames/frame_{frame_number}.png'
-#     warped_image_path = f'files/warped_frames/warped_frame_{frame_number}.png'
+    input_image_path = f'files/frames/frame_{frame_number}.png'
+    warped_image_path = f'files/warped_frames/warped_frame_{frame_number}.png'
 
 # frame_timestamping(video_path, first_frame, first_frame_timestamp, timestamps_csv_path)
 # inverse_gamma_csv(rgb_csv_path, rgb_csv_path)

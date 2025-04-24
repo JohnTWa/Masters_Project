@@ -4,7 +4,71 @@ from matplotlib.colors import LogNorm
 from matplotlib.cm import ScalarMappable
 from scipy.stats import gaussian_kde
 
-def plot_channel_scatter(raw, target, pred):
+def plot_channel_vs_target(raw, target, channel='R',
+                           dot_size=5,
+                           major_fontsize=18,
+                           minor_fontsize=12):
+    """
+    Scatter plot for a single channel comparing determined vs. actual LED values,
+    colored by the true target RGB color.
+
+    Parameters
+    ----------
+    raw : ndarray, shape (N,3)
+        Raw (measured) RGB values, any encoding.
+    target : ndarray, shape (N,3)
+        True LED RGB values.
+    channel : {'R','G','B'}, optional
+        Which channel to plot (default 'R').
+    dot_size : int, optional
+        Marker size for the scatter (default 5).
+    major_fontsize : int, optional
+        Font size for axis labels and title (default 24).
+    minor_fontsize : int, optional
+        Font size for tick labels (default 16).
+    """
+    # Map channel letter to column index
+    idx_map = {'Red': 0, 'Green': 1, 'Blue': 2}
+    if channel not in idx_map:
+        raise ValueError("channel must be one of 'Red', 'Green', or 'Blue'")
+    idx = idx_map[channel]
+
+    # Prepare data
+    x = target[:, idx]
+    y = raw[:,    idx]
+
+    # Prepare colors from target RGB
+    colors = np.clip(target / 255.0, 0, 1)
+
+    # Create figure and axis
+    fig, ax = plt.subplots(figsize=(6, 6))
+
+    # Scatter plot
+    ax.scatter(x, y, c=colors, s=dot_size, alpha=0.7)
+
+    # Reference line
+    ax.plot([0, 255], [0, 255], color='gray', linestyle='--', linewidth=2)
+
+    # Labels and title
+    ax.set_xlabel(f"Actual LED {channel} Value (0–255)", fontsize=major_fontsize)
+    ax.set_ylabel(f"Determined LED {channel} Value (0–255)", fontsize=major_fontsize)
+
+    # Tick parameters
+    ax.tick_params(axis='both', labelsize=minor_fontsize)
+
+    # Remove top and right spines
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    # Axis limits and aspect
+    ax.set_xlim(0, 255)
+    ax.set_ylim(0, 255)
+    ax.set_aspect('equal', 'box')
+
+    plt.tight_layout()
+    plt.show()
+
+def plot_channel_scatters(raw, target, pred):
     """
     Plots two rows of channel-wise scatter plots:
       - Top row: raw vs. target for R, G, B channels
@@ -39,6 +103,47 @@ def plot_channel_scatter(raw, target, pred):
         )
         ax.set_title(f"Predicted {channels[i]} vs Target")
         ax.set_xlabel(f"{channels[i]} pred")
+        ax.set_ylabel(f"{channels[i]} target")
+        ax.set_aspect('equal', 'box')
+
+    plt.tight_layout()
+    plt.show()
+
+def compare_linear_and_gamma(raw_linear, raw_gamma, target, dot_size=5):
+    """
+    Plots two rows of channel-wise scatter plots comparing:
+      - Row 1: gamma-encoded raw vs. target
+      - Row 2: linear raw vs. target
+
+    raw_linear: ndarray (N,3) of linear RGB values [0–255]
+    raw_gamma:  ndarray (N,3) of gamma-encoded RGB values [0–255]
+    target:     ndarray (N,3) of target RGB values [0–255]
+    dot_size:   size of scatter plot points (default 5)
+    """
+    # Normalize target colors for point coloring
+    target_colors = np.clip(target / 255.0, 0, 1)
+
+    channels = ['R', 'G', 'B']
+    fig, axes = plt.subplots(2, 3, figsize=(15, 10), sharex='col', sharey='row')
+    fig.subplots_adjust(hspace=0.3, wspace=0.2)
+
+    # Top row: gamma-encoded raw vs target
+    for i in range(3):
+        ax = axes[0, i]
+        ax.scatter(raw_gamma[:, i], target[:, i],
+                   c=target_colors, s=dot_size, alpha=0.8)
+        ax.set_title(f"Gamma raw vs Target ({channels[i]})")
+        ax.set_xlabel(f"{channels[i]} raw (gamma)")
+        ax.set_ylabel(f"{channels[i]} target")
+        ax.set_aspect('equal', 'box')
+    
+    # Bottom row: linear raw vs target
+    for i in range(3):
+        ax = axes[1, i]
+        ax.scatter(raw_linear[:, i], target[:, i],
+                   c=target_colors, s=dot_size, alpha=0.8)
+        ax.set_title(f"Linear raw vs Target ({channels[i]})")
+        ax.set_xlabel(f"{channels[i]} raw (linear)")
         ax.set_ylabel(f"{channels[i]} target")
         ax.set_aspect('equal', 'box')
 
@@ -176,12 +281,27 @@ if __name__ == '__main__':
 
     # load data arrays
     import numpy as np
-    data = np.load('files/models/data.npz')
+    data = np.load('files/models/data_unprocessed.npz')
     raw_train   = data['raw_train']
     tgt_train   = data['tgt_train']
-    pred_train  = data['pred_train']
+    pred_train  = data['pred_ccm_train']
+    
+    data_normalised = np.load('files/models/data_normalised.npz')
+    raw_train_norm   = data_normalised['raw_train']
 
-    plot_channel_scatter(raw_train, tgt_train, pred_train)
-    plot_residuals(pred_train, tgt_train)
-    plot_rgb_error_planes(raw_train, tgt_train, pred_train)
-    plot_rgb_clouds_3d(raw_train, tgt_train, pred_train)
+    data_linearised = np.load('files/models/data_linearised.npz')
+    raw_train_lin   = data_linearised['raw_train']
+    pred_CCM_train_lin = data_linearised['pred_ccm_train']
+    pred_OLS_train_lin = data_linearised['pred_ols_train']
+    pred_RF_train_lin = data_linearised['pred_rf_train']
+    
+    plot_channel_vs_target(raw_train, tgt_train, 'Green')
+    plot_channel_vs_target(raw_train_norm, tgt_train, 'Green')
+    plot_channel_vs_target(raw_train_lin, tgt_train, 'Green')
+    plot_channel_vs_target(pred_OLS_train_lin, tgt_train, 'Green')
+    plot_channel_vs_target(pred_RF_train_lin, tgt_train, 'Green')
+    # compare_linear_and_gamma(raw_train_lin, raw_train, tgt_train)
+    # plot_channel_scatter(raw_train, tgt_train, pred_train)
+    # plot_residuals(pred_train, tgt_train)
+    # plot_rgb_error_planes(raw_train, tgt_train, pred_train)
+    # plot_rgb_clouds_3d(raw_train, tgt_train, pred_train)

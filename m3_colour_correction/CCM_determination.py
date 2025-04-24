@@ -171,51 +171,79 @@ def main(raw_csv, CLK_csv, target_csv,
     print(rf.feature_importances_)
     models['RF'] = ('rf', rf)
 
-    # 5) Evaluate & save
+    # 5) Train models
+    models = {}
+
+    # 5a) CCM
+    M = compute_color_correction_matrix(raw_tr, tgt_tr)
+    models['ccm'] = M
+
+    # 5b) OLS
+    ols = LinearRegression(fit_intercept=True)
+    ols.fit(raw_tr, tgt_tr)
+    models['ols'] = ols
+
+    # 5c) Random Forest
+    rf = RandomForestRegressor(
+        n_estimators=100,
+        random_state=int(random_state/100000),
+        n_jobs=-1
+    )
+    rf.fit(raw_tr, tgt_tr)
+    models['rf'] = rf
+
+    # 6) Evaluate & save each, also collect predictions
     records = []
-    for name, (key, mdl) in models.items():
-        # choose prediction function
-        if name == 'CCM':
+    preds_train = {}
+    preds_test  = {}
+
+    for name, mdl in models.items():
+        if name == 'ccm':
             def predict_fn(X, M=mdl):
                 return np.clip(X @ M.T, 0, 255)
         else:
             def predict_fn(X, model=mdl):
                 return np.clip(model.predict(X), 0, 255)
 
-        # train metrics
+        # train
         p_tr = predict_fn(raw_tr)
+        preds_train[name] = p_tr
         rmse_tr = np.sqrt(np.mean((p_tr - tgt_tr)**2))
         r2_tr   = r2_score(tgt_tr, p_tr, multioutput='uniform_average')
         records.append({'model': name, 'stage': 'train', 'RMSE': rmse_tr, 'R2': r2_tr})
 
-        # test metrics
+        # test
         p_te = predict_fn(raw_te)
+        preds_test[name] = p_te
         rmse_te = np.sqrt(np.mean((p_te - tgt_te)**2))
         r2_te   = r2_score(tgt_te, p_te, multioutput='uniform_average')
         records.append({'model': name, 'stage': 'test', 'RMSE': rmse_te, 'R2': r2_te})
 
-        # save
-        if name == 'CCM':
+        # save artifact
+        if name == 'ccm':
             np.save(ccm_npy, mdl)
-            print(f"Saved CCM → {ccm_npy}")
+        elif name == 'ols':
+            joblib.dump(mdl, ols_joblib)
         else:
-            path = ols_joblib if name=='OLS' else rf_joblib
-            joblib.dump(mdl, path)
-            print(f"Saved {name} → {path}")
+            joblib.dump(mdl, rf_joblib)
 
-    # 6) Save metrics table
+    # 7) Save metrics
     dfm = pd.DataFrame.from_records(records)
     dfm.to_csv(metrics_csv, index=False)
-    print(f"\nSaved metrics:\n{dfm}\n→ {metrics_csv}")
 
-    # 7) Save data for viz
+    # 8) Save raw/target and all model predictions
     np.savez_compressed(
         data_npz,
         raw_samples=raw_samples,
         target_samples=target_samples,
-        raw_train=raw_tr,  tgt_train=tgt_tr,  pred_train=p_tr,
-        raw_test= raw_te,  tgt_test= tgt_te,  pred_test= p_te,
+        raw_train=raw_tr,
+        tgt_train=tgt_tr,
+        **{f'pred_{name}_train': arr for name, arr in preds_train.items()},
+        raw_test=raw_te,
+        tgt_test=tgt_te,
+        **{f'pred_{name}_test':  arr for name, arr in preds_test.items()}
     )
+
     print(f"Saved data for viz → {data_npz}")
 
 if __name__ == "__main__":
