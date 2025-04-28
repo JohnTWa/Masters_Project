@@ -27,7 +27,7 @@ spreadsheets_folder = 'files/spreadsheets'
 
 ## Define file paths
 
-video_path = 'files/M-FSK test.mp4'
+video_path = 'files/10110001.mp4'
 input_image_path = frames_folder + '/frame_0.png'
 corners_csv_path = spreadsheets_folder + '/s2_corner_coordinates.csv'
 warped_image_path = warped_frames_folder + '/warped_frame_0.png'
@@ -53,28 +53,28 @@ timestamps_csv_path = spreadsheets_folder + '/s7_frame_timestamps.csv'
 # first_frame = 248
 # first_frame_timestamp = '2025-02-03-16-24-52-767'
 
-# ## Reset Files as Required ##
+## Reset Files as Required ##
 
-# reset(frames_folder)
+reset(frames_folder)
 reset(warped_frames_folder)
 reset('files/keyboard_vectors/coloured_keyboards', rgb_csv_path)
 
 # # ## Run the Process for Initial Frame
 
-# video_frame_splitting(video_path, frames_folder)
-# point_selection(input_image_path, corners_csv_path)
-# image_warping(input_image_path, corners_csv_path, warped_image_path)
-# display_image(warped_image_path)
-# vector_fitting(keyboard_vector_path, warped_image_path, fitted_vector_path)
-# produce_overlaid_image(fitted_vector_path, warped_image_path, overlaid_image_path)
-# display_image(overlaid_image_path)
-# save_coordinates_to_csv(fitted_vector_path, coordinates_csv_path)
-# reconstruct_svg(coordinates_csv_path, reconstructed_vector_path)
-# produce_overlaid_image(reconstructed_vector_path, warped_image_path, reconstructed_overlaid_path)
-# display_image(reconstructed_overlaid_path)
-# LED_identification(warped_image_path, coordinates_csv_path, LED_mask_image_path, LED_mask_numpy_path)
-# produce_overlaid_image(None, warped_image_path, LED_mask_overlaid_path, LED_mask_image_path)
-# display_image(LED_mask_overlaid_path)
+video_frame_splitting(video_path, frames_folder)
+point_selection(input_image_path, corners_csv_path)
+image_warping(input_image_path, corners_csv_path, warped_image_path)
+display_image(warped_image_path)
+vector_fitting(keyboard_vector_path, warped_image_path, fitted_vector_path)
+produce_overlaid_image(fitted_vector_path, warped_image_path, overlaid_image_path)
+display_image(overlaid_image_path)
+save_coordinates_to_csv(fitted_vector_path, coordinates_csv_path)
+reconstruct_svg(coordinates_csv_path, reconstructed_vector_path)
+produce_overlaid_image(reconstructed_vector_path, warped_image_path, reconstructed_overlaid_path)
+display_image(reconstructed_overlaid_path)
+LED_identification(warped_image_path, coordinates_csv_path, LED_mask_image_path, LED_mask_numpy_path)
+produce_overlaid_image(None, warped_image_path, LED_mask_overlaid_path, LED_mask_image_path)
+display_image(LED_mask_overlaid_path)
 
 # Repeat for all frames 
 
@@ -90,6 +90,7 @@ while os.path.exists(input_image_path):
     warped_image_path = f'files/warped_frames/warped_frame_{frame_number}.png'
 
 # frame_timestamping(video_path, first_frame, first_frame_timestamp, timestamps_csv_path)
-# inverse_gamma_csv(rgb_csv_path, rgb_csv_path)
-normalise_rgb(rgb_csv_path, normalised_rgb_csv_path)
+inverse_gamma_csv(rgb_csv_path, normalised_rgb_csv_path)
+normalise_rgb(normalised_rgb_csv_path, normalised_rgb_csv_path)
+
 # predict_rgb_values(rgb_csv_path, corrected_rgb_csv_path, model=joblib.load(model_filepath))

@@ -1,5 +1,7 @@
 from _SETUP_ import set_directory
 set_directory()
+from common.figure_formatting import set_global_font
+set_global_font()
 
 import time
 from common.file_handling import csv_to_list, adjust_for_Corsair_logo

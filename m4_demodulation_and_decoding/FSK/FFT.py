@@ -169,27 +169,19 @@ def plot_three_spectrograms(
     window_size=120,
     overlap=0,
     max_freq=2.5,
-    scale='dB',                       # 'dB' or 'linear'
+    scale='dB',
     cmap_list=('Reds', 'Greens', 'Blues'),
     major_fontsize=24,
-    minor_fontsize=16,
-    vertical_spacing=0.2
+    minor_fontsize=20,
+    vertical_spacing=0.2,
+    freq_ticks=[0.5, 1, 1.5, 2]
 ):
     """
     Compute and plot three vertically stacked spectrograms for R, G, B channels,
     each using its own colormap and individual colorbars.
 
-    :param csv_path:        Path to CSV with at least three columns.
-    :param columns:         Tuple of three zero-indexed column IDs for R, G, B.
-    :param sampling_rate:   Sampling rate in Hz.
-    :param window_size:     FFT window length in samples.
-    :param overlap:         Overlap in samples between windows.
-    :param max_freq:        Max frequency (Hz) to display on y-axis.
-    :param scale:           'dB' for 10·log₁₀(power), or 'linear' for raw power.
-    :param cmap_list:       Tuple of three colormap names for R, G, B.
-    :param major_fontsize:  Font size for axis and colorbar labels.
-    :param minor_fontsize:  Font size for tick labels.
-    :param vertical_spacing: Vertical spacing between subplots (fraction of axis height).
+    :param freq_ticks:
+        If provided as a list of numbers, these will be used for y-axis tick locations.
     """
     import numpy as np
     import matplotlib.pyplot as plt
@@ -199,20 +191,22 @@ def plot_three_spectrograms(
     specs = []
     for col in columns:
         spec = compute_fft_spectrogram(
-            csv_path=csv_path,
-            column=col,
+            csv_path=csv_path, column=col,
             sampling_rate=sampling_rate,
             window_size=window_size,
             overlap=overlap
         )
-        intensity = spec["intensity_matrix"]
-        if scale.lower() == 'dB':
-            data = 10 * np.log10(intensity + 1e-10)
+        power = spec["intensity_matrix"]
+        s = scale.lower()
+        if s == 'db':
+            data = 10 * np.log10(power + 1e-10)
+        elif s == 'amplitude':
+            data = np.sqrt(power)
         else:
-            data = intensity
+            data = power / 1e3
         specs.append((spec["times"], spec["frequencies"], data))
 
-    # 2) Determine common color scale (only up to max_freq)
+    # 2) Normalize color scale up to max_freq
     vmins, vmaxs = [], []
     for _, freqs, data in specs:
         mask = freqs <= max_freq
@@ -220,11 +214,23 @@ def plot_three_spectrograms(
         vmaxs.append(data[mask, :].max())
     norm = Normalize(vmin=min(vmins), vmax=max(vmaxs))
 
-    # 3) Build colorbar labels
-    if scale.lower() == 'dB':
-        bar_labels = [r'$P_{\mathrm{R}}$ (dB)', r'$P_{\mathrm{G}}$ (dB)', r'$P_{\mathrm{B}}$ (dB)']
+    # 3) Colorbar labels
+    if scale.lower() == 'db':
+        bar_labels = [r'$P_{\mathrm{R}}$ (dB)',
+                      r'$P_{\mathrm{G}}$ (dB)',
+                      r'$P_{\mathrm{B}}$ (dB)']
+    elif scale.lower() == 'amplitude':
+        bar_labels = [r'$A_{\mathrm{R}}$',
+                      r'$A_{\mathrm{G}}$',
+                      r'$A_{\mathrm{B}}$']
     else:
-        bar_labels = [r'$P_{\mathrm{R}}$', r'$P_{\mathrm{G}}$', r'$P_{\mathrm{B}}$']
+        bar_labels = [r'$P_{\mathrm{R}}$ ($\times10^3$)',
+                      r'$P_{\mathrm{G}}$ ($\times10^3$)',
+                      r'$P_{\mathrm{B}}$ ($\times10^3$)']
+
+    # Precompute integer ticks for colorbars
+    vmin_int = int(np.floor(norm.vmin))
+    vmax_int = int(np.ceil(norm.vmax))
 
     # 4) Plot
     fig, axes = plt.subplots(
@@ -234,26 +240,40 @@ def plot_three_spectrograms(
     )
 
     for ax, (times, freqs, data), cmap, cbar_label in zip(axes, specs, cmap_list, bar_labels):
-        mesh = ax.pcolormesh(
-            times, freqs, data,
-            shading='auto',
-            cmap=cmap,
-            norm=norm
-        )
+        mesh = ax.pcolormesh(times, freqs, data,
+                             shading='auto', cmap=cmap, norm=norm)
         ax.set_ylabel(r'$f\ (\mathrm{Hz})$', fontsize=major_fontsize)
         ax.set_ylim(0, max_freq)
+        if freq_ticks is not None:
+            ax.set_yticks(freq_ticks)
         ax.tick_params(labelsize=minor_fontsize)
 
         cbar = fig.colorbar(mesh, ax=ax, orientation='vertical', pad=0.02)
         cbar.set_label(cbar_label, fontsize=major_fontsize)
+        cbar.set_ticks([vmin_int, vmax_int])
+        cbar.set_ticklabels([str(vmin_int), str(vmax_int)])
         cbar.ax.tick_params(labelsize=minor_fontsize)
 
     axes[-1].set_xlabel('Time (s)', fontsize=major_fontsize)
-    plt.tight_layout()
+
+    # --- NEW: force ticks at 0,2,4,6,8 seconds (and beyond if needed) ---
+    import numpy as np
+    tN = specs[0][0].max()
+    max_tick = max(8, int(np.ceil(tN / 2.0)) * 2)
+    ticks = np.arange(0, max_tick + 1e-6, 2)
+    axes[-1].set_xticks(ticks)
+    axes[-1].set_xlim(0, max_tick)
+
+    # reduce top whitespace, ensure y-labels aren’t cut off
+    fig.subplots_adjust(top=0.97, left=0.17)
+
     plt.show()
 
 if __name__ == '__main__':
-    plot_three_spectrograms('files/spreadsheets/s5_rgb_normalised.csv')
+    # plot_three_spectrograms('files/spreadsheets/s5_rgb_normalised.csv', scale ='amplitude')
+    plot_three_spectrograms('files/spreadsheets/s5_rgb_normalised.csv', scale ='linear')
+    plot_three_spectrograms('files/spreadsheets/s5_rgb_normalised.csv', scale ='linear', major_fontsize=18, minor_fontsize=18)
+    # plot_three_spectrograms('files/spreadsheets/s5_rgb_normalised.csv', scale ='dB')
 # Example Usage:
 # result = compute_fft_spectrogram(csv_path, consideration_bounds=(0, 474), sampling_rate=30, window_size=30)
 # plot_fft_spectrogram(result)

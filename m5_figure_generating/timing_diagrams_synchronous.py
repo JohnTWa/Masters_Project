@@ -142,7 +142,7 @@ def display_synchronous_received(bit_freq, rgb_csv, SGL_column, CLK_column, DATA
         else:
             y_SGL = y_SGL * 0
     axs[0].plot(t, y_SGL, color='black', linewidth=2)
-    axs[0].set_ylabel("SGL", fontsize=major_fontsize)
+    axs[0].set_ylabel("EN", fontsize=major_fontsize)
     axs[0].set_ylim(fixed_ylim)
     axs[0].set_yticks(fixed_yticks)
     axs[0].spines.top.set_visible(False)
@@ -207,5 +207,5 @@ def display_synchronous_received(bit_freq, rgb_csv, SGL_column, CLK_column, DATA
     plt.show()
     
 # Example usage
-display_synchronous_timing_diagram_labelled(binary_string='10110001', idle_bits=1, major_fontsize=24, minor_fontsize=20)
-display_synchronous_received(bit_freq=10, rgb_csv='files/spreadsheets/s5_rgb_normalised.csv', SGL_column=3, CLK_column=0, DATA_column=6, sample_rate=67, start_row=125, major_fontsize=24, normalise=True)
+display_synchronous_timing_diagram_labelled(binary_string='10110001', idle_bits=1, major_fontsize=28, minor_fontsize=24)
+display_synchronous_received(bit_freq=10, rgb_csv='files/spreadsheets/s5_rgb_normalised.csv', SGL_column=3, CLK_column=0, DATA_column=6, sample_rate=67, start_row=125, major_fontsize=28, normalise=True)

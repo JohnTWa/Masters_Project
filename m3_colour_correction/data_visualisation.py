@@ -1,13 +1,19 @@
+from _SETUP_ import set_directory
+set_directory()
+from common.figure_formatting import set_global_font
+set_global_font()
+
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.colors import LogNorm
 from matplotlib.cm import ScalarMappable
 from scipy.stats import gaussian_kde
 
-def plot_channel_vs_target(raw, target, channel='R',
-                           dot_size=5,
-                           major_fontsize=18,
-                           minor_fontsize=12):
+def plot_channel_vs_target(raw, target, channel='Red',
+                           dot_size=4,
+                           major_fontsize=24,
+                           minor_fontsize=18, 
+                           y_label='Channel Value'):
     """
     Scatter plot for a single channel comparing determined vs. actual LED values,
     colored by the true target RGB color.
@@ -15,7 +21,7 @@ def plot_channel_vs_target(raw, target, channel='R',
     Parameters
     ----------
     raw : ndarray, shape (N,3)
-        Raw (measured) RGB values, any encoding.
+        Raw (measured) RGB values, any encoding.  
     target : ndarray, shape (N,3)
         True LED RGB values.
     channel : {'R','G','B'}, optional
@@ -37,6 +43,12 @@ def plot_channel_vs_target(raw, target, channel='R',
     x = target[:, idx]
     y = raw[:,    idx]
 
+     # Compute R^2 against unity line y = x
+    # R^2 = 1 - SS_res / SS_tot, where SS_res = sum((y_i - x_i)^2)
+    ss_res = np.sum((y - x) ** 2)
+    ss_tot = np.sum((y - np.mean(y)) ** 2)
+    r2 = 1 - ss_res / ss_tot if ss_tot > 0 else np.nan
+
     # Prepare colors from target RGB
     colors = np.clip(target / 255.0, 0, 1)
 
@@ -46,12 +58,22 @@ def plot_channel_vs_target(raw, target, channel='R',
     # Scatter plot
     ax.scatter(x, y, c=colors, s=dot_size, alpha=0.7)
 
-    # Reference line
+    # Reference unity line
     ax.plot([0, 255], [0, 255], color='gray', linestyle='--', linewidth=2)
 
+    # Annotate R^2
+    ax.text(
+        0.05, 0.95,
+        rf"$R^2 = {r2:.2f}$",
+        transform=ax.transAxes,
+        fontsize=major_fontsize,
+        va='top', ha='left',
+        bbox=dict(facecolor='white', alpha=0.6, edgecolor='none')
+    )
+
     # Labels and title
-    ax.set_xlabel(f"Actual LED {channel} Value (0–255)", fontsize=major_fontsize)
-    ax.set_ylabel(f"Determined LED {channel} Value (0–255)", fontsize=major_fontsize)
+    ax.set_xlabel(f"LED {channel} Value", fontsize=major_fontsize)
+    ax.set_ylabel(y_label, fontsize=major_fontsize)
 
     # Tick parameters
     ax.tick_params(axis='both', labelsize=minor_fontsize)
@@ -295,11 +317,11 @@ if __name__ == '__main__':
     pred_OLS_train_lin = data_linearised['pred_ols_train']
     pred_RF_train_lin = data_linearised['pred_rf_train']
     
-    plot_channel_vs_target(raw_train, tgt_train, 'Green')
-    plot_channel_vs_target(raw_train_norm, tgt_train, 'Green')
-    plot_channel_vs_target(raw_train_lin, tgt_train, 'Green')
-    plot_channel_vs_target(pred_OLS_train_lin, tgt_train, 'Green')
-    plot_channel_vs_target(pred_RF_train_lin, tgt_train, 'Green')
+    plot_channel_vs_target(raw_train, tgt_train, 'Green', y_label='Raw Camera Green Value')
+    plot_channel_vs_target(raw_train_norm, tgt_train, 'Green', y_label='Normalised Camera Green Value')
+    plot_channel_vs_target(raw_train_lin, tgt_train, 'Green', y_label='Gamma-Decoded Green Value')
+    plot_channel_vs_target(pred_OLS_train_lin, tgt_train, 'Green', y_label='Corrected Green Value')
+    plot_channel_vs_target(pred_RF_train_lin, tgt_train, 'Green', y_label='RF Deduced Green Value')
     # compare_linear_and_gamma(raw_train_lin, raw_train, tgt_train)
     # plot_channel_scatter(raw_train, tgt_train, pred_train)
     # plot_residuals(pred_train, tgt_train)

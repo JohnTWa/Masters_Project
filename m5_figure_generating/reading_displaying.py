@@ -1,5 +1,7 @@
 from _SETUP_ import set_directory
 set_directory()
+from common.figure_formatting import set_global_font
+set_global_font()
 
 import csv
 import matplotlib.pyplot as plt
@@ -254,7 +256,7 @@ def display_FSK_reading(csv_path, column, framerate=None):
     plt.plot(video_frames, values, linestyle='-', color='black', linewidth=2)  # Black curve
 
     # 4) Set Y limits fixed to 0 and 255
-    plt.ylim(0, 255)
+    plt.ylim(-0.1*255, 1.1*255)
 
     # 5) Label and style the axes
     if framerate:
@@ -267,7 +269,7 @@ def display_FSK_reading(csv_path, column, framerate=None):
         plt.xticks(fontsize=24)
     plt.ylabel("Received Red Value \n (0-255)", fontsize=24)
     # Set fixed y-ticks at 0, 128, and 255 for clarity
-    plt.yticks([0, 128, 255], fontsize=24)
+    plt.yticks([0, 127, 255], fontsize=24)
 
     # Disable the grid for a clean, white-background look
     plt.grid(False)
@@ -280,6 +282,192 @@ def display_FSK_reading(csv_path, column, framerate=None):
     ax.spines.left.set_bounds(0, 255)
 
     plt.tight_layout()
+    plt.show()
+
+def display_MFSK_reading(
+    csv_path,
+    columns,
+    framerate=None,
+    major_fontsize=24,
+    width=8
+):
+    """
+    Reads three specified columns of numeric data from csv_path and displays their
+    values over time on the same axes, with a white background. Each channel is plotted
+    in its own color (red, green, blue), and the y-axis is fixed to range from 0 to 255.
+
+    X-axis ticks are placed every 2 seconds when framerate is provided.
+
+    :param csv_path:   Path to the CSV file containing numeric data in columns.
+    :param columns:    Tuple of three 0-based column indices for R, G, B.
+    :param framerate:  Frames per second (optional; used to convert row index to time in seconds).
+    """
+    # 1) Read values from the specified columns
+    r_col, g_col, b_col = columns
+    vals_r, vals_g, vals_b = [], [], []
+
+    with open(csv_path, 'r', newline='') as infile:
+        reader = csv.reader(infile)
+        for row in reader:
+            if len(row) <= max(r_col, g_col, b_col):
+                continue
+            try:
+                r = float(row[r_col])
+                g = float(row[g_col])
+                b = float(row[b_col])
+            except ValueError:
+                continue
+            vals_r.append(r)
+            vals_g.append(g)
+            vals_b.append(b)
+
+    if not vals_r:
+        print(f"No valid data found in columns {columns} of '{csv_path}'")
+        return
+
+    # 2) Create a common time/frame axis
+    n = len(vals_r)
+    frames = np.arange(n)
+
+    # 3) Plot the three channels
+    plt.figure(figsize=(width, 4), facecolor='white')
+    plt.plot(frames, vals_r, color='red',   linestyle='-', linewidth=3)
+    plt.plot(frames, vals_g, color='#00BB00', linestyle='--', linewidth=2.5)
+    plt.plot(frames, vals_b, color='blue',  linestyle='-.', linewidth=2)
+
+    # 4) Fix Y limits to 0–255
+    plt.ylim(-0.1*255, 1.1*255)
+
+    # 5) Label and style the axes, xticks every 2 seconds if framerate given
+    if framerate:
+        total_time = n / framerate
+        # generate ticks at 0, 2, 4, ..., up to total_time
+        secs = np.arange(0, total_time + 1e-6, 2.0)
+        frames_ticks = secs * framerate
+        plt.xticks(frames_ticks, secs.astype(int), fontsize=major_fontsize)
+        plt.xlabel("Time (s)", fontsize=major_fontsize)
+    else:
+        # fallback: ticks every 2 frames
+        ticks = np.arange(0, n + 1, 2)
+        plt.xticks(ticks, fontsize=major_fontsize)
+        plt.xlabel("Video Frame", fontsize=major_fontsize)
+
+    plt.ylabel("Received Value \n (0-255)", fontsize=major_fontsize)
+    plt.yticks([0, 127, 255], fontsize=major_fontsize)
+    plt.grid(False)
+
+    # 6) Adjust spines
+    ax = plt.gca()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['bottom'].set_bounds(0, n)
+    ax.spines['left'].set_bounds(0, 255)
+
+    plt.tight_layout()
+    plt.show()
+
+def display_MFSK_reading_subplots(
+    csv_path,
+    columns,
+    framerate=None,
+    major_fontsize=24,
+    subplot_spacing=0.2
+):
+    """
+    Reads three specified columns of numeric data from csv_path and displays their
+    values over time in three stacked subplots (R, G, B), with a white background.
+    Each channel is plotted in its own color, style, and line-width, and the y-axis
+    is fixed to range from 0 to 255. The top two subplots omit their x-axis.
+
+    X-axis ticks are placed every 2 seconds when framerate is provided.
+
+    :param csv_path:   Path to the CSV file containing numeric data in columns.
+    :param columns:    Tuple of three 0-based column indices for R, G, B.
+    :param framerate:  Frames per second (optional; used to convert row index to time in seconds).
+    :param major_fontsize: Font size for axis labels and ticks.
+    :param width:      Width of the figure in inches.
+    """
+    # 1) Read values from the specified columns
+    r_col, g_col, b_col = columns
+    vals_r, vals_g, vals_b = [], [], []
+
+    with open(csv_path, 'r', newline='') as infile:
+        reader = csv.reader(infile)
+        for row in reader:
+            if len(row) <= max(r_col, g_col, b_col):
+                continue
+            try:
+                r = float(row[r_col])
+                g = float(row[g_col])
+                b = float(row[b_col])
+            except ValueError:
+                continue
+            vals_r.append(r)
+            vals_g.append(g)
+            vals_b.append(b)
+
+    if not vals_r:
+        print(f"No valid data found in columns {columns} of '{csv_path}'")
+        return
+
+    # 2) Create a common time/frame axis
+    n = len(vals_r)
+    frames = np.arange(n)
+
+    # 3) Prepare subplots: three rows, shared x-axis, white background
+    fig, axes = plt.subplots(3, 1, figsize=(5, 7), sharex=True, facecolor='white')
+    fig.subplots_adjust(hspace=subplot_spacing)
+
+    colors     = ('red',   'green',  'blue')
+    linestyles = ('-',     '-',     '-')
+    linewidths = (2,       2,       2)
+
+    # 4) Plot each channel in its own subplot
+    for idx, (ax, data, c, ls, lw) in enumerate(zip(
+        axes,
+        (vals_r, vals_g, vals_b),
+        colors,
+        linestyles,
+        linewidths
+    )):
+        ax.plot(frames, data, color=c, linestyle=ls, linewidth=lw)
+
+        # Y-axis formatting (identical to original)
+        ax.set_ylim(-0.1*255, 1.1*255)
+        ax.set_yticks([0, 255])
+        ax.tick_params(axis='y', labelsize=major_fontsize)
+        # ax.set_ylabel(c[0].capitalize() + 'Value', fontsize=major_fontsize)
+
+        # X-axis formatting: only bottom subplot shows ticks & label
+        if idx < 2:
+            # hide bottom spine and ticks/labels
+            ax.spines['bottom'].set_visible(False)
+            ax.tick_params(axis='x', which='both', bottom=False, labelbottom=False)
+        else:
+            # set up ticks every 2 seconds or 2 frames, as before
+            if framerate:
+                total_time = n / framerate
+                secs = np.arange(0, total_time + 1e-6, 2.0)
+                frame_ticks = secs * framerate
+                ax.set_xticks(frame_ticks)
+                ax.set_xticklabels(secs.astype(int), fontsize=major_fontsize)
+                ax.set_xlabel("Time (s)", fontsize=major_fontsize)
+            else:
+                ticks = np.arange(0, n + 1, 2)
+                ax.set_xticks(ticks)
+                ax.tick_params(axis='x', labelsize=major_fontsize)
+                ax.set_xlabel("Video Frame", fontsize=major_fontsize)
+
+        # Disable grid (as in original)
+        ax.grid(False)
+
+        # Spine styling (top & right off; bottom & left bounds same as original)
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['bottom'].set_bounds(0, n)
+        ax.spines['left'].set_bounds(0, 255)
+
+    # plt.tight_layout()
     plt.show()
 
 def display_ASK_reading(csv_path, column, framerate, compression_factor=0.5):
@@ -492,6 +680,8 @@ while key <= 108:
     print(f'key{key}')
     signal_csv_path = f'files/key_light_levels/light_levels_key_{key}.csv'
     # display_binary_reading_with_markers(signal_csv_path)
+    # display_MFSK_reading('files/spreadsheets/s5_rgb_normalised.csv', (0,1,2), 60)
+    # display_MFSK_reading_subplots('files/spreadsheets/s5_rgb_normalised.csv', (0,1,2), 60)
     print('RED')
     display_FSK_reading('files/spreadsheets/s5_rgb_normalised.csv', key*3)
     print('GREEN')

@@ -1,5 +1,7 @@
 from _SETUP_ import set_directory
 set_directory()
+from common.figure_formatting import set_global_font
+set_global_font()
 
 from common.hamming_code import hamming_encode
 import matplotlib.pyplot as plt
@@ -19,7 +21,7 @@ def display_asynchronous_text_timing_diagram_labelled(
     """
 
     start_bit_label = "Start Bit"
-    end_bit_label = "End Bit"
+    end_bit_label = "Stop Bit"
 
     try:
         # Add start and end bits to each message
@@ -131,7 +133,7 @@ def display_asynchronous_text_timing_diagram_labelled_Hamming(
     major_fontsize: int,
     minor_fontsize: int,
     start_bit_label: str = "Start Bit",
-    end_bit_label: str = "End Bit",
+    end_bit_label: str = "Stop Bit",
 ):
     try:
         # Add start and end bits to each message
@@ -262,6 +264,6 @@ def display_asynchronous_text_timing_diagram_labelled_Hamming(
     except Exception as e:
         print(f"Error: {e}")
 
-display_asynchronous_text_timing_diagram_labelled(['10110001'], [''], idle_zone_length=5, major_fontsize=24, minor_fontsize=20)
-display_asynchronous_text_timing_diagram_labelled_Hamming([hamming_encode('10110001')], [''], idle_zone_length=5, major_fontsize=24, minor_fontsize=20)
-display_asynchronous_text_timing_diagram_labelled([1101000, 1100101, 1101100, 1101100, 1101111], ['h','e','l','l','o'], idle_zone_length=8, major_fontsize=24, minor_fontsize=8, label_bits=False)
+display_asynchronous_text_timing_diagram_labelled(['10110001'], [''], idle_zone_length=5, major_fontsize=28, minor_fontsize=24)
+display_asynchronous_text_timing_diagram_labelled_Hamming([hamming_encode('10110001')], [''], idle_zone_length=5, major_fontsize=28, minor_fontsize=24)
+display_asynchronous_text_timing_diagram_labelled([1101000, 1100101, 1101100, 1101100, 1101111], ['h','e','l','l','o'], idle_zone_length=8, major_fontsize=28, minor_fontsize=8, label_bits=False)

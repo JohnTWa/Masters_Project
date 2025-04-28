@@ -133,7 +133,7 @@ def create_BER_vs_f_plot(BER_vs_f_csv, color='black', label='BER', fontsize=16, 
              va='bottom', ha='left')
 
     # formatting & limits
-    plt.xlabel(r'Transmission Frequency $f_{\mathrm{bit}}$ (Hz)', fontsize=fontsize)
+    plt.xlabel(r'Per-LED Bit Rate $R_{\mathrm{b}}$ (bps)', fontsize=fontsize)
     plt.ylabel('Bit Error Rate (BER)', fontsize=fontsize)
     plt.tick_params(axis='both', labelsize=minor_fontsize)
 
